@@ -230,5 +230,32 @@ img.blur {
 
 /*Footer CSS*/
 .footer_style1 ul li a {
-    
+    color: #494949;
+}
+
+.footer_style1 ul li .social_links a {
+    background: #E6E6E6;
+    padding: 8px 0;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.footer_style1 ul li .social_links a:hover {
+    background: #d6d4d4;
+}
+
+.footer_style1 ul.address li {
+    padding-left: 34px;
+    position: relative;
+}
+
+.footer_style1 ul.address li i {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    font-size: 16px;
 }
