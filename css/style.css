@@ -1,0 +1,234 @@
+/*body {
+    background-image: url(../images/home.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}*/
+
+body {
+    font-size: 14px;
+    color: #494949;
+}
+
+/*Extra CSS*/
+
+.container_909 {
+    max-width: 909px;
+}
+
+
+h1.main_heading {
+    font-size: 77px;
+}
+
+.btn-primary {
+    background-color: #5BBC2E;
+    border-color: #5BBC2E;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+    max-width: 100%;
+    width: 150px;
+}
+
+.btn-primary {
+    background-color: #5BBC2E;
+    border-color: #5BBC2E;
+}
+
+.bg-primary {
+    background-color: #5BBC2E !important;
+}
+
+.btn-outline-primary {
+    border-color: #5BBC2E;
+}
+
+.text-primary {
+    color: #5BBC2E !important;
+}
+
+.text-primary,
+.link,
+a {
+    color: #5BBC2E;
+}
+
+a.link2 {
+    color: #01bafb;
+}
+
+.bg-dark {
+    background-color:#303342 !important;
+}
+
+.bg_grey, 
+.jumbotron {
+    background-color: #E6E6E6;
+}
+
+.ptb_140_130 {
+    padding:150px 0px 130px 0px
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+img.blur {
+    top:-10px;
+}
+
+/*Header*/
+.header_design1 .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 12px;
+    padding: 18px 10px;
+    font-weight: normal;
+    margin-right: 80px;
+}
+
+.header_design1 a.nav-link {
+    border-top: 3px solid transparent;
+}
+
+.header_design1 a.nav-link:hover {
+    border-top: 3px solid #5BBC2E;
+}
+
+.header_design1 li.nav-item a.btn {
+    margin: 10px 0;
+}
+
+.header_design1 li.nav-item a.phone_number {
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 10px 0 13px 90px;
+}
+
+/*Banner */
+
+.banner_card {
+    margin-top: 125px;
+}
+
+.banner_card:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 160px;
+    position: absolute;
+    left: -24px;
+    background: #5BBC2E;
+}
+
+/*Background Full Image*/
+.bg_image_full{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+} 
+
+/*Login Logout Button*/
+.fixed_top_right.login_button {
+    top: 30px;
+    z-index: 9;
+    width: 100px;
+    right: 44px;
+}
+
+
+/*Heading Style*/
+.heading_style {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    color: #5BBC2E;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.heading_style.type_2:before {
+    display: block;
+    content: "";
+    border-top: 3px solid #5BBC2E;
+    border-bottom: none;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-width: 50px;
+    top: unset;
+    margin-top: -2px;
+    height: 0;
+    bottom: -20px;
+}
+
+.heading_style.type_2.text-center:before {
+    left: 50%;
+    margin-left: -25px;    
+}
+
+
+.heading_style.type_2.text-white:before {
+    border-color:#ffffff;   
+}
+
+
+/*About Section*/
+.section-about img.position-absolute {
+    left: 0;
+    top: 0;
+}
+
+/*Brands Section*/
+.section-brands .col img {
+    max-width: 200px;
+    max-height: 40px;
+}
+
+/*Tools Section*/
+.section-tools .pricing_card1 {
+    box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.2);
+}
+
+.section-tools  .pricing_card1 .card-title {
+    font-size: 12px;
+}
+
+.section-tools .pricing_card1 .card-price .price {
+    font-size: 60px;
+}
+
+/*Testimonials*/
+.section-testionials .img-thumbnail {
+    background: transparent;
+    padding: 6px;
+}
+
+.testimonials_card1 .card-icon {
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+/*Subcription*/
+.section-subscription .form-control {
+    border-color: #ffffff;
+}
+
+.section-subscription input::placeholder {
+    color:#fff;
+}
+
+/*Footer CSS*/
+.footer_style1 ul li a {
+    
+}
