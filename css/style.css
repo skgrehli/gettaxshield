@@ -303,7 +303,7 @@ img.blur {
 /*Login Logout Button*/
 .fixed_top_right.login_button {
     top: 30px;
-    z-index: 9;
+    z-index: 9999;
     width: 100px;
     right: 44px;
 }
@@ -465,3 +465,32 @@ img.blur {
 }
 
 
+
+/*Responsive*/
+
+@media all and (min-width: 787px) {
+    .scrolled .header_design1.fixed_bottom {
+        bottom: unset !important;
+        top: 0 !important;
+        position: fixed !important;
+    }
+
+    .scrolled .header_design1 a.nav-link {
+        padding: 15px 10px !important;
+        color: #fff !important;
+    }
+
+    .scrolled .fixed_top_right.login_button {
+        top: 10px;
+    }
+
+    .scrolled header .text-white {
+        color: #fff !important;
+    }
+}
+
+/*Mobile Devices*/
+@media all and (max-width: 580px) {
+
+
+}

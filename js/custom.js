@@ -117,3 +117,14 @@ function change_slide() {
 	jQuery('.home_carousel .slick-prev').html('<img src="'+prev_src+'" /> <span>Prev</span>');
 	jQuery('.home_carousel .slick-next').html('<img src="'+next_src+'" /> <span>Next</span>'); 
 }
+
+   
+jQuery(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 580) {
+        $("body").addClass("scrolled");
+    } else {
+        $("body").removeClass("scrolled");
+    }
+}); 
