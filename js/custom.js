@@ -120,11 +120,12 @@ function change_slide() {
 
    
 jQuery(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 580) {
-        $("body").addClass("scrolled");
-    } else {
-        $("body").removeClass("scrolled");
-    }
+    if ($(window).width() > 767) {
+	   var scroll = $(window).scrollTop();
+       if (scroll >= 580) {
+	        $("body").addClass("scrolled");
+	    } else {
+	        $("body").removeClass("scrolled");
+	    }
+	}  
 }); 
