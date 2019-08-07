@@ -1,5 +1,7 @@
 jQuery('document').ready(function(){
 
+	jQuery('.testimonials_slick').slick();
+
 	jQuery('.hamburger_sign').on('click',function(){
 		jQuery('.hover_menus').toggle();
 	});
