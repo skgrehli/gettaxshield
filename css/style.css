@@ -292,6 +292,7 @@ img.blur {
 
 .banner_card {
     margin-top: 236px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .banner_card:before {
@@ -374,6 +375,71 @@ img.blur {
     top: 0;
 }
 
+/*Section Features*/
+.section-features  .main_heading{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.section-features .card.right_before .rounded-circle,
+.section-features .card.left_before .rounded-circle {
+    z-index: 9;
+    border: 5px solid #fff;
+    box-shadow: rgba(0,0,0,.12) 0 0 5px!important;
+    top: 50%;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    font-size: 34px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.section-features .card.right_before .rounded-circle {
+    right: -102px;
+ }
+
+.section-features .card.left_before .rounded-circle {
+    left: -102px;
+ }
+
+
+.section-features  .centerd_logo {
+    height: 100%;
+    border: 3px solid #6fbe4a;
+    width: 312px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 50px;
+    max-width: 100%;
+    padding:  0 60px;
+}
+
+.section-features .card.right_before .rounded-circle:before {
+    display: block;
+    content: '';
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 20px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: -36px;
+    margin-top: -16px;
+}
+
+.section-features .card.left_before .rounded-circle:after {
+    display: block;
+    content: '';
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-right: 20px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    right: -36px;
+    margin-top: -16px;
+}
+
+
 /*Service Slider*/
 .service_slider .slick-prev, .service_slider .slick-next {
     background: #6fbe4a;
@@ -395,6 +461,8 @@ img.blur {
     line-height: 0px;
     cursor: pointer; 
 }
+
+
 
 /*Brands Section*/
 .section-brands .col img {
@@ -509,6 +577,12 @@ img.blur {
 
 .go_top_arrow {
     display: none;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Responsive*/
@@ -674,6 +748,17 @@ img.blur {
 /*Mobile Devices*/
 @media all and (max-width: 580px) {
 
+
+    .section-features .card.w_300.right_before {
+        float: left !important;
+        width: 280px;
+    }
+
+    .section-features .card.w_300.left_before {
+        float: right !important;
+        width: 280px;
+    }
+
     .tab_bar_design li {
         margin: -8px 2% -4px 2%;
     }
@@ -695,3 +780,5 @@ img.blur {
         flex: 0 0 50%;
     }
 }
+
+

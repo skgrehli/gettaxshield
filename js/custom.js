@@ -1,7 +1,7 @@
 jQuery('document').ready(function(){
 
 	 var typed5 = new Typed('#typed5', {
-	    strings: ['Think outside the box,', 'Innovate and execute!'], 
+	    strings: ['Think outside the box, Innovate and execute!'], 
 	     typeSpeed: 30,
 	    backSpeed: 20,
 	    smartBackspace: true, // this is a default
