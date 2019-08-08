@@ -374,6 +374,28 @@ img.blur {
     top: 0;
 }
 
+/*Service Slider*/
+.service_slider .slick-prev, .service_slider .slick-next {
+    background: #6fbe4a;
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+}
+
+.service_slider .slick-prev {
+    left: -50px;
+}
+
+.service_slider .slick-next {
+    right: -50px;
+}
+
+.service_slider .slick-prev:before, 
+.service_slider .slick-next:before {
+    line-height: 0px;
+    cursor: pointer; 
+}
+
 /*Brands Section*/
 .section-brands .col img {
     max-width: 200px;
@@ -626,6 +648,14 @@ img.blur {
         margin: 0 auto;
     }
 
+
+    .service_slider .slick-prev {
+        left: 0px;
+    }
+
+    .service_slider .slick-next {
+        right: 0px;
+    }
 
     /*Tools Section*/
     .section-tools .go_ahead_box {

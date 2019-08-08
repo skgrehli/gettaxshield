@@ -70,8 +70,8 @@
  	<!-- Header End -->
 
  	<!-- Banner Section Start -->
- 	<section class="banner_section p_y_100 position-relative vh_100"> 
- 		<img src="https://picsum.photos/id/481/1300/600" class="position-absolute bg_image_full vh_100">
+ 	<section data-parallax="scroll" data-image-src="https://picsum.photos/1300/600" class="banner_section p_y_100 position-relative vh_100"> 
+ 		<!-- <img src="https://picsum.photos/id/481/1300/600" class="position-absolute bg_image_full vh_100"> -->
  		<div class="container">
 	 		<div class="row">
 	 			<div class="col-12">
@@ -89,11 +89,11 @@
 
  	<!-- About Section -->
  	<section id="about" class="section-about ptb_140_130 position-relative">
-		<img src="images/about_image.jpg" class="img-fluid position-absolute w_50p">
- 				
+				
  		<div class="container">
  			<div class="row">
  				<div class="col-12 col-md-6">
+ 					<img src="images/about_image.jpg" class="img-fluid position-absolute w_80p">
  				</div>
  				<div class="col-12 col-md-6">
  					<h2 class="main_heading heading_style type_2">About Our<br /> Belife</h2>
@@ -117,8 +117,8 @@
 
 
  	<!-- Features Section -->
- 	<section id="features" class="section-features text-white bg-dark ptb_100_80 position-relative box_scroll_hidden">
- 		<img src="https://picsum.photos/id/481/1345/512" class="position-absolute bg_image_full blur">
+ 	<section data-parallax="scroll" data-image-src="https://picsum.photos/1345/512?blur=3" id="features" class="section-features text-white ptb_100_80 position-relative box_scroll_hidden">
+ 		<!-- <img src="https://picsum.photos/id/481/1345/512" class="position-absolute bg_image_full blur"> -->
  		<div class="container container_909">
  			<div class="row">
  				<div class="col-12 col-md-8 float-left">
@@ -141,46 +141,58 @@
  	<!-- Services Section -->
  	<section id="services" class="section-services text-white bg-dark ptb_100_80">
  		<div class="container container_909">
- 			<div class="row">
+ 			    <!--Card Start -->
 
-		        <!--Card Start -->
-		        <div class="col-12 col-sm-6 col-md-4">
-		            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
-		                <img class="card-img-top img-fluid" src="images/referral_image.jpg" alt="Card image cap">
-		                <div class="card-body px-0">
-		                    <h5 class="card-title font-weight-bold text-center text-uppercase text-primary">REFERRAL</h5>
-		                    <p class="card-text f_12_18">Set your own criteria for funding referrals based on your market. Print all referrals checks right on the spot. Eliminate capital constraints by utilizing funding directly from TaxShield.</p>
-		                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
-		                </div>
-		            </div>
-		        </div>  
+		        <div class="three_col_carosusel service_slider">
+			        <div class="service_item">
+			            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
+			                <img class="card-img-top img-fluid" src="images/referral_image.jpg" alt="Card image cap">
+			                <div class="card-body px-0">
+			                    <h5 class="card-title font-weight-bold text-center text-uppercase text-primary">REFERRAL</h5>
+			                    <p class="card-text f_12_18">Set your own criteria for funding referrals based on your market. Print all referrals checks right on the spot. Eliminate capital constraints by utilizing funding directly from TaxShield.</p>
+			                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
+			                </div>
+			            </div>
+			        </div>  
 
-		        <div class="col-12 col-sm-6 col-md-4">
-		            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
-		                <img class="card-img-top img-fluid" src="images/txt_messaging_image.jpg" alt="Card image cap">
-		                <div class="card-body px-0">
-		                    <h5 class="card-title font-weight-bold text-center text-uppercase text-primary">TXT Messaging</h5>
-		                    <p class="card-text f_12_18">Inform or update all your clients by way of SMS. Message your clients all at once or individually on a particular day (birthdays). Text a pleasant message after each incoming call and more!</p>
-		                    
-		                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
-		                </div>
-		            </div>
-		        </div>  
+			        <div class="service_item">
+			            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
+			                <img class="card-img-top img-fluid" src="images/txt_messaging_image.jpg" alt="Card image cap">
+			                <div class="card-body px-0">
+			                    <h5 class="card-title font-weight-bold text-center text-uppercase text-primary">TXT Messaging</h5>
+			                    <p class="card-text f_12_18">Inform or update all your clients by way of SMS. Message your clients all at once or individually on a particular day (birthdays). Text a pleasant message after each incoming call and more!</p>
+			                    
+			                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
+			                </div>
+			            </div>
+			        </div>  
 
-		        <div class="col-12 col-sm-6 col-md-4">
-		            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
-		                <img class="card-img-top img-fluid" src="images/call_tracking_image.jpg" alt="Card image cap">
-		                <div class="card-body px-0">
-		                    <h5 class="card-title font-weight-bold text-center text-primary text-uppercase">Call Tracking</h5>
-		                    <p class="card-text f_12_18">Gain vast insight into your entire marketing channels. Listen to all incoming calls, easy to read tracking and reporting, route calls, as well as purchase Toll free or local numbers.</p>
-		                   
-		                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
-		                </div>
-		            </div>
+			        <div class="service_item">
+			            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
+			                <img class="card-img-top img-fluid" src="images/call_tracking_image.jpg" alt="Card image cap">
+			                <div class="card-body px-0">
+			                    <h5 class="card-title font-weight-bold text-center text-primary text-uppercase">Call Tracking</h5>
+			                    <p class="card-text f_12_18">Gain vast insight into your entire marketing channels. Listen to all incoming calls, easy to read tracking and reporting, route calls, as well as purchase Toll free or local numbers.</p>
+			                   
+			                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
+			                </div>
+			            </div>
+			        </div>  
+
+			        <div class="service_item">
+			            <div class="card mb-4 card_with_icon2 pt-4 border-0  text-center bg-dark p_x_20">
+			                <img class="card-img-top img-fluid" src="images/call_tracking_image.jpg" alt="Card image cap">
+			                <div class="card-body px-0">
+			                    <h5 class="card-title font-weight-bold text-center text-primary text-uppercase">Call Tracking</h5>
+			                    <p class="card-text f_12_18">Gain vast insight into your entire marketing channels. Listen to all incoming calls, easy to read tracking and reporting, route calls, as well as purchase Toll free or local numbers.</p>
+			                   
+			                    <p class="mb-0"><a class="btn btn-primary badge-pill p_x_30 text-uppercase" href="#" title="Read more " target="_self">Read more </a></p>
+			                </div>
+			            </div>
+			        </div>  
 		        </div>  
 		        <!-- Card End -->
-		            
-		    </div>
+	 
  		</div>
  	</section>
  	<!-- Services Section End -->
@@ -459,6 +471,9 @@
 
 	<!-- TypejS -->
 	<script src="js/typed.min.js" type="text/javascript"></script>
+
+	<!-- Parallax Js -->  
+	<script src="js/parallax.min.js" type="text/javascript"></script>
 
 	<!-- Slick Slider -->
 	<script type="text/javascript" src="js/slick.min.js"></script>
