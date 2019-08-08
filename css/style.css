@@ -600,7 +600,8 @@ img.blur {
     }
 
     section.banner_section h1.main_heading {
-        font-size: 30px;
+        font-size: 40px;
+        line-height: 40px;
     }
 
     section.banner_section img.vh_100 {
@@ -614,7 +615,7 @@ img.blur {
     }
 
     section.banner_section .banner_card:before {
-        height: 88px;
+        height: 182px;
         left: 10px;
         bottom: 58px;
     }
@@ -632,7 +633,7 @@ img.blur {
     }
 
     .section-about.ptb_140_130 {
-        padding: 0 0px 30px 0;
+        padding: 40px 0px 30px 0;
     }
 
     /*Features Section*/
