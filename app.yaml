@@ -1,0 +1,62 @@
+application: taxshield-landing
+version: 4
+runtime: python27
+api_version: 1
+env: standard
+threadsafe: true
+instance_class: F1
+default_expiration: 2592000s
+libraries:
+  - name: jinja2
+    version: '2.6'
+  - name: markupsafe
+    version: '0.15'
+  - name: setuptools
+    version: 0.6c11
+handlers:
+  - url: /(.*\.css)
+    application_readable: false
+    mime_type: text/css
+    static_files: \1
+    require_matching_file: false
+    upload: css/(.*\.css)
+  - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
+    application_readable: false
+    static_files: \1
+    require_matching_file: false
+    upload: images/(.*\.(bmp|gif|ico|jpeg|jpg|png))
+  - url: /(.*\.(js|map))
+    application_readable: false
+    mime_type: text/javascript
+    static_files: \1
+    require_matching_file: false
+    upload: js/(.*\.(js|map))
+  - url: /(.*\.(eot|svg|ttf|woff|otf))
+    application_readable: false
+    static_files: \1
+    require_matching_file: false
+    upload: (.*\.(eot|svg|ttf|woff|otf))
+  - url: /(.*\.(ogv|webm|mp4))
+    application_readable: false
+    static_files: \1
+    require_matching_file: false
+    upload: (.*\.(ogv|webm|mp4))
+  - url: /(.*\.ico)
+    application_readable: false
+    expiration: 604800000
+    mime_type: image/x-icon
+    static_files: images/\1
+    require_matching_file: false
+    upload: images/(.*\.ico)
+  - url: /
+    application_readable: false
+    expiration: 900000
+    static_files: index.html
+    require_matching_file: false
+    upload: index\.html
+
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
