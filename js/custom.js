@@ -1,5 +1,13 @@
 jQuery('document').ready(function(){
 
+	 var typed5 = new Typed('#typed5', {
+	    strings: ['Think outside the box,', 'Innovate and execute!'], 
+	     typeSpeed: 30,
+	    backSpeed: 20,
+	    smartBackspace: true, // this is a default
+	    loop: true
+	  });
+
 	jQuery('.testimonials_slick').slick();
 
 	jQuery('.hamburger_sign').on('click',function(){
