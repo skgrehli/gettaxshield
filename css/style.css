@@ -18,10 +18,10 @@ body {
 
 
 h1.main_heading {
-    font-size: 60px;
-    margin: 0 0 1rem 0;
+    font-size: 90px;
+    margin: 0;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    line-height: 64px;
+    line-height: 100px;
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -291,7 +291,7 @@ img.blur {
 /*Banner */
 
 .banner_card {
-    margin-top: 236px;
+    margin-top: 186px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -299,7 +299,7 @@ img.blur {
     content: "";
     display: block;
     width: 3px;
-    height: 140px;
+    height: 180px;
     position: absolute;
     left: -15px;
     background: #6fbe4a;

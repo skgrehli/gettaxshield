@@ -1,13 +1,26 @@
 jQuery('document').ready(function(){
 
-	 var typed5 = new Typed('#typed5', {
-	    strings: ['Think outside the box, Innovate and execute!'], 
-	     typeSpeed: 30,
-	    backSpeed: 20,
-	    smartBackspace: true, // this is a default
-	    loop: true
-	  });
+    var eventInfo = [
+         "for modern EROs",
+         "be efficient and increase your bottom line",
+         "track your referrals",
+         "gain full control of your business",
+         "track each marketing dollar!",
+         "extensive useful reporting ",
+         "offer interest free, 0% APR advances to all your customer!",
+         "bank level security",
+         "use your own funding",
+         "for EROs by EROs"
+         ];
 
+	 var typed5 = new Typed('#typed5', {
+	    strings: eventInfo,
+        typeSpeed: 50,
+        backSpeed: 40,
+        backDelay: 2000,
+        loop: true 
+	  });
+ 
 	jQuery('.testimonials_slick').slick();
 
 	jQuery('.hamburger_sign').on('click',function(){
