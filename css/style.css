@@ -52,17 +52,21 @@ h1.main_heading {
     border-color: #4a9826;
 }
 
-
-
 .bg-primary {
     background-color: #6fbe4a !important;
 }
 
 .btn-outline-primary {
     border-color: #6fbe4a;
-}
-
-
+} 
+ 
+.btn-outline-light:hover {
+    background-color: #6fbe4a !important;
+    color: #fff !important;
+    border-color: #6fbe4a !important;
+    text-shadow: unset;
+} 
+ 
 .text-primary {
     color: #6fbe4a !important;
 }
