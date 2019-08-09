@@ -292,8 +292,9 @@ img.blur {
 
 .banner_wr_2 {
     position: absolute;
-    bottom: 100px;
+    /*bottom: 100px;*/
     width: 100%;
+    bottom: 120px;
 }
 
 .banner_card {
