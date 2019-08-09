@@ -290,8 +290,13 @@ img.blur {
 
 /*Banner */
 
+.banner_wr_2 {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
 .banner_card {
-    margin-top: 186px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -668,9 +673,16 @@ img.blur {
     }
 
     /*Banner*/
+
+    .banner_wr_2 {
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+    }
+
     section.banner_section {
         padding: 56px 0;
-        height: auto !important;
+        /*height: auto !important;*/
     }
 
     section.banner_section h1.main_heading {
@@ -691,14 +703,14 @@ img.blur {
     }
 
     section.banner_section .banner_card:before {
-        height: 182px;
+        height: 120px;
         left: 10px;
         bottom: 58px;
     }
 
-    section.banner_section p.f_36_40 {
+    section.banner_section .f_40_44 {
         font-size: 20px;
-        line-height: 26px;
+        line-height: 26px !important;
     }
 
     /*About Section*/
@@ -750,6 +762,18 @@ img.blur {
 /*Mobile Devices*/
 @media all and (max-width: 580px) {
 
+    section.banner_section {
+        height: 340px;
+    }
+
+    section.banner_section .banner_card:before {
+        height: 95px;
+    }
+
+    section.banner_section .f_40_44 {
+        font-size: 20px;
+        line-height: 22px !important;
+    }
 
     .section-features .card.w_300.right_before {
         float: left !important;
