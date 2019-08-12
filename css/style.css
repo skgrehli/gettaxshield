@@ -195,6 +195,7 @@ img.blur {
 
 .tab_bar_design {
     padding: 0px;
+    overflow: visible !important;
 }
 
 .tab_bar_design li a {
@@ -207,7 +208,7 @@ img.blur {
 .tab_bar_design li {
     display: inline-block;
     text-align: center;
-    width: 34px;
+    width: 26px;
     margin: -8px 11px -4px 12px;
 }
 
@@ -226,8 +227,13 @@ img.blur {
     background: #6fbe4a;
     border: 12px solid #fff;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    position: relative;
 } 
 
+.tooltip.bs-tooltip-top {
+    top: -14px !important; 
+}
 
 
 /*Slick Slider*/
@@ -528,7 +534,7 @@ img.blur {
 }
 
 .section-tools  .go_ahead_box {
-    bottom: -8px;
+    bottom: -16px;
     left: 96px;
 }
 

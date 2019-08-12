@@ -1,5 +1,14 @@
 jQuery('document').ready(function(){
 
+	// Progress Bar 
+	jQuery('.tab_bar_design li a').on('click',function(){
+		jQuery(this).parent().siblings().children().removeClass('active');
+		jQuery(this).addClass('active');  
+		jQuery('.pb_selectedvalue').text(jQuery(this).data('value'));
+	});
+
+	// jQuery('[data-toggle="tooltip"]').tooltip(); 
+
     var eventInfo = [
          "for modern EROs",
          "be efficient and increase your bottom line",
