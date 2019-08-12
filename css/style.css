@@ -634,7 +634,7 @@ img.blur {
 }
 
 .pricing_arrow_down:after {
-height: 0;
+    height: 0;
     border-left: 110px solid transparent;
     border-right: 110px solid transparent;
     border-top: 28px solid #6fbe4a;
@@ -648,9 +648,31 @@ height: 0;
     visibility: hidden;
 }
 
+.bg_stripped {
+    color: rgba(0,0,0,0);
+}
+
 .pricing_card4 .card-price .price {
     font-size: 40px;
     letter-spacing: 0;
+}
+
+.pricing_blue {
+    background-color: #139dc2 !important;
+    border-color: #139dc2 !important;
+}
+
+.pricing_blue.pricing_arrow_down:after {
+    border-top-color: #139dc2 !important;
+}
+
+.pricing_orange {
+    background-color: #ee7c24  !important;
+    border-color: #ee7c24 !important;
+}
+
+.pricing_orange.pricing_arrow_down:after {
+    border-top-color: #ee7c24 !important;
 }
 
 /*Responsive*/
