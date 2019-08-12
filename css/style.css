@@ -536,6 +536,7 @@ img.blur {
 .section-tools  .go_ahead_box {
     /*bottom: -16px;*/
     left: 96px;
+    z-index: 9;
 }
 
 .section-tools .go_ahead_box .card-body {
