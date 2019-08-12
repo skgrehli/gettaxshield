@@ -109,45 +109,45 @@ jQuery('document').ready(function(){
     function update_price_text() {
         console.log('function called');
         if (fundedReferrals50Price){
-            jQuery(".fundedReferrals50CostText").html('$ ' + fundedReferrals50Price);
+            jQuery(".fundedReferrals50CostText").html('$' + fundedReferrals50Price);
         }
         else{
             jQuery(".fundedReferrals50CostText").html(fundedReferrals50CostText);
         }
         if (customerFundedReferralsPrice){
-            jQuery(".customerFundedReferralsCostText").html('$ ' + customerFundedReferralsPrice);
+            jQuery(".customerFundedReferralsCostText").html('$' + customerFundedReferralsPrice);
         }
         else{
             jQuery(".customerFundedReferralsCostText").html(customerFundedReferralsCostText);
         }
         if (textMessageCostPrice){
-            jQuery(".textMessageCostText").html('$ ' + textMessageCostPrice);
+            jQuery(".textMessageCostText").html('$' + textMessageCostPrice);
         }else
         {
             jQuery(".textMessageCostText").html(textMessageCostText);
         }if (hollidayAdvanceModulePrice){
-            jQuery(".hollidayAdvanceModuleCostText").html('$ ' +hollidayAdvanceModulePrice);
+            jQuery(".hollidayAdvanceModuleCostText").html('$' +hollidayAdvanceModulePrice);
 
         }else
         {
             jQuery(".hollidayAdvanceModuleCostText").html(hollidayAdvanceModuleCostText);
         }if (coBrandingPrice){
-            jQuery(".coBrandingCostText").html('$ '+coBrandingPrice);
+            jQuery(".coBrandingCostText").html('$'+coBrandingPrice);
         }else
         {
             jQuery(".coBrandingCostText").html(coBrandingCostText);
         }if (positvePayIntegrationPrice){
-            jQuery(".positvePayIntegrationCostText").html('$ '+positvePayIntegrationPrice);
+            jQuery(".positvePayIntegrationCostText").html('$'+positvePayIntegrationPrice);
         }else
         {
             jQuery(".positvePayIntegrationCostText").html(positvePayIntegrationCostText);
         }if (leadManagemntCostYearlyPrice){
-            jQuery(".leadManagemntCostText").html('$ '+leadManagemntCostYearlyPrice);
+            jQuery(".leadManagemntCostText").html('$'+leadManagemntCostYearlyPrice);
         }else
         {
             jQuery(".leadManagemntCostText").html(leadManagemntCostText);
         }if (localNumbersCostYearlyPrice || tollFreeNumbersCostYearlyPrice){
-            jQuery(".callTrackingText").html('$ ' + tollFreeNumbersCostYearlyPrice);
+            jQuery(".callTrackingText").html('$' + tollFreeNumbersCostYearlyPrice);
         }
         else
         {
