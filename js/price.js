@@ -203,14 +203,11 @@ jQuery('document').ready(function(){
             }else{
                coBrandingPrice = 0 
             }
-            if(positvePayIntegrationFlag){
-                positvePayIntegrationPrice = positvePayIntegrationCost;
-            }else{
-               positvePayIntegrationPrice = 0 
-            }
             if(leadManagemntFlag){
-               leadManagemntCostMonthlyPrice = leadManagemntCostYearly;
+               leadManagemntCostYearlyPrice = leadManagemntCostYearly;
+               leadManagemntCostMonthlyPrice = leadManagemntCostMonthly;
             }else{
+               leadManagemntCostYearlyPrice = 0; 
                leadManagemntCostMonthlyPrice = 0; 
             }
             // tollFreeNumbersCostYearlyPrice
@@ -221,6 +218,12 @@ jQuery('document').ready(function(){
         {
             tollFreeNumbersCostYearlyPrice = toll_free_numbers * tollFreeNumbersCostYearly; 
             localNumbersCostYearlyPrice = local_numbers * localNumbersCostYearly;
+        }
+        
+        if(positvePayIntegrationFlag){
+            positvePayIntegrationPrice = positvePayIntegrationCost;
+        }else{
+           positvePayIntegrationPrice = 0 
         }
 
         total_yearly_price = fundedReferrals50Price + customerFundedReferralsPrice + textMessageCostPrice + hollidayAdvanceModulePrice + coBrandingPrice + positvePayIntegrationPrice + leadManagemntCostMonthlyPrice + leadManagemntCostYearlyPrice + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice;         
