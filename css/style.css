@@ -641,8 +641,11 @@ img.blur {
     position: absolute;
     content: '';
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -110px;
 }
+ 
 
 .vhide {
     visibility: hidden;
@@ -656,6 +659,7 @@ img.blur {
 .pricing_card4 {
     max-width: 220px;
     margin:0 auto;
+    overflow-x: hidden;
 } 
 
 .pricing_card4 .card-price .price {
@@ -852,6 +856,35 @@ img.blur {
         float: none !important;
     }
 
+        /*Responsive Table Design*/
+    .mobile_responsive {
+        overflow-x: scroll;
+    }
+
+    .mobile_responsive .row {
+        width: 880px;
+        display: block;
+        max-width: 880px;
+    }
+
+   .mobile_responsive .f_16_18 {
+        font-size: 13px;
+        line-height: 16px!important;
+    }
+
+    .mobile_responsive .col {
+        width: 172px;
+        float: left;
+    }
+
+    .pricing_arrow_down:after {
+        bottom: -27px;
+    }
+
+    .mobile_responsive .col:nth-child(3), .mobile_responsive .col:nth-child(4) {
+        max-width: 145px;
+    }
+
 }
 
 /*Mobile Devices*/
@@ -897,31 +930,15 @@ img.blur {
         flex: 0 0 50%;
     }
 
-    /*Responsive Table Design*/
-    .mobile_responsive {
-        overflow-x: scroll;
-    }
-    .mobile_responsive .row {
-        width: 880px;
-        display: block;
-        max-width: 880px;
+    .pricing_arrow_down:after {
+        bottom: -27px;
     }
 
     .mobile_responsive .col {
-        width: 180px;
+        width: 172px;
         float: left;
-        max-width: 40%;
     }
 
-    .mobile_responsive .f_16_18 {
-        font-size: 13px;
-        line-height: 16px!important;
-    }
-
-    .pricing_arrow_down:after {
-        border-left: 90px solid transparent;
-        border-right: 90px solid transparent;
-     }
 
 }
 
