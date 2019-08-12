@@ -383,7 +383,7 @@ img.blur {
 .section-about {
     background-image: url(../images/about_bg.png);
     background-repeat: no-repeat;
-    background-position: -180px 0; 
+    background-size: auto 104%;
 }
 
 .section-about img.position-absolute {
