@@ -719,6 +719,10 @@ img.blur {
 
 @media all and (max-width: 786px) {
 
+    .section-about {
+        background-size: auto 52%;
+    }
+
     .container {
         max-width: 100%;
     }
@@ -890,6 +894,30 @@ img.blur {
 /*Mobile Devices*/
 @media all and (max-width: 580px) {
 
+    .section-about {
+        background-size: auto 400px; 
+    }
+
+    .section-features .card.right_before .rounded-circle, .section-features .card.left_before .rounded-circle {
+        border: 2px solid #fff;
+        width: 60px;
+        height: 60px;
+        font-size: 21px;
+        left: -70px;
+    }
+
+    .section-features .card.right_before .rounded-circle {
+        right: -70px;
+    }
+
+    .section-features .card.left_before .rounded-circle:after {
+        right: -25px;
+    }
+
+    .section-features .card.right_before .rounded-circle:before {
+        left: -25px;
+    }
+
     section.banner_section {
         height: 340px;
     }
@@ -939,6 +967,17 @@ img.blur {
         float: left;
     }
 
+    .section-tools .pricing_card1 {
+        height: auto !important;
+    }
+
+    .row {
+        height: auto !important;
+    }
+
+    .section-about .list-group-item {
+        font-size: 18px;
+    }
 
 }
 
