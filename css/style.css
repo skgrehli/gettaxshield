@@ -534,12 +534,12 @@ img.blur {
 }
 
 .section-tools  .go_ahead_box {
-    bottom: -16px;
+    /*bottom: -16px;*/
     left: 96px;
 }
 
 .section-tools .go_ahead_box .card-body {
-    padding: 40px 30px;
+    padding: 30px;
 }
 
 /*Testimonials*/
@@ -617,6 +617,10 @@ img.blur {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.call_tracking_dropdown {
+    display: none;
 }
 
 /*Responsive*/

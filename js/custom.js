@@ -9,6 +9,10 @@ jQuery('document').ready(function(){
 
 	// jQuery('[data-toggle="tooltip"]').tooltip(); 
 
+	jQuery('.call_tracking').on('change', function(){
+		jQuery('.call_tracking_dropdown').toggle();
+	});
+
     var eventInfo = [
          "for modern EROs",
          "be efficient and increase your bottom line",

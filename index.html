@@ -269,16 +269,17 @@
  					<h2 class="main_heading heading_style type_2 text-center">End The Multi-Tool chaos</h2>
  					<p class="text-center w_600 mx-auto m_b_60">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magn. sed do eiusmod por incididunt ut labore et dolore magn</p>
  					<div class="card rounded-0 w_440 position-absolute go_ahead_box m_b_30">
- 						<div class="card-body p_t_50">
- 							<select name="nof" class="form-control required custom-select m_b_20 f_14_16">
-	                            <option value="">Number of stores</option>
+ 						<div class="card-body p_t_30">
+ 							<label class="font-weight-bold">Number of Phone</label>
+							<select name="nof" class="form-control required custom-select m_b_10 f_14_16">
+	                            <option value="">Select</option>
 	                            <option value="1">1</option>
-	                            <option value="2">2</option>
+	                            <option value="2">2</option> 
 	                            <option value="3">3</option>
-	                            <option value="4">4</option>
+	                            <option value="4">4</option> 
 	                            <option value="5">5</option>
 							</select>
-
+							<label class="font-weight-bold">Incoming and Outgoing</label>
 							<div class="progress tab_bar_design m_b_10">
 							  <div class="progress-bar" role="progressbar" ></div>
 							  <ul class="nav tab_bar_design m_b_30 bg_grey badge-pill" id="myTab" role="tablist">
@@ -360,8 +361,15 @@
 												<div class="row">
 													<div class="col-6">Call Tracking<i class="fas fa-info"></i></div>
 													<div class="col"><label class="switch">
-	  										<input type="checkbox" checked><span class="slider round"></span></label></div>
+	  												<input type="checkbox" class="call_tracking"><span class="slider round"></span></label></div>
 													<div class="col">$79/year</div>
+													<div class="w-100"></div>
+													<div class="col-6">
+														<select name="call_tracking_option" class="form-control required custom-select m_b_10 f_14_16 call_tracking_dropdown m_t_10">
+								                            <option value="4">Tol Free Numbers</option>
+								                            <option value="5">Local Numbers</option>
+														</select>
+													</div>		
 												</div>
 											</li>
 											<li class="list-group-item pl-0 pr-0">
