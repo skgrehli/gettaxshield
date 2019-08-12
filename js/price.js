@@ -69,7 +69,7 @@ jQuery('document').ready(function(){
     var textMessageCostText = "Free";
     var hollidayAdvanceModuleCostText = "Free";
     var coBrandingCostText = "Free";
-    var positvePayIntegrationCostText = "";
+    var positvePayIntegrationCostText = "$1500";
     var leadManagemntCostText = "Free";
     var callTrackingText = "";
 
@@ -87,6 +87,10 @@ jQuery('document').ready(function(){
     var localNumbersCostMonthlyPrice = 0;
     var number_of_store = 0;
     var number_of_customer = 0;
+    var outgoing_calls = 100;
+    var incoming_calls = 100;
+    var local_numbers = 1;
+    var toll_free_numbers = 1; 
 
     var total_monthly_price = 0;
     var total_yearly_price = 0;
@@ -146,7 +150,13 @@ jQuery('document').ready(function(){
         }else
         {
             jQuery(".leadManagemntCostText").html(leadManagemntCostText);
-        }if (localNumbersCostYearlyPrice || tollFreeNumbersCostYearlyPrice){
+        }if (localNumbersCostYearlyPrice && tollFreeNumbersCostYearlyPrice){
+            jQuery(".callTrackingText").html('$' + (tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice));
+        }else if (localNumbersCostYearlyPrice)
+        {
+            jQuery(".callTrackingText").html('$' + localNumbersCostYearlyPrice);
+        }else if (tollFreeNumbersCostYearlyPrice)
+        {
             jQuery(".callTrackingText").html('$' + tollFreeNumbersCostYearlyPrice);
         }
         else
@@ -206,6 +216,13 @@ jQuery('document').ready(function(){
             // tollFreeNumbersCostYearlyPrice
             // localNumbersCostYearlyPrice
         }
+
+        if(callTrackingFlag)
+        {
+            tollFreeNumbersCostYearlyPrice = toll_free_numbers * tollFreeNumbersCostYearly; 
+            localNumbersCostYearlyPrice = local_numbers * localNumbersCostYearly;
+        }
+
         total_yearly_price = fundedReferrals50Price + customerFundedReferralsPrice + textMessageCostPrice + hollidayAdvanceModulePrice + coBrandingPrice + positvePayIntegrationPrice + leadManagemntCostMonthlyPrice + leadManagemntCostYearlyPrice + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice;         
         total_monthly_price = leadManagemntCostMonthlyPrice + tollFreeNumbersCostMonthlyPrice + localNumbersCostMonthlyPrice;         
         update_price_text();
@@ -292,6 +309,36 @@ jQuery('document').ready(function(){
         price_calculator();
     });
 
+
+    jQuery('.callTrackingCheckbox').on('change', function(){
+        if($(this).is(':checked')){
+            callTrackingFlag = true;
+        } else {
+            callTrackingFlag = false;
+
+        }
+        price_calculator();
+    });
+
+    jQuery('.outgoing_calls').on('change', function(){
+        outgoing_calls = $(this).val();
+        price_calculator();
+    });
+
+    jQuery('.incoming_calls').on('change', function(){
+        incoming_calls = $(this).val();
+        price_calculator();
+    });
+
+    jQuery('.local_numbers').on('change', function(){
+        local_numbers = $(this).val();
+        price_calculator();
+    });
+
+    jQuery('.toll_free_numbers').on('change', function(){
+        toll_free_numbers = $(this).val();
+        price_calculator();
+    });
 
     update_price_text();
 });
