@@ -83,9 +83,13 @@ jQuery('document').ready(function(){
     var leadManagemntCostYearlyPrice = 0;
     var tollFreeNumbersCostYearlyPrice = 0;
     var localNumbersCostYearlyPrice = 0;
+    var tollFreeNumbersCostMonthlyPrice = 0;
+    var localNumbersCostMonthlyPrice = 0;
     var number_of_store = 0;
     var number_of_customer = 0;
 
+    var total_monthly_price = 0;
+    var total_yearly_price = 0;
     var taxshieldSoftwareFlag = true;
     var fundedReferrals50Flag = true;
     var customerFundedReferralsFlag = true;
@@ -149,6 +153,8 @@ jQuery('document').ready(function(){
         {
             jQuery(".callTrackingText").html(callTrackingText);
         }
+        jQuery(".yearly_price").html(total_yearly_price);
+        jQuery(".monthly_price").html(total_monthly_price);
     }
     function price_calculator() {
         if (taxshieldSoftwareFlag)
@@ -167,17 +173,41 @@ jQuery('document').ready(function(){
             }else{
                 fundedReferrals50Price = 0;
             }
-
-            // customerFundedReferralsPrice
-            // textMessageCostPrice
-            // hollidayAdvanceModulePrice
-            // coBrandingPrice
-            // positvePayIntegrationPrice
-            // leadManagemntCostMonthlyPrice
-            // leadManagemntCostYearlyPrice
+            if(customerFundedReferralsFlag){
+                customerFundedReferralsPrice = customerFundedReferralsCost[number_of_store][number_of_customer];
+            }else{
+                customerFundedReferralsPrice = 0;
+            }
+            if(textMessageFlag){
+                textMessageCostPrice = textMessageCost[number_of_store][number_of_customer];
+            }else{
+               textMessageCostPrice = 0; 
+            }
+            if(hollidayAdvancePriceFlag){
+                hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer];
+            }else{
+               hollidayAdvanceModulePrice = 0; 
+            }
+            if(coBrandingFlag){
+                coBrandingPrice = coBrandingCost;
+            }else{
+               coBrandingPrice = 0 
+            }
+            if(positvePayIntegrationFlag){
+                positvePayIntegrationPrice = positvePayIntegrationCost;
+            }else{
+               positvePayIntegrationPrice = 0 
+            }
+            if(leadManagemntFlag){
+               leadManagemntCostMonthlyPrice = leadManagemntCostYearly;
+            }else{
+               leadManagemntCostMonthlyPrice = 0; 
+            }
             // tollFreeNumbersCostYearlyPrice
             // localNumbersCostYearlyPrice
         }
+        total_yearly_price = fundedReferrals50Price + customerFundedReferralsPrice + textMessageCostPrice + hollidayAdvanceModulePrice + coBrandingPrice + positvePayIntegrationPrice + leadManagemntCostMonthlyPrice + leadManagemntCostYearlyPrice + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice;         
+        total_monthly_price = leadManagemntCostMonthlyPrice + tollFreeNumbersCostMonthlyPrice + localNumbersCostMonthlyPrice;         
         update_price_text();
     }
 
