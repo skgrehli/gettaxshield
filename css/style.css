@@ -535,7 +535,7 @@ img.blur {
 
 .section-tools  .go_ahead_box {
     /*bottom: -16px;*/
-    left: 96px;
+    /*left: 96px;*/
     z-index: 9;
 }
 
@@ -622,7 +622,12 @@ img.blur {
 
 .calltracking_fields {
     display: none;
-}
+    /*position: absolute;
+    top: 40px;
+    z-index: 99;
+    width: 100%;
+    left: 0;*/
+} 
 
 /*Pricing Page*/
 .list_striped li:nth-child(2n) {
@@ -852,7 +857,8 @@ img.blur {
     /*Tools Section*/
     .section-tools .go_ahead_box {
         position: static !important;
-        margin: auto;
+        margin: 0 auto;
+        float: unset !important;
     }
 
     .section-tools .pricing_card1 {
