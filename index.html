@@ -273,19 +273,18 @@
  							<div class="row">
  								<label class="font-weight-bold col">Number of Store:</label>
 	 							<div class="col">
-									<select name="nof" class="form-control required custom-select m_b_10 f_14_16" style="height: auto;">
-			                            <option value="">Select</option>
-			                            <option value="1">1</option>
-			                            <option value="2">2</option> 
-			                            <option value="3">3</option>
-			                            <option value="4">4</option> 
-			                            <option value="5">5</option>
-			                            <option value="10">10</option>
-			                            <option value="15">15</option>
-			                            <option value="20">20</option>
-			                            <option value="25">25</option>
-			                            <option value="50">50</option>
-			                            <option value="100">100</option>
+									<select class="form-control required custom-select m_b_10 f_14_16 number_of_store" style="height: auto;">
+			                            <option value="0">1</option>
+			                            <option value="1">2</option> 
+			                            <option value="2">3</option>
+			                            <option value="3">4</option> 
+			                            <option value="4">5</option>
+			                            <option value="5">10</option>
+			                            <option value="6">15</option>
+			                            <option value="7">20</option>
+			                            <option value="8">25</option>
+			                            <option value="9">50</option>
+			                            <option value="10">100</option>
 									</select>
 								</div>
  							</div>
@@ -293,13 +292,13 @@
 							<div class="progress tab_bar_design m_b_10">
 							  <div class="progress-bar" role="progressbar" ></div>
 							  <ul class="nav tab_bar_design m_b_30 bg_grey badge-pill" id="myTab" role="tablist">
-								  <li><a data-value="100" title="100" data-toggle="tooltip" data-placement="top" class="active rounded-circle f_0" href="javascript:void('0');">100</a></li>
-								  <li><a data-value="200" title="200" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:void('0');">Point</a></li>
-								  <li><a data-value="300" title="300" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:void('0');">Point</a></li>
-								  <li><a data-value="500" title="500" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:void('0');">Point</a></li>
-								  <li><a data-value="1000" title="1000" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:void('0');">Point</a></li>
-								  <li><a data-value="2000" title="2000" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:void('0');">Point</a></li>
-								  <li><a data-value="5000" title="5000" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:void('0');">Point</a></li>
+								  <li><a data-value="100" title="100" data-toggle="tooltip" data-placement="top" class="active rounded-circle f_0" href="javascript:update_number_of_customer(0);">100</a></li>
+								  <li><a data-value="200" title="200" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:update_number_of_customer(1);">Point</a></li>
+								  <li><a data-value="300" title="300" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:update_number_of_customer(2);">Point</a></li>
+								  <li><a data-value="500" title="500" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:update_number_of_customer(3);">Point</a></li>
+								  <li><a data-value="1000" title="1000" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:update_number_of_customer(4);">Point</a></li>
+								  <li><a data-value="2000" title="2000" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:update_number_of_customer(5);">Point</a></li>
+								  <li><a data-value="5000" title="5000" data-toggle="tooltip" data-placement="top" class="rounded-circle f_0" href="javascript:update_number_of_customer(6);">Point</a></li>
 								</ul>
 							</div>
 						 
@@ -311,56 +310,65 @@
 											<div class="row">
 												<div class="col-6">TaxShield Software<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">Free</div>
+  										<input type="checkbox" class="taxShieldSoftwareCheckbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 customerFundedReferralsCostText">Free</div>
 											</div>
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
 												<div class="col-6">Upto $50 Funded Referrals<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">Free</div>
+  										<input type="checkbox" class="fundedReferrals50Checkbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 fundedReferrals50CostText">Free</div>
 											</div>
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
 												<div class="col-6">Customer funded Referrals<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">Free</div>
+  										<input type="checkbox" class="customerFundedReferralsCheckbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 customerFundedReferralsCostText">Free</div>
 											</div>
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
-												<div class="col-6">Text message<i class="fas fa-info"></i></div>
+												<div class="col-6">Text Message<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">Free</div>
+  										<input type="checkbox" class="textMessageCheckbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 textMessageCostText">Free</div>
 											</div>
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
 												<div class="col-6">Lead Management<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">Free</div>
+  										<input type="checkbox" class="leadManagementCheckbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 leadManagemntCostText">Free</div>
 											</div>
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
 												<div class="col-6">Co-Branding<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">Free</div>
+  										<input type="checkbox" class="coBrandingCheckbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 coBrandingCostText">Free</div>
 											</div>
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
+												<div class="col-6">Holliday Advance<i class="fas fa-info"></i></div>
+												<div class="col"><label class="switch">
+  										<input type="checkbox" class="hollidayAdvanceCheckbox" checked><span class="slider round"></span></label></div>
+												<div class="col f_16_18 hollidayAdvanceModuleCostText">Free</div>
+											</div>
+										</li>
+
+										<li class="list-group-item pl-0 pr-0">
+											<div class="row">
 												<div class="col-6">Call Tracking<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  												<input type="checkbox" class="call_tracking"><span class="slider round"></span></label></div>
-												<div class="col f_16_18">$79/year</div>
+  												<input type="checkbox" class="callTrackingCheckbox"><span class="slider round"></span></label></div>
+												<div class="col f_16_18 callTrackingText">$79/year</div>
 												<div class="w-100"></div>
 													
 												<div class="calltracking_fields p_y_10 m_t_10 col-12 bg-light">
@@ -398,10 +406,10 @@
 										</li>
 										<li class="list-group-item pl-0 pr-0">
 											<div class="row">
-												<div class="col-6">Ban Positve Pay Integration<i class="fas fa-info"></i></div>
+												<div class="col-6">BanK Positve Pay Integration<i class="fas fa-info"></i></div>
 												<div class="col"><label class="switch">
-  										<input type="checkbox" checked><span class="slider round"></span></label></div>
-												<div class="col f_16_18">$1,500</div>
+  										<input type="checkbox" class="bankPositvePayCheckbox" ><span class="slider round"></span></label></div>
+												<div class="col f_16_18 positvePayIntegrationCostText">$1,500</div>
 											</div>
 										</li>
 									</ul>
@@ -599,6 +607,9 @@
 
 	<!-- Custom Script -->
 	<script type="text/javascript" src="js/custom.js"></script>
+
+	<!-- Price Script -->
+	<script type="text/javascript" src="js/price.js"></script>
 
 </body>
 </html> 
