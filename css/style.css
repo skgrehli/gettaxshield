@@ -24,6 +24,10 @@ h1.main_heading {
     line-height: 100px;
 }
 
+.text_shadow {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 .btn-primary.focus, .btn-primary:focus {
     box-shadow: none;
 }
