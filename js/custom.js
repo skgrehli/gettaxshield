@@ -39,16 +39,13 @@ jQuery('document').ready(function(){
 	});
 
     var eventInfo = [
-         "for modern EROs",
-         "be efficient and increase your bottom line",
-         "track your referrals",
-         "gain full control of your business",
-         "track each marketing dollar!",
-         "extensive useful reporting ",
-         "offer interest free, 0% APR advances to all your customer!",
-         "bank level security",
-         "use your own funding",
-         "for EROs by EROs"
+		"Intuitive Tax Software",
+		"Referral Software",
+		"Text Message",
+		"Pre-season Assistance",
+		"Pre-ack Advances",
+		"Top Notch Support",
+		"Call Tracking"
          ];
 
 	 var typed5 = new Typed('#typed5', {
