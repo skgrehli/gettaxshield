@@ -173,12 +173,12 @@ function price_calculator() {
     }
     else{
         if (fundedReferrals50Flag){
-            fundedReferrals50Price = fundedReferrals50Cost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer];
+            fundedReferrals50Price = fundedReferrals50Cost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
         }else{
             fundedReferrals50Price = 0;
         }
         if(customerFundedReferralsFlag){
-            customerFundedReferralsPrice = customerFundedReferralsCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer];
+            customerFundedReferralsPrice = customerFundedReferralsCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
         }else{
             customerFundedReferralsPrice = 0;
         }
@@ -188,7 +188,7 @@ function price_calculator() {
            textMessageCostPrice = 0; 
         }
         if(hollidayAdvanceModuleFlag){
-            hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer];
+            hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
         }else{
            hollidayAdvanceModulePrice = 0; 
         }
@@ -342,7 +342,34 @@ function update_number_of_customer(number) {
     price_calculator();
 }
 
+
+$(".subscription_form").submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = 'https://app.gettaxshield.com/api/subscribe';
+
+    $.ajax({
+           type: "GET",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+            $('.subscription_notifications_success').hide();
+           },
+           error:function(data)
+           {
+            $('.subscription_notifications_danger').hide();
+           }
+         });
+
+
+});
+
 jQuery('document').ready(function(){
-    
+    $('.subscription_notifications').hide();
+    $('.subscription_notifications_success').hide();
+    $('.subscription_notifications_danger').hide();
     update_price_text();
 });
