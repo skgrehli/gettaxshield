@@ -1,5 +1,5 @@
 application: taxshield-landing
-version: 16
+version: 25
 runtime: python27
 api_version: 1
 env: standard
@@ -61,6 +61,13 @@ handlers:
     static_files: pricing.html
     require_matching_file: false
     upload: pricing\.html
+
+  - url: /contact
+    application_readable: false
+    expiration: 900000
+    static_files: contact.html
+    require_matching_file: false
+    upload: contact\.html
 
 automatic_scaling:
   min_idle_instances: automatic
