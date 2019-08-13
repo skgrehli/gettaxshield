@@ -118,7 +118,7 @@ function update_price_text() {
         jQuery(".fundedReferrals50CostText").html(fundedReferrals50CostText);
     }
     else{
-        jQuery(".fundedReferrals50CostText").html('$9 Per');
+        jQuery(".fundedReferrals50CostText").html('$'+ fundedReferrals50Cost[number_of_store][number_of_customer] +' Per');
     }
     if (customerFundedReferralsPrice){
         jQuery(".customerFundedReferralsCostText").html('$' + parseFloat(customerFundedReferralsPrice).toFixed(2));
@@ -126,14 +126,14 @@ function update_price_text() {
     else if(taxshieldSoftwareFlag){
         jQuery(".customerFundedReferralsCostText").html(customerFundedReferralsCostText);
     }else{
-        jQuery(".customerFundedReferralsCostText").html('$9 Per');
+        jQuery(".customerFundedReferralsCostText").html('$'+ customerFundedReferralsCost[number_of_store][number_of_customer] +' Per');
     }
     if (textMessageCostPrice){
         jQuery(".textMessageCostText").html('$' + parseFloat(textMessageCostPrice).toFixed(2));
     }else if(taxshieldSoftwareFlag){
         jQuery(".textMessageCostText").html(textMessageCostText);
     }else{
-        jQuery(".textMessageCostText").html('$120.00');
+        jQuery(".textMessageCostText").html('$'+ textMessageCost[number_of_store][number_of_customer]);
     }
     if (hollidayAdvanceModulePrice){
         jQuery(".hollidayAdvanceModuleCostText").html('$' + parseFloat(hollidayAdvanceModulePrice).toFixed(2));
@@ -141,7 +141,7 @@ function update_price_text() {
     }else if(taxshieldSoftwareFlag){
         jQuery(".hollidayAdvanceModuleCostText").html(hollidayAdvanceModuleCostText);
     }else{
-        jQuery(".hollidayAdvanceModuleCostText").html('$9 Per');
+        jQuery(".hollidayAdvanceModuleCostText").html('$'+ hollidayAdvanceModuleCost[number_of_store][number_of_customer] +' Per');
     }if (coBrandingPrice){
         jQuery(".coBrandingCostText").html('$'+ parseFloat(coBrandingPrice).toFixed(2));
     }else if(taxshieldSoftwareFlag){
@@ -178,8 +178,6 @@ function update_price_text() {
     jQuery(".monthly_price").html(parseFloat(total_monthly_price).toFixed(2));
 }
 function price_calculator() {
-    total_yearly_price = 0;
-    total_monthly_price = 0;
     if (taxshieldSoftwareFlag)
     {
         fundedReferrals50Price = 0;
@@ -191,49 +189,56 @@ function price_calculator() {
         leadManagemntCostYearlyPrice = 0;
     }
     else{
-        fundedReferrals50Price = fundedReferrals50Cost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
-        customerFundedReferralsPrice = customerFundedReferralsCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
-        textMessageCostPrice = textMessageCost[number_of_store][number_of_customer];
-        hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.7;
-        coBrandingPrice = coBrandingCost;
-        leadManagemntCostYearlyPrice = leadManagemntCostYearly;
-        leadManagemntCostMonthlyPrice = leadManagemntCostMonthly;
-
         if (fundedReferrals50Flag){
-            total_yearly_price = total_yearly_price + fundedReferrals50Price;
+            fundedReferrals50Price = fundedReferrals50Cost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
+        }else{
+            fundedReferrals50Price = 0;
         }
         if(customerFundedReferralsFlag){
-            total_yearly_price = total_yearly_price + customerFundedReferralsPrice;
+            customerFundedReferralsPrice = customerFundedReferralsCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
+        }else{
+            customerFundedReferralsPrice = 0;
         }
         if(textMessageFlag){
-            total_yearly_price = total_yearly_price + textMessageCostPrice;
+            textMessageCostPrice = textMessageCost[number_of_store][number_of_customer];
+        }else{
+           textMessageCostPrice = 0; 
         }
         if(hollidayAdvanceModuleFlag){
-            total_yearly_price = total_yearly_price + hollidayAdvanceModulePrice;
+            hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.7;
+        }else{
+           hollidayAdvanceModulePrice = 0; 
         }
         if(coBrandingFlag){
-            total_yearly_price = total_yearly_price + coBrandingPrice;
+            coBrandingPrice = coBrandingCost;
+        }else{
+           coBrandingPrice = 0 
         }
         if(leadManagemntFlag){
-            total_yearly_price = total_yearly_price + leadManagemntCostYearlyPrice;
-            total_monthly_price = total_monthly_price + leadManagemntCostMonthlyPrice;
+           leadManagemntCostYearlyPrice = leadManagemntCostYearly;
+           leadManagemntCostMonthlyPrice = leadManagemntCostMonthly;
+        }else{
+           leadManagemntCostYearlyPrice = 0; 
+           leadManagemntCostMonthlyPrice = 0; 
         }
+        // tollFreeNumbersCostYearlyPrice
+        // localNumbersCostYearlyPrice
     }
-
-    tollFreeNumbersCostYearlyPrice = toll_free_numbers * tollFreeNumbersCostYearly; 
-    localNumbersCostYearlyPrice = local_numbers * localNumbersCostYearly;
-    positvePayIntegrationPrice = positvePayIntegrationCost;
 
     if(callTrackingFlag)
     {
-        total_monthly_price = total_monthly_price + tollFreeNumbersCostMonthlyPrice + localNumbersCostMonthlyPrice;         
-        total_yearly_price = total_yearly_price + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice;
+        tollFreeNumbersCostYearlyPrice = toll_free_numbers * tollFreeNumbersCostYearly; 
+        localNumbersCostYearlyPrice = local_numbers * localNumbersCostYearly;
     }
     
     if(positvePayIntegrationFlag){
-        total_yearly_price = total_yearly_price + positvePayIntegrationPrice;
+        positvePayIntegrationPrice = positvePayIntegrationCost;
+    }else{
+       positvePayIntegrationPrice = 0 
     }
 
+    total_yearly_price = fundedReferrals50Price + customerFundedReferralsPrice + textMessageCostPrice + hollidayAdvanceModulePrice + coBrandingPrice + positvePayIntegrationPrice + leadManagemntCostMonthlyPrice + leadManagemntCostYearlyPrice + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice;         
+    total_monthly_price = leadManagemntCostMonthlyPrice + tollFreeNumbersCostMonthlyPrice + localNumbersCostMonthlyPrice;         
     update_price_text();
 }
 
