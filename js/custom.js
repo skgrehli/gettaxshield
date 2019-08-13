@@ -13,6 +13,18 @@ jQuery('document').ready(function(){
 		jQuery('.calltracking_fields').toggle();
 	});
 
+	// Switch
+	jQuery('.switch input').on('change', function(){
+
+		if(jQuery(this).prop('checked')) {
+			jQuery(this).closest('li').addClass('enabled');
+			jQuery(this).closest('li').removeClass('disabled');
+		} else {
+			jQuery(this).closest('li').removeClass('enabled');
+			jQuery(this).closest('li').addClass('disabled');
+		}
+	});
+
     var eventInfo = [
          "for modern EROs",
          "be efficient and increase your bottom line",
