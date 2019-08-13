@@ -106,6 +106,13 @@ var callTrackingFlag = false;
 
 function update_price_text() {
     console.log('function called');
+    if(taxshieldSoftwareFlag){
+        jQuery(".taxShieldSoftwareCostText").html('Free');
+
+    }else{
+        jQuery(".taxShieldSoftwareCostText").html('Per $9..');
+    }
+
     if (fundedReferrals50Price){
         jQuery(".fundedReferrals50CostText").html('$' + parseFloat(fundedReferrals50Price).toFixed(2));
     }
