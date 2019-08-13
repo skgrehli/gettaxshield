@@ -140,6 +140,10 @@ img.blur {
     max-width: 100%;
 }
 
+.t_deco_none {
+    text-decoration: none !important;
+}
+
 /*CSS Switch*/
 
 .switch {
