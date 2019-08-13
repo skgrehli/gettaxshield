@@ -143,10 +143,12 @@ function update_price_text() {
     }else{
         jQuery(".hollidayAdvanceModuleCostText").html('$9 Per');
     }if (coBrandingPrice){
-        jQuery(".coBrandingCostText").html('$'+ coBrandingPrice);
+        jQuery(".coBrandingCostText").html('$'+ parseFloat(coBrandingPrice).toFixed(2));
+    }else if(taxshieldSoftwareFlag){
+        jQuery(".coBrandingCostText").html(coBrandingCostText);
     }else
     {
-        jQuery(".coBrandingCostText").html(coBrandingCostText);
+        jQuery(".coBrandingCostText").html('$1000.00');
     }if (positvePayIntegrationPrice){
         jQuery(".positvePayIntegrationCostText").html('$' + parseFloat(positvePayIntegrationPrice).toFixed(2));
     }else
@@ -154,9 +156,11 @@ function update_price_text() {
         jQuery(".positvePayIntegrationCostText").html(positvePayIntegrationCostText);
     }if (leadManagemntCostYearlyPrice){
         jQuery(".leadManagemntCostText").html('$' + parseFloat(leadManagemntCostYearlyPrice).toFixed(2));
+    }else if(taxshieldSoftwareFlag){
+        jQuery(".leadManagemntCostText").html(leadManagemntCostText);
     }else
     {
-        jQuery(".leadManagemntCostText").html(leadManagemntCostText);
+        jQuery(".leadManagemntCostText").html('$499.80');
     }if (localNumbersCostYearlyPrice && tollFreeNumbersCostYearlyPrice){
         jQuery(".callTrackingText").html('$' + parseFloat((tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice)).toFixed(2));
     }else if (localNumbersCostYearlyPrice)
