@@ -507,18 +507,6 @@ img.blur {
 
 /*Service*/
 
-.section-services .signature_pad {
-    right: 0px;
-    width: 230px;
-    top: 110px;
-}
-
-.section-services .scanner_img {
-    left: 44px;
-    width: 150px;
-    top: 140px;
-}
-
 .section-services .slick-dots li button:before {
     font-size: 10px;
     opacity: 1 !important ;
