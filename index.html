@@ -491,22 +491,28 @@
 	<!-- Subscription Section -->
  	<section id="subscription" class="section-subscription text-white bg-primary ptb_40_20 ">
  		<div class="container container_909">
-			<form class="form" method="post">
+			<form class="form subscription_form" name="subscription_form" method="post">
 				<div class="row">
 					<div class="col">
 					 	<h2 class="f_24_26 m_b_20">Get Our Latest Updates!</h2>
 					 </div>
 
 					<div class="col">
-					    <input class="form-control mb-3 bg-primary text-white r_100 f_14_16 p_y_10" type="email" name="EMAIL" placeholder="Enter Your Email" required="" />
+					    <input class="form-control mb-3 bg-primary text-white r_100 f_14_16 p_y_10" type="email" name="subscription_email" placeholder="Enter Your Email" />
 					</div>
 
 					<div class="col">
 					    <input class="btn btn-light badge-pill mb-3 text-uppercase text-primary" type="submit" value="Submit" />
 					</div>
-					</div>
+				</div>
+	 		</form>
+	 		<div class="row">
+	 			<div class="col subscription_notifications">
+					<div class="alert alert-success m-0 r_3 text-center">Thank you for subscribing our latest updates.</div>
+					<div class="alert alert-danger m-0 r_3 text-center">Unable to send your request. Please try again.</div>
 	 			</div>
-			</form>
+	 		</div>	
+		</div>
 		</div>
  	</section>
  	<!-- Subscription Section End -->
