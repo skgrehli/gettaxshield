@@ -964,14 +964,12 @@ img.blur {
         line-height: 22px !important;
     }
 
-    .section-features .card.w_300.right_before {
-        float: left !important;
-        width: 280px;
+    .section-features.ptb_40_20{
+        padding-bottom: 50px;
     }
 
-    .section-features .card.w_300.left_before {
-        float: right !important;
-        width: 280px;
+    .section-features .ptb_60_40{
+        padding-top: 20px;
     }
 
     .tab_bar_design li {
@@ -982,6 +980,7 @@ img.blur {
     .section-about img.position-absolute {
         width: 100%;
         position: static !important;
+        margin-bottom: 140px !important;
     }
 
 
@@ -1002,6 +1001,7 @@ img.blur {
 
     .section-tools .pricing_card1 {
         height: auto !important;
+        margin-top: 0px !important;
     }
 
     .row {
