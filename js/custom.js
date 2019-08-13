@@ -1,5 +1,18 @@
 jQuery('document').ready(function(){
 
+	jQuery('.subscription_form').on('submit',function(){
+
+		var email = jQuery('input[name="subscription_email"]').val();
+		console.log('Email'+email);
+
+
+		var notification = '<div class="alert alert-success m-0 r_3 text-center">Thank you for subscribing our latest updates.</div>';
+		jQuery('.subscription_notifications').html(notification);  
+
+		return false;
+
+	});
+
 	// Progress Bar 
 	jQuery('.tab_bar_design li a').on('click',function(){
 		jQuery(this).parent().siblings().children().removeClass('active');
