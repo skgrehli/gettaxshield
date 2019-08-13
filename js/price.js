@@ -105,19 +105,20 @@ var positvePayIntegrationFlag = false;
 var callTrackingFlag = false;
 
 function update_price_text() {
-    console.log('function called');
-    if(taxshieldSoftwareFlag){
-        jQuery(".taxShieldSoftwareCostText").html('Free');
+    // if(taxshieldSoftwareFlag){
+    //     jQuery(".taxShieldSoftwareCostText").html('Free');
 
-    }else{
-        jQuery(".taxShieldSoftwareCostText").html('Per $9..');
-    }
-
+    // }else{
+    //     jQuery(".taxShieldSoftwareCostText").html('Per $9..');
+    // }
     if (fundedReferrals50Price){
         jQuery(".fundedReferrals50CostText").html('$' + parseFloat(fundedReferrals50Price).toFixed(2));
     }
-    else{
+    else if(taxshieldSoftwareFlag){
         jQuery(".fundedReferrals50CostText").html(fundedReferrals50CostText);
+    }
+    else{
+        jQuery(".taxShieldSoftwareCostText").html('Per $9..');
     }
     if (customerFundedReferralsPrice){
         jQuery(".customerFundedReferralsCostText").html('$' + parseFloat(customerFundedReferralsPrice).toFixed(2));
