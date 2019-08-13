@@ -1,14 +1,5 @@
 jQuery('document').ready(function(){
 
-	jQuery('.subscription_form').on('submit',function(){
-
-		var email = jQuery('input[name="subscription_email"]').val();
-		console.log('Email'+email);
-
-		return false;
-
-	});
-
 	// Progress Bar 
 	jQuery('.tab_bar_design li a').on('click',function(){
 		jQuery(this).parent().siblings().children().removeClass('active');

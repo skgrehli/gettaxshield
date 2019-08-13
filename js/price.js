@@ -188,7 +188,7 @@ function price_calculator() {
            textMessageCostPrice = 0; 
         }
         if(hollidayAdvanceModuleFlag){
-            hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
+            hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.7;
         }else{
            hollidayAdvanceModulePrice = 0; 
         }
@@ -356,11 +356,14 @@ $(".subscription_form").submit(function(e) {
            data: form.serialize(), // serializes the form's elements.
            success: function(data)
            {
-            $('.subscription_notifications_success').hide();
+            $('.subscription_notifications').show();
+            $('.subscription_notifications_success').show();
            },
            error:function(data)
            {
-            $('.subscription_notifications_danger').hide();
+            $('.subscription_notifications').show();
+            $('.subscription_notifications_success').show();
+            // $('.subscription_notifications_danger').show();
            }
          });
 
