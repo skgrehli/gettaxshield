@@ -1,5 +1,19 @@
 var number_of_customer_list = [100, 200, 300, 500, 1000, 2000, 5000];
 
+var taxShieldSoftwareCost = [
+     [1000.00, 700.00, 490.00, 0, 0, 0 ],
+     [2000.00, 1400.00, 980.00, 0, 0, 0 ],
+     [3000.00, 2100.00, 1470.00, 0, 0, 0 ],
+     [3500.00, 2450.00, 1715.00, 0, 0, 0 ],
+     [3750.00, 2625.00, 1837.50, 0, 0, 0 ],
+     [4000.00, 2800.00, 1960.00, 0, 0, 0 ],
+     [4500.00, 3150.00, 2205.00, 0, 0, 0 ],
+     [4750.00, 3325.00, 2327.50, 0, 0, 0 ],
+     [5000.00, 3500.00, 2450.00, 0, 0, 0 ],
+     [5500.00, 3850.00, 2695.00, 0, 0, 0 ],
+     [6000.00, 4200.00, 2940.00, 0, 0, 0 ],
+]
+
 var fundedReferrals50Cost = [
     [ 9, 8.5, 8, 7.5, 7.5, 7, 6.5 ],
     [ 9.5, 9, 8.5, 8, 7.5, 7, 7 ],
@@ -73,6 +87,9 @@ var positvePayIntegrationCostText = "$1500";
 var leadManagemntCostText = "Free";
 var callTrackingText = "";
 
+var number_of_store = 0;
+var number_of_customer = 0;
+var taxShieldSoftwarePrice = taxShieldSoftwareCost[number_of_store][number_of_customer];
 var fundedReferrals50Price = 0;
 var customerFundedReferralsPrice = 0;
 var textMessageCostPrice = 0;
@@ -85,8 +102,6 @@ var tollFreeNumbersCostYearlyPrice = 0;
 var localNumbersCostYearlyPrice = 0;
 var tollFreeNumbersCostMonthlyPrice = 0;
 var localNumbersCostMonthlyPrice = 0;
-var number_of_store = 0;
-var number_of_customer = 0;
 var outgoing_calls = 100;
 var incoming_calls = 100;
 var local_numbers = 1;
@@ -105,12 +120,11 @@ var positvePayIntegrationFlag = false;
 var callTrackingFlag = false;
 
 function update_price_text() {
-    // if(taxshieldSoftwareFlag){
-    //     jQuery(".taxShieldSoftwareCostText").html('Free');
-
-    // }else{
-    //     jQuery(".taxShieldSoftwareCostText").html('Per $9..');
-    // }
+    if(taxShieldSoftwarePrice){
+        jQuery(".taxShieldSoftwareCostText").html('$' + parseFloat(taxShieldSoftwarePrice).toFixed(2));
+    }else{
+        jQuery(".taxShieldSoftwareCostText").html('Free');
+    }
     if (fundedReferrals50Price){
         jQuery(".fundedReferrals50CostText").html('$' + parseFloat(fundedReferrals50Price).toFixed(2));
     }
@@ -180,6 +194,7 @@ function update_price_text() {
 function price_calculator() {
     if (taxshieldSoftwareFlag)
     {
+        taxShieldSoftwarePrice = taxShieldSoftwareCost[number_of_store][number_of_customer];
         fundedReferrals50Price = 0;
         customerFundedReferralsPrice = 0;
         textMessageCostPrice = 0;
@@ -189,6 +204,7 @@ function price_calculator() {
         leadManagemntCostYearlyPrice = 0;
     }
     else{
+        taxShieldSoftwarePrice = 0;
         if (fundedReferrals50Flag){
             fundedReferrals50Price = fundedReferrals50Cost[number_of_store][number_of_customer] * number_of_customer_list[number_of_customer] * 0.4;
         }else{
@@ -237,7 +253,7 @@ function price_calculator() {
        positvePayIntegrationPrice = 0 
     }
 
-    total_yearly_price = fundedReferrals50Price + customerFundedReferralsPrice + textMessageCostPrice + hollidayAdvanceModulePrice + coBrandingPrice + positvePayIntegrationPrice + leadManagemntCostMonthlyPrice + leadManagemntCostYearlyPrice + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice;         
+    total_yearly_price = fundedReferrals50Price + customerFundedReferralsPrice + textMessageCostPrice + hollidayAdvanceModulePrice + coBrandingPrice + positvePayIntegrationPrice + leadManagemntCostMonthlyPrice + leadManagemntCostYearlyPrice + tollFreeNumbersCostYearlyPrice + localNumbersCostYearlyPrice + taxShieldSoftwarePrice;         
     total_monthly_price = leadManagemntCostMonthlyPrice + tollFreeNumbersCostMonthlyPrice + localNumbersCostMonthlyPrice;         
     update_price_text();
 }
@@ -391,5 +407,5 @@ jQuery('document').ready(function(){
     $('.subscription_notifications').hide();
     $('.subscription_notifications_success').hide();
     $('.subscription_notifications_danger').hide();
-    update_price_text();
+    price_calculator();
 });
