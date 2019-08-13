@@ -105,37 +105,43 @@ var positvePayIntegrationFlag = false;
 var callTrackingFlag = false;
 
 function update_price_text() {
-    console.log('function called');
-    if(taxshieldSoftwareFlag){
-        jQuery(".taxShieldSoftwareCostText").html('Free');
+    // if(taxshieldSoftwareFlag){
+    //     jQuery(".taxShieldSoftwareCostText").html('Free');
 
-    }else{
-        jQuery(".taxShieldSoftwareCostText").html('Per $9..');
-    }
-
+    // }else{
+    //     jQuery(".taxShieldSoftwareCostText").html('Per $9..');
+    // }
     if (fundedReferrals50Price){
         jQuery(".fundedReferrals50CostText").html('$' + parseFloat(fundedReferrals50Price).toFixed(2));
     }
-    else{
+    else if(taxshieldSoftwareFlag){
         jQuery(".fundedReferrals50CostText").html(fundedReferrals50CostText);
+    }
+    else{
+        jQuery(".fundedReferrals50CostText").html('$9 Per');
     }
     if (customerFundedReferralsPrice){
         jQuery(".customerFundedReferralsCostText").html('$' + parseFloat(customerFundedReferralsPrice).toFixed(2));
     }
-    else{
+    else if(taxshieldSoftwareFlag){
         jQuery(".customerFundedReferralsCostText").html(customerFundedReferralsCostText);
+    }else{
+        jQuery(".customerFundedReferralsCostText").html('$9 Per');
     }
     if (textMessageCostPrice){
         jQuery(".textMessageCostText").html('$' + parseFloat(textMessageCostPrice).toFixed(2));
-    }else
-    {
+    }else if(taxshieldSoftwareFlag){
         jQuery(".textMessageCostText").html(textMessageCostText);
-    }if (hollidayAdvanceModulePrice){
+    }else{
+        jQuery(".textMessageCostText").html('$120.00');
+    }
+    if (hollidayAdvanceModulePrice){
         jQuery(".hollidayAdvanceModuleCostText").html('$' + parseFloat(hollidayAdvanceModulePrice).toFixed(2));
 
-    }else
-    {
+    }else if(taxshieldSoftwareFlag){
         jQuery(".hollidayAdvanceModuleCostText").html(hollidayAdvanceModuleCostText);
+    }else{
+        jQuery(".hollidayAdvanceModuleCostText").html('$9 Per');
     }if (coBrandingPrice){
         jQuery(".coBrandingCostText").html('$'+ coBrandingPrice);
     }else
