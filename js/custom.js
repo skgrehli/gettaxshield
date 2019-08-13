@@ -46,7 +46,23 @@ jQuery('document').ready(function(){
         loop: true 
 	  });
  
-	jQuery('.testimonials_slick').slick();
+	jQuery('.testimonials_slick').slick({ 
+		infinite: true,
+		speed: 300,
+		slidesToShow: 2,
+		centerMode: true,
+	 	centerPadding: '0',
+		slidesToScroll: 2,
+		responsive: [ 
+		{
+		  breakpoint: 480,
+		  settings: {
+		    slidesToShow: 1,
+		    slidesToScroll: 1
+		  }
+		}
+		]
+	});
 
 	jQuery('.hamburger_sign').on('click',function(){
 		jQuery('.hover_menus').toggle();
