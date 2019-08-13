@@ -101,7 +101,6 @@ jQuery('document').ready(function(){
     var hollidayAdvanceModuleFlag = true;
     var coBrandingFlag = true;
     var leadManagemntFlag = true;
-    var hollidayAdvancePriceFlag = true;
     var positvePayIntegrationFlag = false;
     var callTrackingFlag = false;
 
@@ -193,7 +192,7 @@ jQuery('document').ready(function(){
             }else{
                textMessageCostPrice = 0; 
             }
-            if(hollidayAdvancePriceFlag){
+            if(hollidayAdvanceModuleFlag){
                 hollidayAdvanceModulePrice = hollidayAdvanceModuleCost[number_of_store][number_of_customer];
             }else{
                hollidayAdvanceModulePrice = 0; 
