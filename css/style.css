@@ -24,6 +24,10 @@ h1.main_heading {
     line-height: 100px;
 }
 
+.text_shadow {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 .btn-primary.focus, .btn-primary:focus {
     box-shadow: none;
 }
@@ -927,6 +931,14 @@ img.blur {
 /*Mobile Devices*/
 @media all and (max-width: 580px) {
 
+    .mobile_hide {
+        display: none !important; 
+    }
+
+    .mobile_show {
+        display: block !important;
+    }
+
     .section-about {
         background-size: auto 400px; 
     }
@@ -977,10 +989,12 @@ img.blur {
     }
 
     /*About Section*/
+    .section-about {
+        background-image:unset;
+    }
+
     .section-about img.position-absolute {
         width: 100%;
-        position: static !important;
-        margin-bottom: 140px !important;
     }
 
 
@@ -1010,6 +1024,11 @@ img.blur {
 
     .section-about .list-group-item {
         font-size: 18px;
+    }
+
+    .section-about .main_heading {
+        margin-top: 0;
+        margin-bottom: 60px;
     }
 
 }
