@@ -94,6 +94,9 @@ jQuery('document').ready(function(){
 		centerMode: true,
 	 	centerPadding: '0',
 		slidesToScroll: 3,
+		dots: true,
+		prevArrow: false,
+		nextArrow: false,
 		responsive: [ 
 		{
 		  breakpoint: 1024,

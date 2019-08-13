@@ -89,6 +89,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     background-color:#303342 !important;
 }
 
+.bg_black {
+    background: #000000 !important;
+}
+
 .bg_grey, 
 .jumbotron {
     background-color: #E6E6E6;
@@ -501,6 +505,29 @@ img.blur {
     cursor: pointer; 
 }
 
+/*Service*/
+
+.section-services .signature_pad {
+    right: 0px;
+    width: 230px;
+    top: 110px;
+}
+
+.section-services .scanner_img {
+    left: 44px;
+    width: 150px;
+    top: 140px;
+}
+
+.section-services .slick-dots li button:before {
+    font-size: 10px;
+    opacity: 1 !important ;
+    color: #fff !important;
+}
+
+.section-services .slick-dots li.slick-active button:before {
+    color:#6fbe4a !important;
+}
 
 
 /*Brands Section*/
@@ -842,7 +869,7 @@ img.blur {
     }
 
     .section-about.ptb_140_130 {
-        padding: 40px 0px 30px 0;
+        padding: 40px 0px 30px 0; 
     }
 
     /*Features Section*/
@@ -857,7 +884,6 @@ img.blur {
         max-width: 300px;
         margin: 0 auto;
     }
-
 
     .service_slider .slick-prev {
         left: 0px;
