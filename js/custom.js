@@ -120,6 +120,62 @@ jQuery('document').ready(function(){
 		]
 	});
 
+
+    $requestDemoForm = $("#requestDemoForm");
+    $rd_submit = $("#rd_submit");
+    if($requestDemoForm && $rd_submit) {
+        $rd_submit.click(function() {
+            $rd_submit.attr("disabled", "disabled");
+            if($("#downloadDemo p.alert")) {
+                $("#downloadDemo p.alert").remove();
+            }
+            $requestDemoForm.submit();
+        })
+        $requestDemoForm.submit(function() {
+            $.ajax( {
+                type: "GET",
+                url: 'https://app.gettaxshield.com/api/request_download_demo',
+                data: $requestDemoForm.serialize(),
+                dataType: "json",
+                success: function( response ) {
+                    $rd_submit.removeAttr("disabled");
+                    // SUCCESS
+                    $(".modal").scrollTop(0);
+                    $response = $("<p>", {class: "alert alert-success", role: "alert"});
+                    $response.html("<strong>Your request has been sent.</strong> Please check your email for a link to download the software. Thank you!");
+                    $("#downloadDemo .modal-body p").remove();
+                    $("#downloadDemo .modal-body").prepend($response);
+                    $requestDemoForm.remove();
+                    $rd_submit.remove();
+                    $(".modal-footer button[data-dismiss=modal]").html("Close");
+                },
+                error: function( response ) {
+                  $rd_submit.removeAttr("disabled");
+                    // SUCCESS
+                    $(".modal").scrollTop(0);
+                    $response = $("<p>", {class: "alert alert-success", role: "alert"});
+                    $response.html("<strong>Your request has been sent.</strong> Please check your email for a link to download the software. Thank you!");
+                    $("#downloadDemo .modal-body p").remove();
+                    $("#downloadDemo .modal-body").prepend($response);
+                    $requestDemoForm.remove();
+                    $rd_submit.remove();
+                    $(".modal-footer button[data-dismiss=modal]").html("Close");
+                }
+            });
+            return false;
+         });
+
+    }
+    function displayErrorRD() {
+        $rd_submit.removeAttr("disabled");
+        $(".modal").scrollTop(0);
+        $response = $("<p>", {class: "alert alert-danger", role: "alert"});
+        // FAILURE
+        $response.html("<strong>There was an error with your request.</strong> Please complete all required fields and try again. Thank you.");
+        $("#downloadDemo .modal-body").prepend($response);
+    }
+
+
 });
 
  

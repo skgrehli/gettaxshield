@@ -403,6 +403,31 @@ $(".subscription_form").submit(function(e) {
 
 });
 
+
+$(".contact-us-form").submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = 'https://app.gettaxshield.com/api/lead_gen';
+
+    $.ajax({
+           type: "GET",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               window.location.replace('https://www.gettaxshield.com/');
+           },
+           error:function(data)
+           {
+               window.location.replace('https://www.gettaxshield.com/');
+           }
+         });
+
+
+});
+
 jQuery('document').ready(function(){
     $('.subscription_notifications').hide();
     $('.subscription_notifications_success').hide();

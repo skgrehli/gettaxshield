@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head> 
         
-    <title>Tax Shield Home Page</title>
+    <title>TaxShield</title>
 	      
 	<!-- Required meta tags -->
 	<meta charset="UTF-8">
@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css?version=1"/>
 
 	<!-- Custom Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/style.css?version=1" /> 
+	<link rel="stylesheet" type="text/css" href="css/style1.css?version=1" /> 
 
 </head> 
 <body id="home">
@@ -130,7 +130,7 @@
  								<h3 class="f_40_46 font-weight-bold m_b_20 text_shadow">Professional Tax Software</h3>
  								<img src="images/feature_next_img.jpg" class="img-fluid w_500 mobile_show d-none m_b_20" alt="" />
  								<p class="f_16_22 text_shadow">TaxShield software provides the most cutting edge technology in the industry. See for yoursef, <a class="text-white" target="_blank" href="https://www.taxshieldservice.com/demo/">Download a demo!</a> </p>
- 								<p><a class="btn btn-primary badge-pill f_16_18 p_x_30 w_200" target="_blank" href="https://www.taxshieldservice.com/demo/">Download Demo Now</a></p>
+ 								<p><a class="btn btn-primary badge-pill f_16_18 p_x_30 w_200" data-toggle="modal" data-target="#downloadDemo" >Download Demo Now</a></p>
 							</div>
  						</div>
  						<div class="col-12 col-md-6 text-center">
@@ -561,6 +561,110 @@
 
  	<a href="#home" class="go_top_arrow bg-primary text-white p_x_10 p_y_10 fixed_bottom_right"><i class="fas fa-arrow-up"></i></a>
 
+
+	<div class="modal fade" id="downloadDemo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Request Demo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Please complete the form below. You will be emailed a link to download the demo software.
+                </p>
+                <form class="form" id="requestDemoForm" method="post">
+                    <div class="form-group">
+                        <label for="yourName">Your Name</label>
+                        <input id="yourName" type="text" placeholder="Your Name" name="name" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourCompany">Company Name</label>
+                        <input id="yourCompany" type="text" placeholder="Company Name" name="company" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourEmail">Email Address</label>
+                        <input id="yourEmail" type="text" placeholder="Email Address" name="email" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourPhoneNumber">Phone Number</label>
+                        <input id="yourPhoneNumber" type="text" placeholder="Phone Number" name="phoneNumber" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numOfBankProducts">Number of Bank Products  <span style="color:red;">*</span></label>
+                        <select name="numOfBankProducts" id="numOfBankProducts" class="form-control" required="true">
+                            <option value="No Bank Products">No Bank Products</option>
+                            <option value="1 - 100 Bank Products">1 - 100</option>
+                            <option value="101 - 250 Bank Products">101 - 250</option>
+                            <option value="251 - 500 Bank Products">251 - 500</option>
+                            <option value="501 - 1000 Bank Products">501 - 1000</option>
+                            <option value="1001 - 2000 Bank Products">1001 - 2000</option>
+                            <option value="2000+ Bank Products">2000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="taxSoftware">Current Tax Software <span style="color:red;">*</span></label>
+                    <select name="taxSoftware" id="taxSoftware" class="form-control" required="true">
+                   <option value="Crosslink">Crosslink</option>
+                   <option value="Drake">Drake</option>
+                   <option value="ProSeries">ProSeries</option>
+                   <option value="TaxSlayer Pro">TaxSlayer Pro</option>
+                   <option value="TaxSlayer Pro Online">TaxSlayer Pro Online</option>
+                   <option value="Tax Wise">Tax Wise</option>
+                   <option value="H&amp;R Block, Jackson Hewitt, Liberty Tax">H&amp;R Block, Jackson Hewitt, Liberty Tax</option>
+                   <option value="Other">Other</option>
+                   <option value="None">None</option>
+                   </select>
+                    </div>
+                    <div class="form-group" required="">
+                        <label for="numOfOffices">Number of Tax Offices <span style="color:red;">*</span></label>
+                        <input type="text" name="numOfOffices" placeholder="Number of Tax Offices" id="numOfOffices" value="" class="form-control" required="true">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" id="rd_submit">
+                    Request Demo
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+        </div>
+           </div>
+
+	<div class="modal fade" id="downloadDemoResponse" tabindex="-1" role="dialog"  aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" >REQUEST DEMO</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="col-form-label">Recipient:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="col-form-label">Message:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Send message</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<!-- script -->
 
 	<!-- jQuery -->
@@ -586,6 +690,14 @@
 
 	<!-- Price Script -->
 	<script type="text/javascript" src="js/price.js?version=1"></script>
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-3769128115545022",
+	    enable_page_level_ads: true
+	  });
+	</script>
 
 </body>
 </html> 

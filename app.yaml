@@ -1,5 +1,5 @@
-application: taxshield-landing
-version: 26
+application: taxshield-landing-new
+version: 5
 runtime: python27
 api_version: 1
 env: standard
@@ -49,6 +49,8 @@ handlers:
     require_matching_file: false
     upload: images/(.*\.ico)
   - url: /
+    secure: always
+    redirect_http_response_code: 301
     application_readable: false
     expiration: 900000
     static_files: index.html
