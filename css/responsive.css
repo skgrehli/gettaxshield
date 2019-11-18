@@ -4,12 +4,14 @@
 */
 @media (min-width: 320px) and (max-width: 480px) {
     #logo .logo {
-        max-width: 40%;
-    
+        max-width: 100%;    
+    }
+    #logo {
+        width: 30%;
     }
     #home,section{padding: 0px 11px;}
     .scroll-btn {padding: 1em 0 0 0;}
-    .partners .list-unstyled li:nth-child(3),.partners .list-unstyled li:nth-child(4) { padding-top: 30px; }
+    .partners .list-unstyled li:nth-child(2),.partners .list-unstyled li:nth-child(3),.partners .list-unstyled li:nth-child(4) { padding-top: 20px; }
     .section-text p { font-size: 15px; }
     ul.list-unstyle li { font-size: 15px; }
     ul.list-unstyle li::before {
@@ -144,12 +146,13 @@ and (max-device-width : 568px)
         font-size: 35px;
     }
     #logo .logo {
-        max-width: 42%;
+        max-width: 100%;
     }
-    .toggle {
-        font-size: 23px;
-        padding: 5px 5px;
-        margin-right: 0;
+    .menu-dropdown-section .ico {
+        height: 0vh;
+    }
+    .menu-dropdown-section {
+        padding: 15px 1px;
     }
     .slider-info {
         margin-bottom: 25px;
@@ -230,17 +233,37 @@ and (max-device-width : 568px)
     }
     .software {
         background:#fff;
-        height: auto;
+    }
+    .holiday {
+        height: 775px;
     }
     .localnumber-text-section {
         margin-top: 60px !important;
         margin-bottom: 30px !important;
+    }
+    .demo-request {
+       padding: 3rem 0 3rem !important;
+    }
+    .money-section {
+        margin-bottom: 25px;
+        padding: 10px;
+        border-left: 3px solid 
+        transparent;
+    }
+    .money-section .ico {
+        margin-bottom: 175px;
     }
 }
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)
 { 
+    #logo {
+        width: 55%;
+    }
+    .head-bnr {
+        max-width: 100%;
+    }
     .banner-info-grid h2 {
         font-size: 1.5em;
         line-height: 35px;
@@ -257,13 +280,13 @@ and (max-device-width : 1024px)
     }
     ul.list-unstyle li {
         font-size: 14px;
-    }
-    ul.list-unstyle li::before {
+    } 
+    ul.list-unstyle li::before { 
         padding: 0 5px 0 0;
     }
     #services {
-        -webkit-clip-path: polygon(0 0%, 100% 6%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0%, 100% 6%, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0% 100%);
     }
     .rs-container {
         width: 96% !important;
@@ -339,7 +362,71 @@ and (max-device-width : 1024px)
     h3.bottom-line::after {
         margin-bottom: 30px;
     }
-    .ico {
-        margin-bottom: 85px;
+    .money-section .ico {
+        margin-bottom: 215px;
+    }
+    .holiday{background: #fff;}
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1200px)
+    {
+    .holiday {
+        background: url('../images/holiday.png');
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+        height: 690px;
+        background-position: -70px;
+        background-size: 60%;
+    }
+    .funded-ref {
+        background: url('../images/Group3.svg');
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+        height: 690px;
+        background-position: -14px -40px;
+        background-size: 50%;
+    }
+    .funded-ref .holiday-text-section {
+        margin-top: 0px !important;
+    }
+    .advance-page-section h3 {
+        font-size: 31px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        line-height: 35px !important;
+    }
+    #services {
+        margin-top: -108px;
+        padding-bottom: 80px;
+    }
+    .holiday-text-section {
+        margin-top: 100px !important;
+    }
+    .advance-page-section p.advance-page-desc {
+        font-size: 15px;
+    }
+    .money-section .ico {
+        margin-bottom: 125px;
+    }
+    .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+        margin-right: 10px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .mega-dropdown-menu ul {
+        padding-left: 0px;
+    }
+    .col-xl-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 16.666667%;
+        flex: 1 0 16.666667%;
+        max-width: 18.667%;
     }
 }

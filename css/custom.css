@@ -61,18 +61,35 @@ li {
 .menu-dropdown-section {
     padding: 30px 1px;
 }
-
+.menu-dropdown-section .ico {
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: 10vh;
+  margin-right: 15px;
+  line-height: 32px;
+  margin-top: 5px;
+  margin-bottom: 92px;
+}
 .menu-dropdown-section .title {
     font-size: 15px;
     font-weight: bold;
     color: #198de1;
+    padding-bottom: 5px;
 }
 .menu-dropdown-section  .desc {
     font-size: 15px;
 }
 .header-more {
-    font-weight: bold;
-    color: #000 !important;
+  font-weight: bold;
+  color: #000 !important;
+  font-size: 14px;
+  padding-top: 5px;
+  display: block;
+}
+.header-more i {
+  font-size: 9px;
+  margin-left: 5px;
 }
 .header-more:hover {
     color: #6fbe4a !important;
@@ -1228,7 +1245,7 @@ ul.list-unstyled.partners-icon img {
 }    
 .section-text p {
     font-size: 17px;
-    color:#7A839E;
+    color:#000;
     font-weight: 300;
     margin: 22px 0;
     line-height: 28px;
@@ -1295,7 +1312,44 @@ ul.under-list li span {color: #5bbc2e;}
 /*-- Global style --*/
 
 /*-- Software --*/
+
+
 ul.list-unstyle {
+  padding:0 0 0px 10px;
+  margin-bottom: 25px;
+  list-style: none;
+}
+ul.list-unstyle li{margin-bottom: 15px;}
+ul.list-unstyle {
+  margin: 0 0 0px 15px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 30px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+}
+ul.list-unstyle li:before {
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #0074D9;
+  content: " ";
+  display: inline-block;
+  color: #6fbe4a;
+  padding: 0 10px 0 0;
+  font-size: 15px;
+  background: url('../images/icons/check-icon.svg');
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+  width: 20px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/*ul.list-unstyle {
   padding: 0;
 margin: 0;
 display: block;
@@ -1328,7 +1382,7 @@ ul.list-unstyle li{
     line-height: 21px;
     padding: 6px 0 6px 0px;
     position: relative;
-}
+}*/
 .software-left h4 {
     font-size: 40px;
     font-weight: 600;
@@ -1508,29 +1562,40 @@ font-family: Nunito Sans;
   font-size: 16px;
   color: #000 !important;
 }
+
+
+
+
+
 .advance-page-section ul.advance-page-list {
-  padding: 0;
-margin: 0;
-display: block;
-width: 100%;
-list-style: none;
+  padding:0 0 0px 10px;
+  margin-bottom: 25px;
+  list-style: none;
 }
-.advance-page-section ul.advance-page-list li:before
-{
-   font-family: FontAwesome;
-    content: "\f00c";
-    display: inline-block;
-    color: #5bbc2e;
-    padding: 0 10px 0 0;
-    font-size: 15px;
+.advance-page-section ul.advance-page-list li{margin-bottom: 10px;}
+.advance-page-section ul.advance-page-list {
+  margin: 0 0 0px 15px;
+  }
+.advance-page-section ul.advance-page-list li:before {
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #0074D9;
+  content: " ";
+  display: inline-block;
+  color: #6fbe4a;
+  padding: 0 10px 0 0;
+  font-size: 15px;
+  background: url('../images/icons/check-icon.svg');
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+  width: 20px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: left;
 }
-.advance-page-section ul.advance-page-list li{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 21px;
-    padding: 6px 0 6px 0px;
-    position: relative;
-}
+
 .about-page-section h3{
   font-size: 32px;
   font-weight: bold;
@@ -1553,6 +1618,9 @@ list-style: none;
     font-size: 17px !important;
     font-weight: 600 !important;
     line-height: 40px !important;
+}
+ul.about-list li::before {
+  height: 43px;
 }
 #client-sec {
     padding-top: 10px;
@@ -1719,16 +1787,13 @@ list-style: none;
     margin: 0 !important;
 }
 .btn.custom-btn {
-  /*background: rgba(255, 255, 255, 0.63);*/
     background:rgb(111, 190, 74);
     color: #fff;
-    /*border-radius: 4px;*/
-/*padding: 10px 50px;*/
     border-radius: 50px;
     padding: 15px 50px;
     text-transform: uppercase;
     font-weight: bold;
-}
+    border-color: #6fbe4a}
 .offer-bottom-text {
     font-size: 15px !important;
     max-width: 45%;
