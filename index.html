@@ -361,7 +361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <h1 class="display-3">Let’s get started!</h1>
 <p class="lead">Everything you need to jumpstart your season, all in one simple platform.</p>
 <p class="lead ">
-<div class="mx-auto text-center"><button class="btn btn-info btn-lg btn-md custom-btn text-uppercase">Start Free Trial</button></div>
+<div class="mx-auto text-center"><button class="btn btn-info btn-lg btn-md custom-btn text-uppercase start_free_trial">Start Free Trial</button></div>
 </p>
 </div>
 
@@ -645,7 +645,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <h1 class="display-3">Professional Tax Software</h1>
 <p class="lead">Need a tax software? Fully integrated with TaxShield Software</p>
 <p class="lead">
-<a class="btn btn-info btn-lg btn-md custom-btn text-uppercase" href="https://www.gettaxshield.com/demo" role="button">Request a Demo</a>
+<a class="btn btn-info btn-lg btn-md custom-btn text-uppercase" data-toggle="modal" data-target="#downloadDemo" >Request a Demo</a>
 </p>
 </div>
 <!-- footer -->
@@ -730,6 +730,86 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </footer>
 <!-- //footer -->
 
+	<div class="modal fade" id="downloadDemo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Request Demo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Please complete the form below. You will be emailed a link to download the demo software.
+                </p>
+                <form class="form" id="requestDemoForm" method="post">
+                    <div class="form-group">
+                        <label for="yourName">Your Name</label>
+                        <input id="yourName" type="text" placeholder="Your Name" name="name" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourCompany">Company Name</label>
+                        <input id="yourCompany" type="text" placeholder="Company Name" name="company" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourEmail">Email Address</label>
+                        <input id="yourEmail" type="text" placeholder="Email Address" name="email" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourPhoneNumber">Phone Number</label>
+                        <input id="yourPhoneNumber" type="text" placeholder="Phone Number" name="phoneNumber" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numOfBankProducts">Number of Bank Products  <span style="color:red;">*</span></label>
+                        <select name="numOfBankProducts" id="numOfBankProducts" class="form-control" required="true">
+                            <option value="No Bank Products">No Bank Products</option>
+                            <option value="1 - 100 Bank Products">1 - 100</option>
+                            <option value="101 - 250 Bank Products">101 - 250</option>
+                            <option value="251 - 500 Bank Products">251 - 500</option>
+                            <option value="501 - 1000 Bank Products">501 - 1000</option>
+                            <option value="1001 - 2000 Bank Products">1001 - 2000</option>
+                            <option value="2000+ Bank Products">2000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="taxSoftware">Current Tax Software <span style="color:red;">*</span></label>
+                    <select name="taxSoftware" id="taxSoftware" class="form-control" required="true">
+                   <option value="Crosslink">Crosslink</option>
+                   <option value="Drake">Drake</option>
+                   <option value="ProSeries">ProSeries</option>
+                   <option value="TaxSlayer Pro">TaxSlayer Pro</option>
+                   <option value="TaxSlayer Pro Online">TaxSlayer Pro Online</option>
+                   <option value="Tax Wise">Tax Wise</option>
+                   <option value="H&amp;R Block, Jackson Hewitt, Liberty Tax">H&amp;R Block, Jackson Hewitt, Liberty Tax</option>
+                   <option value="Other">Other</option>
+                   <option value="None">None</option>
+                   </select>
+                    </div>
+                    <div class="form-group" required="">
+                        <label for="numOfOffices">Number of Tax Offices <span style="color:red;">*</span></label>
+                        <input type="text" name="numOfOffices" placeholder="Number of Tax Offices" id="numOfOffices" value="" class="form-control" required="true">
+                    </div>
+                    <div class="form-group text-center">
+						<div class="g-recaptcha" data-sitekey="6Ld3XLUUAAAAADZkiCmcPIVFuYHCpgUmDZjfEKlu"></div>
+					</div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" id="rd_submit">
+                    Request Demo
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+        </div>
+           </div>
+
+
+
+
 <!-- copyright -->
 <div class="copy-right-top border-top">
 	<div class="container">
@@ -800,7 +880,7 @@ $(document).ready(function(){
         navigationText:["",""],
         autoPlay:false
     });
-    $(".demo-btn").click(function(){
+    $(".start_free_trial").click(function(){
        window.location.replace('https://app.gettaxshield.com/');
 	});
 });
