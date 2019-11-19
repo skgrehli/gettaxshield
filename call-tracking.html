@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Tax-Shield</title>
@@ -209,7 +210,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				    <span class="title">Buy Toll Free ot Local Numbers</span>
 				    <span class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
 				</div>
-
 				<div class="money-section"> 
 				    <span class="ico">
 				    	<img src="images/icons/money2.svg">
@@ -423,177 +423,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</a>
 </div>
 <!-- move top -->
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script src="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/js/rSlider.min.js"></script>
-<script src="js/slider.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,2],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        pagination:false,
-        navigation:true,
-        slideSpeed:1000,
-        singleItem:true,
-        transitionStyle:"goDown",
-        navigationText:["",""],
-        autoPlay:false
-    });
-});
-
-//$(document).ready(function(){
-
-   (function () {
-    'use strict';
-    var init = function () {
-           
-        var slider2 = new rSlider({
-            target: '#time_range',
-            values: [100+'+',200+'+',300+'+',500+'+',1000+'+',2000+'+'],
-            step: 1,
-            range: false,
-            set: [500+'+'],
-            tooltip: true,
-            scale: true,
-            labels: true,
-            width: null,
-            onChange: function (vals) {
-                console.log(vals);
-                $("#rangeselect").val(vals);
-                $('#hiddenvalue').val(vals);
-            }
-        });
-        $('#rangeselect').on('change', function() {
-          var getselect = this.value;
-             console.log(getselect);
-             slider2.setValues( getselect );
-             $('#hiddenvalue').val(getselect);
-        });
-    };
-    $(document).ready(init); 
-})();   
-
-
-$('select').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;  
-    $this.addClass('select-hidden'); 
-    $this.wrap('<div class="select"></div>');
-    $this.after('<div class="select-styled"></div>');
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());  
-    var $list = $('<ul />', {'class': 'select-options'}).insertAfter($styledSelect);  
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-    var $listItems = $list.children('li');  
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.select-options').hide();
-        });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });  
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-    });
-  
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-
-});
-
-// $(document).ready(function() {
-    
-//   // When the button is clicked make the lightbox fade in in the span of 1 second, hide itself and start the video
-//   $("#button").on("click", function() {
-//     $("#lightbox").fadeIn(1000);
-//     $(this).hide();
-//     var videoURL = $('#video').prop('src');
-//     videoURL += "?autoplay=1";
-//     $('#video').prop('src',videoURL);
-//   });
-  
-//   // When the close button is clicked make the lightbox fade out in the span of 0.5 seconds and show the play button
-//   $("#close-btn").on("click", function() {
-//     $("#lightbox").fadeOut(500);
-//     $("#button").show(250);
-//   });
-// });
-
-// Function to reveal lightbox and adding YouTube autoplay
-function revealVideo(div,video_id) {
-  var video = document.getElementById(video_id).src;
-  document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
-  document.getElementById(div).style.display = 'block';
-}
-
-// Hiding the lightbox and removing YouTube autoplay
-function hideVideo(div,video_id) {
-  var video = document.getElementById(video_id).src;
-  var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
-  document.getElementById(video_id).src = cleaned;
-  document.getElementById(div).style.display = 'none';
-}
-
-</script>	
-
 <script>
-	(function(){
-      var words = [
-		  'Holiday Advances',
-	  	  'Print Referrals',
-          'Tracks calls',
-		  'Text Messages'
-          ], i = 0;
-    //   setInterval(function(){
-    //       $('#changingword').fadeOut(function(){
-    //           $(this).html(words[i=(i+1)%words.length]).fadeIn();
-    //       });
-    //   }, 2000);
-        
-  })();
-</script>
-<script>
-$(document).ready(function() {
-  // slick carousel
-//   $('.vertical-center-4').slick({
-//     dots: true,
-//     // infinite: true,
-//   	// speed: 100,
-//     vertical: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 0,
-//     verticalSwiping: true,
-//     autoplay: true,
-//   	autoplaySpeed: 1000,
-//   });
-
-$(".vertical-center-4").owlCarousel({
-	items:1,
-	itemsDesktop:[1000,1],
-	itemsDesktopSmall:[979,1],
-	itemsTablet:[768,1],
-	pagination:false,
-	navigation:false,
-	slideSpeed:500,
-	singleItem:true,
-	transitionStyle:"goDown",
-	autoPlay:1500,
-});
-});
+includeHTML();
 </script>
 </body>
 </html>

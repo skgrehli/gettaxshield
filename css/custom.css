@@ -474,7 +474,7 @@ color:#F66B1C !important;
 .call-tracking-banner .banner-info-grid h2,
 .advance-banner .banner-info-grid h2{
   color: #fff !important;
-  font-size:50px;
+
 }
 .referral-banner .banner-info-grid p,
 .call-tracking-banner .banner-info-grid p,
@@ -1523,12 +1523,17 @@ font-family: Nunito Sans;
     height: 690px;
     background-position:0 -60px;
 }
+.ref-img{
+  position: absolute;
+    top: -48px;
+    z-index: 0;
+}
 .local-number {
     background: url('../images/local-number.png');
     background-repeat: repeat;
     background-repeat: no-repeat;
     padding: 0 !important;
-    height: 690px;
+    height: auto;
     background-position: 20%;
 }
 .holiday {
@@ -1562,11 +1567,6 @@ font-family: Nunito Sans;
   font-size: 16px;
   color: #000 !important;
 }
-
-
-
-
-
 .advance-page-section ul.advance-page-list {
   padding:0 0 0px 10px;
   margin-bottom: 25px;
@@ -1677,6 +1677,9 @@ ul.about-list li::before {
     -ms-user-select: none;
     float: left;
     left: 30px;
+}
+.pdd{
+  padding-top: 10px !important;
 }
 .onoffswitch-checkbox {
     display: none;
@@ -2205,6 +2208,11 @@ a.move-top span{
 @media(max-width:1280px) {
     
 }
+@media(max-width:1199px){
+  .ref-img{
+    top: -35px;
+  }
+}
 @media(max-width:1080px) {
   .banner-info-grid h2 {
     font-size: 2.8em;
@@ -2269,7 +2277,9 @@ a.move-top span{
 }
 
 @media(max-width:991px) {
-  
+  .ref-img{
+    position: relative;
+  }
   .information p {
     font-size: 15px;
   }
@@ -2311,6 +2321,13 @@ a.move-top span{
   }
 }
 
+@media(max-width:767px) {
+  #services{
+    -webkit-clip-path: polygon(0 0%, 100% 2%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 2%, 100% 100%, 0% 100%);
+  }
+
+}
 @media(max-width:736px) {
  
   .about-text h3 {
@@ -2405,6 +2422,9 @@ a.move-top span{
   .information span.fa {
     font-size: 20px;
   }
+  .ref-img {
+    top: -25px;
+}
 }
 @media(max-width:414px) {
   .banner-info-grid h2, .banner-info-grid h3 {

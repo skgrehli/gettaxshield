@@ -22,10 +22,10 @@
     height: auto;
     -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
-    padding: 20px 0;
+    padding: 0 10px;
     }
     #services .section-text h3 {
-        padding-top: 0px;
+        padding-top: 50px;
     }
     .package-price {
         font-size: 45px;
@@ -97,12 +97,13 @@
     .social {
         text-align: center !important;
         margin: auto;
-            margin-bottom: auto;
+        margin-bottom: auto;
         width: 40%;
         margin-bottom: 55px;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         float: none !important;
+        padding-left:0 !important;
     }
     .paral h1 {
         padding-top: 0px !important;
@@ -235,7 +236,7 @@ and (max-device-width : 568px)
         background:#fff;
     }
     .holiday {
-        height: 775px;
+        height: 700px;
     }
     .localnumber-text-section {
         margin-top: 60px !important;
@@ -247,11 +248,11 @@ and (max-device-width : 568px)
     .money-section {
         margin-bottom: 25px;
         padding: 10px;
-        border-left: 3px solid 
-        transparent;
+        border-left: 3px solid transparent;
+
     }
     .money-section .ico {
-        margin-bottom: 175px;
+        margin-bottom: 0;
     }
 }
 @media only screen 
