@@ -88,7 +88,7 @@ function includeHTML() {
 </script>
 </head>
 <body>
-<div class="about-menu" include-html="menu.html"></div>
+<div class="about-menu" include-html="/menu"></div>
 <!-- banner -->
 <div class="referral-banner" id="home">
 	<div class="container">
@@ -293,12 +293,16 @@ function includeHTML() {
 	</div>
 </section>
 <!-- //Partners -->
-<div class="about-footer-menu" include-html="footer_menu.html"></div>
+<div class="about-footer-menu" include-html="/footer_menu"></div>
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>
-includeHTML();
-</script>
 </body>
 </html>

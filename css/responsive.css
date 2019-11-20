@@ -197,7 +197,7 @@ and (max-device-width : 568px)
      display: none;
   }
   .inputGroup label {
-    padding: 20px 5px;
+    padding: 20px 10px;
     font-size: 14px;
   }
   .inputGroup label::after {
@@ -218,8 +218,7 @@ and (max-device-width : 568px)
     margin: 15px 0;
   }
   .form {
-    padding: 0px 16px;
-    margin: 50px auto;
+    margin:0px auto 50px;
     font-size: 18px;
     }
     section.process {
@@ -254,6 +253,22 @@ and (max-device-width : 568px)
     .money-section .ico {
         margin-bottom: 0;
     }
+    .row.price-text-section .title-section h3.heading {
+        font-size: 32px !important;
+        margin-top: 0px !important;
+    }
+    h3.bottom-line,
+    h3.bottom-line span {
+        font-size: 30px !important;
+    }
+    .tracking-left-section {
+        padding: 0px;
+        min-height: 130px;
+    }
+    #contactus-form {
+        padding: 0 15px;
+    }
+
 }
 @media only screen 
 and (min-device-width : 768px) 
@@ -332,11 +347,11 @@ and (max-device-width : 1024px)
         left: 80px;
     }
     .price-text-section {
-        padding: 100px 0 15px;
+        padding: 0px 0 15px;
     }
     .form {
-        padding: 45px 16px;
-        margin: 40px auto;
+        padding: 25px 5px;
+        margin: 0px auto;
         font-size: 18px;
     }
     .select-boxes {
@@ -367,12 +382,18 @@ and (max-device-width : 1024px)
         margin-bottom: 215px;
     }
     .holiday{background: #fff;}
+    .vl.client-sec {
+        display: none;
+    }
 }
 
 @media only screen 
 and (min-device-width : 1024px) 
 and (max-device-width : 1200px)
     {
+    .vl.client-sec {
+        display: block;
+    }
     .holiday {
         background: url('../images/holiday.png');
         background-repeat: repeat;
@@ -416,6 +437,12 @@ and (max-device-width : 1200px)
     .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
         margin-right: 10px;
     }
+    .tracking-left-section .ico {
+        margin-bottom: 95px;
+    }
+    .tracking-left-section {
+        padding: 13px;
+    }
 }
 
 /* Large screens ----------- */
@@ -430,4 +457,13 @@ and (min-width : 1224px) {
         flex: 1 0 16.666667%;
         max-width: 18.667%;
     }
+}
+
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 640px) 
+                   and (orientation: landscape) {
+
+.holiday {
+    background: #fff;
+}
 }
