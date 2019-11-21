@@ -260,11 +260,19 @@ and (max-device-width : 568px)
     h3.bottom-line,
     h3.bottom-line span {
         font-size: 30px !important;
+<<<<<<< HEAD
     }
     .tracking-left-section {
         padding: 0px;
         min-height: 130px;
     }
+=======
+    }
+    .tracking-left-section {
+        padding: 0px;
+        min-height: 130px;
+    }
+>>>>>>> 76ddb2c8c9baf3156966560d4e5a8e88b3a0d63f
     #contactus-form {
         padding: 0 15px;
     }
@@ -385,6 +393,7 @@ and (max-device-width : 1024px)
     .vl.client-sec {
         display: none;
     }
+<<<<<<< HEAD
     .local-number {
         background-position: 4%;
         background-size: 40%;
@@ -393,6 +402,8 @@ and (max-device-width : 1024px)
         margin-top: 80px !important;
         margin-bottom: 80px !important;
     }
+=======
+>>>>>>> 76ddb2c8c9baf3156966560d4e5a8e88b3a0d63f
 }
 
 @media only screen 
