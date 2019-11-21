@@ -394,6 +394,7 @@ color:#000 !important;
   color: #000 !important;
   padding: 15px 10px;
   z-index: 99999;
+  transition: 1s;
 }
 
 
@@ -444,6 +445,9 @@ color:#000 !important;
 .referral-banner .slider-info a.btn{
 color:#F66B1C !important;
 }
+.call-tracking-banner .slider-info a.btn{
+color:#00BAD5 !important;
+}
 .referral-banner .slider-info a.req-demo,
 .call-tracking-banner .slider-info a.req-demo,
 .advance-banner .slider-info a.req-demo {
@@ -474,7 +478,7 @@ color:#F66B1C !important;
 .call-tracking-banner .banner-info-grid h2,
 .advance-banner .banner-info-grid h2{
   color: #fff !important;
-  font-size:50px;
+
 }
 .referral-banner .banner-info-grid p,
 .call-tracking-banner .banner-info-grid p,
@@ -508,17 +512,8 @@ color:#F66B1C !important;
 .price-text p {
     color: #fff !important;
 }
-
-
-
-
-
 /*.price-text-section .form {
     padding: 80px 16px;}*/
-
-
-
-
 .business{
     background: #fff;
     width: 100%;
@@ -613,11 +608,10 @@ color:#F66B1C !important;
   right: 30px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
   visibility: hidden;
 }
-
 .inputGroup i {
     font-size: 18px;
     color: #B2B2B2;
@@ -627,7 +621,6 @@ color:#F66B1C !important;
 #count-checkboxes{
     font-weight: bold;
 }
-
 .vl {
   border-left: 1px solid #d7d1d182;
   height: auto;
@@ -687,8 +680,8 @@ color:#F66B1C !important;
 }
 .tracking-left-section .desc{
   font-size: 17px;
-font-family: Nunito Sans;
-font-weight: 100;
+  font-family: Nunito Sans;
+  font-weight: 100;
 }
 .tracking-left-section .title { display: block; overflow: hidden; }
 .tracking-left-section {
@@ -696,7 +689,6 @@ font-weight: 100;
   padding: 25px;
   min-height: 165px;
 }
-
 .panel-heading.n_panel-heading {
     padding: 20px 0px;
 }
@@ -765,7 +757,6 @@ font-weight: 100;
 .panel-body.n_panel-body {
     border-top: none !important;
 }
-
 .price-text-section{padding: 0px 0 15px;}
 p.heading-desc {
     font-size: 18px;
@@ -776,7 +767,6 @@ p.plan-selection {
     font-size: 15px;
     font-weight: 100;
 }
-
 .btn-next {
     padding: 15px 70px;
     background: #82BD3F;
@@ -794,7 +784,6 @@ p.plan-selection {
   visibility: hidden;
   padding-right: 10px;
 }
-
 .select {
   cursor: pointer;
   display: inline-block;
@@ -805,7 +794,6 @@ p.plan-selection {
   height: 40px;
   line-height: 25px;
 }
-
 .left-select {
     font-size: 18px !important;
     height: 55px !important;
@@ -818,8 +806,8 @@ p.plan-selection {
 }
 .left-select .select .select-styled:after{top: 22px;}
 .left-select .select .select-styled:active:after, .left-select .select .select-styled.active:after {
-    top: 13px !important;}
-
+    top: 13px !important;
+}
 .select-styled {
   position: absolute;
   top: 0;
@@ -854,7 +842,6 @@ p.plan-selection {
   top: 9px;
   border-color: transparent transparent #000 transparent;
 }
-
 .select-options {
   display: none;
   position: absolute;
@@ -900,8 +887,8 @@ p.plan-selection {
 .plan-table .table td, .table th {
     padding: 20px;
     font-size: 16px;
-    }
-    .plan-table .table-striped tbody tr:nth-of-type(2n) td {
+}
+.plan-table .table-striped tbody tr:nth-of-type(2n) td {
     padding-left: 0 !important;
 }
 p.plan-selection.total {
@@ -912,8 +899,6 @@ p.total-price {
     font-size: 36px;
     font-weight: bolder;
 }
-
-
 .login-icon a,.login-icon a:hover {
     padding: 15px 50px;
     color: #fff;
@@ -943,26 +928,25 @@ p.total-price {
     max-width: 110%;
 }
 .banner-info-grid h2 {
-    color: #000;
-    display: inline-block;
-    font-size: 3.253rem;
-    text-transform: capitalize;
+  color: #000;
+  display: inline-block;
+  font-size: 3.253rem;
+  text-transform: capitalize;
   line-height: 65px;
   letter-spacing: 1px;
-    font-weight: 800;
-    white-space: nowrap;
+  font-weight: 800;
+  white-space: nowrap;
 }
 .banner-info-grid h3{
-    font-size: 2em;
-    font-weight: 800;
-    color: #000;
-    /* line-height: 1.2; */
+  font-size: 2em;
+  font-weight: 800;
+  color: #000;
 }
 .banner-info-grid p {
-    font-size: 1.125rem;
-    color:#797676;
-    margin: 1em 0;
-    line-height: 1.6rem;
+  font-size: 1.125rem;
+  color:#797676;
+  margin: 1em 0;
+  line-height: 1.6rem;
 }
 #button {
   font-size: 20px;
@@ -970,7 +954,7 @@ p.total-price {
   height: 50px;
   position: absolute;
   top: 50%;
-    left: 55%;
+  left: 55%;
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1251,7 +1235,6 @@ ul.list-unstyled.partners-icon img {
     line-height: 28px;
 }
 .service-section p{ margin: 5px 0;}
-
 ul.about-list1 {
 display: block;
 width: 100%;
@@ -1259,18 +1242,18 @@ list-style: none;
 }
 ul.about-list1 li:before
 {
-   font-family: FontAwesome;
-    content: " ";
-    display: inline-block;
-    color: #5bbc2e;
-    padding: 0 10px 0 0;
-    font-size: 15px;
-    padding-right: 5px;
-    margin-left: -1.1em;
-    background: url('../images/icons/play.svg');
-    width: 19px;
-    height: 17px;
-    background-repeat: no-repeat;
+  font-family: FontAwesome;
+  content: " ";
+  display: inline-block;
+  color: #5bbc2e;
+  padding: 0 10px 0 0;
+  font-size: 15px;
+  padding-right: 5px;
+  margin-left: -1.1em;
+  background: url('../images/icons/play.svg');
+  width: 19px;
+  height: 17px;
+  background-repeat: no-repeat;
 }
 ul.about-list1 li{
     font-size: 17px;
@@ -1308,12 +1291,9 @@ ul.under-list li{
     position: relative;
 }
 ul.under-list li span {color: #5bbc2e;}
-
 /*-- Global style --*/
 
 /*-- Software --*/
-
-
 ul.list-unstyle {
   padding:0 0 0px 10px;
   margin-bottom: 25px;
@@ -1340,49 +1320,14 @@ ul.list-unstyle li:before {
   padding: 0 10px 0 0;
   font-size: 15px;
   background: url('../images/icons/check-icon.svg');
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
   width: 20px;
   height: 17px;
   background-repeat: no-repeat;
   background-position: left;
 }
-
-/*ul.list-unstyle {
-  padding: 0;
-margin: 0;
-display: block;
-width: 100%;
-columns: 2;
-margin-top:5px;
--webkit-columns: 2;
--moz-columns: 2;
--ms-columns: 2;
--o-columns: 2;
-list-style: none;
-}
-ul.list-unstyle li:before
-{
-   font-family: FontAwesome;
-    content: " ";
-    display: inline-block;
-    color: #6fbe4a;
-    padding: 0 10px 0 0;
-    font-size: 15px;
-    background: url('../images/icons/check-icon.svg');
-    width: 30px;
-    height: 17px;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-ul.list-unstyle li{
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 21px;
-    padding: 6px 0 6px 0px;
-    position: relative;
-}*/
 .software-left h4 {
     font-size: 40px;
     font-weight: 600;
@@ -1393,7 +1338,6 @@ ul.list-unstyle li{
     color: #666;
     font-weight: normal;
 }
-
 h3.bottom-line span{  
 color:#86C568;
 font-style: italic;
@@ -1523,12 +1467,17 @@ font-family: Nunito Sans;
     height: 690px;
     background-position:0 -60px;
 }
+.ref-img{
+  position: absolute;
+    top: -48px;
+    z-index: 0;
+}
 .local-number {
     background: url('../images/local-number.png');
     background-repeat: repeat;
     background-repeat: no-repeat;
     padding: 0 !important;
-    height: 690px;
+    height: auto;
     background-position: 20%;
 }
 .holiday {
@@ -1544,6 +1493,7 @@ font-family: Nunito Sans;
 }
 .localnumber-text-section {
     margin-top: 215px !important;
+    margin-bottom: 80px !important;
 }
 #print {
     padding-top: 50px;
@@ -1562,11 +1512,6 @@ font-family: Nunito Sans;
   font-size: 16px;
   color: #000 !important;
 }
-
-
-
-
-
 .advance-page-section ul.advance-page-list {
   padding:0 0 0px 10px;
   margin-bottom: 25px;
@@ -1677,6 +1622,9 @@ ul.about-list li::before {
     -ms-user-select: none;
     float: left;
     left: 30px;
+}
+.pdd{
+  padding-top: 10px !important;
 }
 .onoffswitch-checkbox {
     display: none;
@@ -2205,6 +2153,11 @@ a.move-top span{
 @media(max-width:1280px) {
     
 }
+@media(max-width:1199px){
+  .ref-img{
+    top: -35px;
+  }
+}
 @media(max-width:1080px) {
   .banner-info-grid h2 {
     font-size: 2.8em;
@@ -2269,7 +2222,9 @@ a.move-top span{
 }
 
 @media(max-width:991px) {
-  
+  .ref-img{
+    position: relative;
+  }
   .information p {
     font-size: 15px;
   }
@@ -2311,6 +2266,13 @@ a.move-top span{
   }
 }
 
+@media(max-width:767px) {
+  #services{
+    -webkit-clip-path: polygon(0 0%, 100% 2%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 2%, 100% 100%, 0% 100%);
+  }
+
+}
 @media(max-width:736px) {
  
   .about-text h3 {
@@ -2405,6 +2367,9 @@ a.move-top span{
   .information span.fa {
     font-size: 20px;
   }
+  .ref-img {
+    top: -25px;
+}
 }
 @media(max-width:414px) {
   .banner-info-grid h2, .banner-info-grid h3 {

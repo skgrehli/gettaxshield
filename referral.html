@@ -88,7 +88,7 @@ function includeHTML() {
 </script>
 </head>
 <body>
-<div class="about-menu" include-html="menu.html"></div>
+<div class="about-menu" include-html="/menu"></div>
 <!-- banner -->
 <div class="referral-banner" id="home">
 	<div class="container">
@@ -111,7 +111,7 @@ function includeHTML() {
 <!-- //banner -->
 
 <!-- software -->
-<section class="software funded-ref" id="software">
+<!-- <section class="software funded-ref" id="software">
 	<div class="container py-lg-5 py-sm-3">
 		<div class="row">
 			<div class="col-sm-5 col-md-12 col-lg-6 col-xl-7 video-img mt-lg-0 mt-4 my-auto text-center text-md-left d-none d-lg-block">
@@ -135,10 +135,39 @@ function includeHTML() {
 			</div>
 		</div>
 	</div>
+</section> -->
+<!-- //software -->
+
+<!-- software -->
+<section class="software">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 video-img mt-lg-0 mt-4 my-auto text-center text-md-left">
+				<div class="ref-img"><img src="./images/Group3.svg" class="img-fluid"></div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 advance-page-section px-2 my-lg-5">
+				<p class="small">CUSTOM BRANDING</p>
+				<h3 class="tittle-w3">$50 Funded Referrals</h3>
+				<p class="advance-page-desc">TaxShield offers you a way to build on the clients you already have. Not only do we give you the ability to administer a robust referral program that can be scaled to multiple stores or even franchise models but also support you by providing the money needed to fund the referrals!<br>
+					<br>
+				<b>How it works</b>
+					<ul class="advance-page-list mt-3">
+						<li>Enter referrer Add referred to referrer account-> Print check</li>
+						<li>$50 unlimited Referral to all your Referrer’s</li>
+						<li>Print customized checks .</li>
+						<li>Simple collection process</li>
+						<li>ERO is responsible for all funded referrals</li>
+						<li>Deferred payment</li>
+						<li>$7.99/ Referral</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
 </section>
 <!-- //software -->
 <!-- why choose us -->
-<section class="choose" id="services">
+<section class="choose mt-3" id="services">
 	<div class="container py-md-3 section-text">
 		<h3 class="heading mt-5 text-center bottom-line"><span>Use Your</span> Own Money</h3>
 		<p class="mb-5 text-center bottom-line-p">$50/Referral from our own pocket</p>
@@ -183,7 +212,7 @@ function includeHTML() {
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7 col-lg-6 col-xl-6 section-text mt-4 px-lg-5 col-sm-9 mx-auto my-auto">
+			<div class="col-md-7 col-lg-6 col-xl-6 pb-5 section-text mt-4 px-lg-5 col-sm-9 mx-auto my-auto">
 				<img class="box-shadow w-100" src="images/ref_money.png">
 			</div>
 		</div>
@@ -264,12 +293,17 @@ function includeHTML() {
 	</div>
 </section>
 <!-- //Partners -->
-<div class="about-footer-menu" include-html="footer_menu.html"></div>
+<div class="about-footer-menu" include-html="/footer_menu"></div>
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>
-includeHTML();
-</script>
+<script type="text/javascript">includeHTML();</script>
 </body>
 </html>

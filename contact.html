@@ -57,102 +57,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }
 .logo{max-width:80%;}
 </style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
 </head>
 <body>
-
-
-<!-- //header -->
-    <div class="header-classic">
-        <!-- navigation start -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <nav class="navbar navbar-expand-lg navbar-classic">
-                        <a href="index.html"><img alt="logo" class="logo" src="images/w-logo.png"></a>
-                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-classic" aria-controls="navbar-classic" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar top-bar mt-0"></span>
-                            <span class="icon-bar middle-bar"></span>
-                            <span class="icon-bar bottom-bar"></span>
-                        </button>
-                                                <div class="collapse navbar-collapse" id="navbar-classic">
-                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
-                            	<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="/about">About</a></li>                               
-                                <li class="nav-item dropdown mega-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Features
-                                    </a>
-                                    <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4">
-                                        <li class="row justify-content-center"">
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon4.png">
-												    </span>
-												    <span class="title">Advance’s</span>
-												    <span class="desc">TaxShield Software is proud to announce our newest product!<br>
-												    <a class="header-more" href="/advance">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon3.png">
-												    </span>
-												    <span class="title color1">Call Tracking</span>
-												    <span class="desc">Use TaxShield software to track all your calls! Knowing <br><a class="header-more" href="/call-tracking">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon2.png">
-												    </span>
-												    <span class="title color2">Referral</span>
-												    <span class="desc">We built a platform that helps thousands of office’s grow<br><a class="header-more" href="/referral">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon1.png">
-												    </span>
-												    <span class="title color3">Txt Message</span>
-												    <span class="desc">We’ve created the perfect way to communicate with<br><a class="header-more" href="#">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon5.png">
-												    </span>
-												    <span class="title color4">Credit Card Payment</span>
-												    <span class="desc">Accept credit card payments for all your clients that want<br><a class="header-more" href="#">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                	<a class="nav-link" href="/pricing">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact">Contact</a>
-                                </li>
-                            </ul>
-                            <div class="login-icon ml-lg-2 text-center">
-								<a class="user" href="https://app.gettaxshield.com/#/login"> Login</a>
-							</div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- navigation close -->
-    </div>
-    <!-- header close -->
-<!-- //header -->
-
+<div class="about-menu" include-html="/menu"></div>
 <div class="contact-banner">
 	<div class="container">
 		<div class="row price-text">
@@ -171,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="row price-text-section">
 			<div class="w-100">
-					<div class="row mb-5">
+					<div class="mb-5">
     					<div class="col-md-12 mb-5">
     						<div class="title-section text-center section-text">
 								<div class="mx-auto"><br>
@@ -180,109 +116,110 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<form class="form contact-form">
-								<div class="row">
-									<div class="col-md-12">
-			    						<div class="inputbox form-group">
-						                	<label>You'd like to talk about <span>*</span></label>
-						                	<div class="select left-select">
-											  <select  class="form-control" name="slct" id="slct">
-											 
-										    	<option value="">Advance module</option>
-										    	<option value="">Funded Advance</option>
-										    	<option value="">Referral Module</option>
-										    	<option value="">Funded Referral</option>
-										    	<option value="">Call Tracking</option>
-										    	<option value="">Text Message</option>
-										    	<option value="">Integrated Tax Software</option>
-										    	<option value="">General Help</option>
-											  </select>
+						<div class="row">
+							<div class="col-md-6">
+								<form id="contactus-form" class="form contact-form">
+									<div class="row">
+										<div class="col-md-12">
+				    						<div class="inputbox form-group">
+							                	<label>You'd like to talk about <span>*</span></label>
+							                	<div class="select left-select">
+												  <select  class="form-control" name="slct" id="slct">
+												 
+											    	<option value="">Advance module</option>
+											    	<option value="">Funded Advance</option>
+											    	<option value="">Referral Module</option>
+											    	<option value="">Funded Referral</option>
+											    	<option value="">Call Tracking</option>
+											    	<option value="">Text Message</option>
+											    	<option value="">Integrated Tax Software</option>
+											    	<option value="">General Help</option>
+												  </select>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class="row  ">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>First Name <span>*</span></label>
-											<input class="form-control" type="text" placeholder="First Name">
+									<div class="row  ">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>First Name <span>*</span></label>
+												<input class="form-control" type="text" placeholder="First Name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Last Name <span>*</span></label>
+												<input class="form-control" type="text" placeholder="Last Name">
+											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Last Name <span>*</span></label>
-											<input class="form-control" type="text" placeholder="Last Name">
-										</div>
-									</div>
-								</div>
 
-								<div class="row mt-2">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Phone No <span>*</span></label>
-											<input class="form-control" type="text" placeholder="Phone Number">
+									<div class="row mt-2">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Phone No <span>*</span></label>
+												<input class="form-control" type="text" placeholder="Phone Number">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>EFIN <span>*</span></label>
+												<input class="form-control" type="text" placeholder="EFIN">
+											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>EFIN <span>*</span></label>
-											<input class="form-control" type="text" placeholder="EFIN">
-										</div>
-									</div>
-								</div>
 
-								<div class="row mt-2">
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Email <span>*</span></label>
-											<input class="form-control" type="text" placeholder="Email Address">
+									<div class="row mt-2">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Email <span>*</span></label>
+												<input class="form-control" type="text" placeholder="Email Address">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row mt-2">
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Message <span>*</span></label>
-											<textarea class="form-control" rows="4"></textarea>
+									<div class="row mt-2">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Message <span>*</span></label>
+												<textarea class="form-control" rows="4"></textarea>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row mt-2">
-									<div class="col-md-12">
-										<div class="form-group">
-											<a href="#" class="btn contact-btn">Submit</a>
+									<div class="row mt-2">
+										<div class="col-md-12">
+											<div class="form-group">
+												<a href="#" class="btn contact-btn">Submit</a>
+											</div>
 										</div>
 									</div>
+								</form>
+							</div>
+							<div class="col-md-6">
+								<div class="contact-page-section col-md-12 col-lg-8 col-xl-8 mx-auto mt-md-5">
+									<h3>General Support</h3><br>
+									<div class="phone p-2">
+										<div class="icon-img">
+											<img src="images/phone.svg">
+										</div>
+										<div class="text">844 978 0021</div>
+									</div><br>
+
+									<div class="address p-2">
+										<div class="icon-img">
+											<img src="images/place.svg">
+										</div>
+										<div class="text">585 Franklin Gateway<br>SE #150, Marietta, GA 30067
+										</div>
+									</div><br>
+
+									<div class="mail p-2">
+										<div class="icon-img">
+											<img src="images/email.svg">
+										</div>
+										<div class="text">support@gettaxshield.com</div>
+									</div><br>
 								</div>
-							</form>
-						</div>
-
-						<div class="col-md-6">
-							<div class="contact-page-section col-md-8 mx-auto">
-								<h3>General Support</h3><br>
-								<div class="phone p-2">
-									<div class="icon-img">
-										<img src="images/phone.svg">
-									</div>
-									<div class="text">844 978 0021</div>
-								</div><br>
-
-								<div class="address p-2">
-									<div class="icon-img">
-										<img src="images/place.svg">
-									</div>
-									<div class="text">585 Franklin Gateway<br>SE #150, Marietta, GA 30067
-									</div>
-								</div><br>
-
-								<div class="mail p-2">
-									<div class="icon-img">
-										<img src="images/email.svg">
-									</div>
-									<div class="text">support@gettaxshield.com</div>
-								</div><br>
 							</div>
 						</div>
 					</div>
@@ -292,135 +229,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div><br><br>
-<!-- footer -->
-<footer class="footer-emp-w3ls py-5">
-	<div class="container pt-lg-3">
-		<div class="row footer-top">
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree">
-				<h4 class="footer-title text-uppercase mb-4">
-					<div id="footer=logo">
-						<img alt="footer-logo" class="f-logo" src="images/TSSoftware-logo-white.svg">					
-					</div>
-				</h4>
-				<div class="contact-info">
-					<p>Compete 1040 & Business Software Integrated Referral software Text Messaging & Call Tracking Customer Lead management Portal Taxpayer's remote signature Self-funded advance Software</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-				<h3 class="footer-title text-uppercase mb-4">COMPANY</h3>
-				<ul class="links list-unstyled">
-					<li>
-						<a class="" href="#"> About Us</a>
-					</li>
-					<li>
-						<a class="" href="#t"> Contact Us</a>
-					</li>
-					<li>
-						<a class="" href="#"> Become a Partner</a>
-					</li>
-					<li>
-						<a class="" href="#">Control & Insights</a>
-					</li>
-					<li>
-						<a class="" href="#">Success Stories</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-				<h3 class="footer-title text-uppercase mb-4">FEATURES</h3>
-				<ul class="links list-unstyled">
-					<li>
-						<a class="" href="#"> Call Analytics</a>
-					</li>
-					<li>
-						<a class="" href="#"> Referrals</a>
-					</li>
-					<li>
-						<a class="" href="#"> Messaging Services</a>
-					</li>
-					<li>
-						<a class="" href="#">Control & Insights</a>
-					</li>
-					<li>
-						<a class="" href="#">Generate Reports</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-				<h3 class="footer-title text-uppercase mb-4">RESOURCES</h3>
-				<ul class="links list-unstyled">
-					<li>
-						<a class="" href="#"> Support</a>
-					</li>
-					<li>
-						<a class="" href="#"> Privacy & Terms</a>
-					</li>
-					<li>
-						<a class="" href="#"> Documentation</a>
-					</li>
-					<li>
-						<a class="" href="#">Security</a>
-					</li>
-					<li>
-						<a class="" href="#">Free Consultant</a>
-					</li>
-					<li>
-						<a class="" href="#">Blog</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-<!-- //footer -->
-
-<!-- copyright -->
-<div class="copy-right-top border-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<p class="copy-right py-4">All Rights Reserved. TaxShield Software LLC. &copy; 2019</p>
-			</div>			
-			<div class="col-md-4 float-right">
-				<ul class="social float-right py-3">
-                        <li> <a href="#"> <i class="fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-linkedin"></i> </a> </li>
-                    </ul>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //copyright -->	
-	
+<div class="about-footer-menu" include-html="/footer_menu"></div>	
 <!-- move top -->
 <div class="move-top text-right">
-	<a href="#home" class="move-top"> 
+	<a href="#contactus-form" class="move-top"> 
 		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
 	</a>
 </div>
 <!-- move top -->
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script src="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/js/rSlider.min.js"></script>
-<script src="js/slider.js"></script>
 <script type="text/javascript">
 
-
-$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-            }
-            var $subMenu = $(this).next(".dropdown-menu");
-            $subMenu.toggleClass('show');
-
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-                $('.dropdown-submenu .show').removeClass("show");
-            });
-            return false;
-        });
 
 $('select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;  
@@ -457,32 +278,6 @@ $('select').each(function(){
     });
 
 });
-
-
-$(".contact-form").submit(function(e) {
-
-    e.preventDefault(); // avoid to execute the actual submit of the form.
-
-    var form = $(this);
-    var url = 'https://app.gettaxshield.com/api/lead_gen';
-
-    $.ajax({
-           type: "GET",
-           url: url,
-           data: form.serialize(), // serializes the form's elements.
-           success: function(data)
-           {
-               window.location.replace('https://www.gettaxshield.com/');
-           },
-           error:function(data)
-           {
-               window.location.replace('https://www.gettaxshield.com/');
-           }
-         });
-
-
-});
-
-</script>	
+</script>
 </body>
 </html>
