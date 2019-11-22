@@ -96,7 +96,7 @@ function includeHTML() {
 				<div class="title-section text-center section-text">
 					<div class="col-md-9 mx-auto">
 						<h3 class="heading mt-3 mt-lg-5 text-center"> About</h3>
-						<p class="mb-5 text-center">Everything you need to grow your business. TaxShield was born out of necessity. The founder’s concept was simple; Have one platform to do what traditionally you‘d need several, Incorporate innovative ways to automate and simplify marketing methods. Support our idea’s by proving funding so anyone can take advantage of these features to grow there business.</p>
+						<p class="mb-5 text-center">Everything you need to grow your business. TaxShield was born out of necessity. The founders concept was simple: Have one platform to do what traditionally, you’d need several, innovative ways to automate and simplify marketing methods. Supporting our ideas by providing funding, so anyone can take advantage of these features to grow their business.</p>
 					</div>
 				</div>
 			</div>
@@ -109,13 +109,13 @@ function includeHTML() {
 			<div class="col-lg-7 col-sm-12 about-page-section px-2 mt-4 my-auto">
 				<p class="small">Everything you need to grow your business</p>
 				<h3 class="tittle-w3">Intuitive Software built for ERO’s by ERO’s</h3>
-				<p class="advance-page-desc">TaxShield was built on the idea that you can run your entire tax business from your favorite coffee shop with ease while increasing your volume every year. Based on the day to day needs of running a tax store, the TaxShield team was able to build this Application. As most innovation’s occur, TSS was built to answer a void in the industry.
+				<p class="advance-page-desc">TaxShield was built on the idea that you can Run your entire tax business from your favorite coffee shop with ease, while increasing your volume every year. Based on the day to day needs of running a tax store, the TaxShield team was able to build this Application. As most innovation’s occur, TSS was built to answer a void in the industry.
 				<br>
 					<ul class="about-list1">
-						<li>Simply, cause and effect
+						<li>Simply: Cause and Effect
 							<ul class="under-list">
 								<li>
-									Needed to monitor all calls for customer service quality purposes so we built the call tracking feature which not only allows you to listen-in to all calls, incoming or outgoing calls but also allows you to monitor your marketing dollars in real time so you can make smart decision in real time.<span class="more">[MORE]</span>
+									We needed to monitor all calls for customer service quality purposes so we built the call tracking feature which not only allows you to listen-in to all calls, incoming or outgoing calls but also allows you to monitor your marketing dollars in real time so you can make smart decision in real time.<span class="more">[MORE]</span>
 								</li>
 								<span class="moretext">
 								    <li>
@@ -127,15 +127,15 @@ function includeHTML() {
 							    </span>
 							</ul>
 						</li>						
-						<li>Having all the solution in one platform made sense, which proved to be true and here we are!</li>
+						<li>Having all the solution in one platform made sense; which proved to be true and here we are!</li>
 					</ul>
 					<br>
 					The Tax Industry has become one of the most competitive industries in the past couple of years. It is imperative that owners seek products that are outside the box to differentiate themselves from their competitors. We know we’re that differentiating factor.<br>
 					<ul class="list-unstyle about-list mt-3">
 						<li>Referral & Advance Software</li>						
 						<li>Referral program up to $50/referrer</li>
-						<li>Accept credit or debt cards</li>
-						<li>Holliday Tax Advances up to $500</li>
+						<li>Accept credit or debit cards</li>
+						<li>Holiday Advances up to $500</li>
 						<li>Text Message & Call Tracking</li>
 						<li>Increased Compliance and Training</li>
 					</ul>
@@ -218,6 +218,15 @@ function includeHTML() {
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
 includeHTML();
+$('.more').click(function(e) {
+	e.stopPropagation();
+  $('.moretext').slideToggle(500);
+  if ($('.more').text() == "[MORE]") {
+    $(this).text("[LESS]")
+  } else {
+    $(this).text("[MORE]")
+  }
+});
 </script>
 </body>
 </html>

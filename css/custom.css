@@ -27,7 +27,6 @@ body img {
 a:hover {
     text-decoration: none;
 }
-
 input[type="button"],
 input[type="submit"],
 input[type="text"],
@@ -1362,6 +1361,14 @@ p.bottom-line-p {
     color: #000;
     margin: 45px 0 !important;
 }
+.call-tracking-newbanner {
+    background: #873AF5;
+    width: 100%;
+    background: url('../images/call-new-banner.svg'),linear-gradient(#00BAD5,#00BAD5);
+    background-size: contain;
+    background-position: 145%;
+    background-repeat: no-repeat;
+}
 .advance-page-section p.small{    
   color:#1785DC;
   font-size: 15px;
@@ -1376,7 +1383,54 @@ h3.tittle-w3 {
     font-weight: 600;
     color: #333;
 }
-
+.angle-wrapper {
+    position: relative;
+    margin: 10% 0;
+}
+ .lt-blue-bg {
+    background-color: 
+    #fff !important;
+}
+ .up-angle-mask-top {
+    -webkit-clip-path: polygon(0% 20%,100% 0,100% 78%,0 100%);
+    clip-path: polygon(0% 20%,100% 0,100% 78%,0 100%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.drk-blue {
+    background-color: 
+    #00bad5;
+}
+.lt-blue-to-lt-green {
+    background: #00e3fd;
+}
+.f-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.down-angle-mask {
+    -webkit-clip-path: polygon(100% 12%,100% 78%,41% 91%,0 84%,0 0);
+    clip-path: polygon(100% 12%,100% 78%,41% 91%,0 84%,0 0);
+}
+.angle-wrapper .nw-content-wrapper {
+    padding-top: 170px;
+    text-align: center;
+}
+#result .advance-page-section{margin-top:10% !important; }
+#result .advance-page-section .advance-page-desc{color: #fff !important; }
+.different-sec-img img{
+   -webkit-filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
+  filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
+  margin: auto;
+  background:#fff;
+  padding: 35px;
+  border-radius: 20px;
+}
 .next-link {
     color: #6fbe4a;
     display: block;
@@ -1611,6 +1665,19 @@ ul.about-list li::before {
 }
 .service-section {
     margin: 25px 0;
+}
+.coversion-text {
+    padding: 28% 14%;
+}
+.coversion-text a.learn-more
+ {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.coversion-text a.learn-more i {
+    color:#000;
+    font-size: 12px;
 }
 
 /* Custom Style */
