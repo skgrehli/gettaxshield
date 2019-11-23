@@ -5,10 +5,12 @@ body {
     font-size: 100%;
     background: #fff;
   font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+
 }
 body a {
     text-decoration: none;
@@ -1041,7 +1043,6 @@ p.total-price {
 }
 ul.list-unstyled.partners-icon img {
     width: 65%;
-    filter: grayscale(100%)!important; 
 }
 .list-unstyle li{
   text-align:left;
@@ -1126,7 +1127,15 @@ ul.list-unstyled.partners-icon img {
     -ms-transition: 0.5s all;
 }
 .banner-text {
-    padding: 135px 0 100px;
+    padding: 50px 0 100px;
+}
+.banner-image img{ 
+  position: relative;
+  top: 6%;
+  bottom: 0;
+  left: -4%;
+  width:150%;
+  
 }
 .banner-image h4 {
     font-size: 20px;
