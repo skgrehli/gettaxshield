@@ -210,6 +210,9 @@ li {
 .dropdown-item:focus .dropdown-toggle::after, .dropdown-item:hover.dropdown-toggle::after {
   color: #4955ef;
 }
+
+.img-fluid img{ filter: grayscale(100%)!important; }
+
 @media(min-width:992px) {
   .dropdown .dropdown-menu {
     display: block;
@@ -1172,10 +1175,12 @@ ul.list-unstyled.partners-icon img {
     padding: 3em 2em;
     z-index: 999;
 }
+
 .popup p {
     font-size: 15px;
     color: #777;
 }
+
 .popup .close {
     position: absolute;
     top: 10px;
@@ -1220,6 +1225,7 @@ ul.list-unstyled.partners-icon img {
 /*-- //popup --*/
 
 /*-- Global style --*/
+
 .section-text h3{
     font-size: 27px;
     font-weight: 600;
@@ -1266,6 +1272,7 @@ display: block;
 width: 100%;
 list-style: none;
 }
+
 ul.under-list li:before
 {
    font-family: FontAwesome;
