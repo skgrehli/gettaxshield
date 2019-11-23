@@ -211,8 +211,6 @@ li {
   color: #4955ef;
 }
 
-.img-fluid img{ filter: grayscale(100%)!important; }
-
 @media(min-width:992px) {
   .dropdown .dropdown-menu {
     display: block;
@@ -1043,6 +1041,7 @@ p.total-price {
 }
 ul.list-unstyled.partners-icon img {
     width: 65%;
+    filter: grayscale(100%)!important; 
 }
 .list-unstyle li{
   text-align:left;
