@@ -2227,7 +2227,7 @@ a.move-top span{
   }
   h3.tittle-w3 {
     /* font-size: 32px; */
-    line-height: 50px;
+    line-height: 45px;
         /* font-weight: 900; */
   }
 }
@@ -2355,8 +2355,8 @@ a.move-top span{
   }
 
 }
+
 @media(max-width:736px) {
- 
   .about-text h3 {
     font-size: 24px;
   }
