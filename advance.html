@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Tax-Shield</title>
+<title>Advance | TaxShield Services</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -311,11 +311,162 @@ src="https://www.facebook.com/tr?id=543424706435942&ev=PageView
 	</a>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="js/bootstrap.js"></script>
+	<div class="modal fade" id="downloadDemo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Request Demo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Please complete the form below. You will be emailed a link to download the demo software.
+                </p>
+                <form class="form" id="requestDemoForm" method="post">
+                    <div class="form-group">
+                        <label for="yourName">Your Name</label>
+                        <input id="yourName" type="text" placeholder="Your Name" name="name" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourCompany">Company Name</label>
+                        <input id="yourCompany" type="text" placeholder="Company Name" name="company" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourEmail">Email Address</label>
+                        <input id="yourEmail" type="text" placeholder="Email Address" name="email" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourPhoneNumber">Phone Number</label>
+                        <input id="yourPhoneNumber" type="text" placeholder="Phone Number" name="phoneNumber" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numOfBankProducts">Number of Bank Products  <span style="color:red;">*</span></label>
+                        <select name="numOfBankProducts" id="numOfBankProducts" class="form-control" required="true">
+                            <option value="No Bank Products">No Bank Products</option>
+                            <option value="1 - 100 Bank Products">1 - 100</option>
+                            <option value="101 - 250 Bank Products">101 - 250</option>
+                            <option value="251 - 500 Bank Products">251 - 500</option>
+                            <option value="501 - 1000 Bank Products">501 - 1000</option>
+                            <option value="1001 - 2000 Bank Products">1001 - 2000</option>
+                            <option value="2000+ Bank Products">2000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="taxSoftware">Current Tax Software <span style="color:red;">*</span></label>
+                    <select name="taxSoftware" id="taxSoftware" class="form-control" required="true">
+                   <option value="Crosslink">Crosslink</option>
+                   <option value="Drake">Drake</option>
+                   <option value="ProSeries">ProSeries</option>
+                   <option value="TaxSlayer Pro">TaxSlayer Pro</option>
+                   <option value="TaxSlayer Pro Online">TaxSlayer Pro Online</option>
+                   <option value="Tax Wise">Tax Wise</option>
+                   <option value="H&amp;R Block, Jackson Hewitt, Liberty Tax">H&amp;R Block, Jackson Hewitt, Liberty Tax</option>
+                   <option value="Other">Other</option>
+                   <option value="None">None</option>
+                   </select>
+                    </div>
+                    <div class="form-group" required="">
+                        <label for="numOfOffices">Number of Tax Offices <span style="color:red;">*</span></label>
+                        <input type="text" name="numOfOffices" placeholder="Number of Tax Offices" id="numOfOffices" value="" class="form-control" required="true">
+                    </div>
+                    <div class="form-group text-center">
+						<div class="g-recaptcha" data-sitekey="6Ld3XLUUAAAAADZkiCmcPIVFuYHCpgUmDZjfEKlu"></div>
+					</div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" id="rd_submit">
+                    Request Demo
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+        </div>
+           </div>
+
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script>
 includeHTML();
 </script>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+	var getUrlParameter = function getUrlParameter(sParam) {
+	    var sPageURL = window.location.search.substring(1),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
+
+	    for (i = 0; i < sURLVariables.length; i++) {
+	        sParameterName = sURLVariables[i].split('=');
+
+	        if (sParameterName[0] === sParam) {
+	            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+	        }
+	    }
+	};
+	console.log(getUrlParameter('request_demo'));
+	if(getUrlParameter('request_demo') == 'true')
+	{
+		$("#downloadDemo").modal();
+	}
+
+    $requestDemoForm = $("#requestDemoForm");
+    $rd_submit = $("#rd_submit");
+    if($requestDemoForm && $rd_submit) {
+        $rd_submit.click(function() {
+            $rd_submit.attr("disabled", "disabled");
+            if($("#downloadDemo p.alert")) {
+                $("#downloadDemo p.alert").remove();
+            }
+            $requestDemoForm.submit();
+        })
+        $requestDemoForm.submit(function() {
+            $.ajax( {
+                type: "GET",
+                url: 'https://app.gettaxshield.com/api/request_download_demo',
+                data: $requestDemoForm.serialize(),
+                dataType: "json",
+                success: function( response ) {
+                    $rd_submit.removeAttr("disabled");
+                    // SUCCESS
+                    $(".modal").scrollTop(0);
+                    $response = $("<p>", {class: "alert alert-success", role: "alert"});
+                    $response.html("<strong>Your request has been sent.</strong> Please check your email for a link to download the software. Thank you!");
+                    $("#downloadDemo .modal-body p").remove();
+                    $("#downloadDemo .modal-body").prepend($response);
+                    $requestDemoForm.remove();
+                    $rd_submit.remove();
+                    $(".modal-footer button[data-dismiss=modal]").html("Close");
+                },
+                error: function( response ) {
+                  $rd_submit.removeAttr("disabled");
+                    // SUCCESS
+                    $(".modal").scrollTop(0);
+                    $response = $("<p>", {class: "alert alert-success", role: "alert"});
+                    $response.html("<strong>Your request has been sent.</strong> Please check your email for a link to download the software. Thank you!");
+                    $("#downloadDemo .modal-body p").remove();
+                    $("#downloadDemo .modal-body").prepend($response);
+                    $requestDemoForm.remove();
+                    $rd_submit.remove();
+                    $(".modal-footer button[data-dismiss=modal]").html("Close");
+                }
+            });
+            return false;
+         });
+
+    }
+});
+
+</script>
+
 </body>
 </html>

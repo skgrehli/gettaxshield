@@ -266,10 +266,7 @@ and (max-device-width : 568px)
         padding: 0px;
         min-height: 130px;
     }
-    .tracking-left-section {
-        padding: 0px;
-        min-height: 130px;
-    }
+
     #contactus-form {
         padding: 0 15px;
     }
