@@ -24,6 +24,7 @@
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
     padding: 0 10px;
     }
+    .conversion, .angle-wrapper{padding: 0px;}
     #services .section-text h3 {
         padding-top: 50px;
     }
@@ -260,23 +261,38 @@ and (max-device-width : 568px)
     h3.bottom-line,
     h3.bottom-line span {
         font-size: 30px !important;
-<<<<<<< HEAD
     }
     .tracking-left-section {
         padding: 0px;
         min-height: 130px;
     }
-=======
-    }
     .tracking-left-section {
         padding: 0px;
         min-height: 130px;
     }
->>>>>>> 76ddb2c8c9baf3156966560d4e5a8e88b3a0d63f
     #contactus-form {
         padding: 0 15px;
     }
-
+    .diff-main-sec {
+        margin-bottom: 35px;
+    }
+    .diff-main-sec .tracking-left-section .ico {
+        margin-bottom: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .diff-main-sec .title {
+        width: 100%;
+        text-align: center;
+    }
+    .diff-main-sec .tracking-left-section .desc {
+        padding-right: 0;
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .conversion-left-img {
+        background: #fff;
+    }
 }
 @media only screen 
 and (min-device-width : 768px) 
@@ -393,7 +409,6 @@ and (max-device-width : 1024px)
     .vl.client-sec {
         display: none;
     }
-<<<<<<< HEAD
     .local-number {
         background-position: 4%;
         background-size: 40%;
@@ -402,8 +417,35 @@ and (max-device-width : 1024px)
         margin-top: 80px !important;
         margin-bottom: 80px !important;
     }
-=======
->>>>>>> 76ddb2c8c9baf3156966560d4e5a8e88b3a0d63f
+    .different-sec-img img {
+        padding: 25px;
+    }
+    .diff-main-sec .title {
+        font-size: 17px !important;
+    }
+    .desc {
+        padding-right: 0px;
+    }
+    .tracking-left-section {
+        padding: 0px;
+    }
+    .diff-main-sec {
+        margin-bottom: 20px;
+    }
+    .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+        padding: 10px 20px;
+        font-weight: 700;
+        padding: 10px 17px;
+        margin-right: 0px;
+        border: 2px solid #fff;
+        margin-bottom: 15px;
+    }
+    .angle-wrapper {
+        margin: 10% 0 5% 0;
+    }
+    .tracking-left-section .ico img {
+        width: 90%;
+    }
 }
 
 @media only screen 
@@ -460,10 +502,19 @@ and (max-device-width : 1200px)
         margin-bottom: 95px;
     }
     .tracking-left-section {
-        padding: 13px;
+        padding: 10px;
     }
     .localnumber-text-section {
         margin-bottom: 135px !important;
+    }
+    .tracking-left-section {
+        padding: 10px;
+    }
+    .diff-main-sec .title {
+        font-size: 21px !important;
+    }
+    .desc {
+        font-size: 16px !important;
     }
 }
 
