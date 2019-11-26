@@ -1136,7 +1136,7 @@ ul.list-unstyled.partners-icon img {
   position: relative;
   top: 6%;
   bottom: 0;
-  left: -4%;
+  left: 0%;
   width:150%;
   
 }
@@ -1454,12 +1454,30 @@ h3.tittle-w3 {
     display: block;
     padding-top: 10px;
     font-weight: bold;
-}
+} 
 .next-link:hover {
     color:#6fbe4a;
 }
 /*-- software --*/
-
+.bg-img {
+position: relative;
+}
+.bg-img::before {
+  background: url('../images/lap-bg.png');
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 42px 94%;
+  opacity: 0.3;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50%;
+  top: 20%;
+  transform: rotate(180deg);
+  z-index: 1;
+}
 .jumbotron {
     padding: 9rem 2rem !important;
 }
@@ -1697,6 +1715,11 @@ ul.about-list li::before {
 .conversion-left-img{
   background: url('../images/track.jpeg');
   background-position: center;
+  background-size: cover;
+}
+.conversion-right-img{
+  background: url('../images/caps lock.jpg');
+  background-position: left;
   background-size: cover;
 }
 .coversion-text {
@@ -2153,6 +2176,9 @@ ul.links li a:hover,
 .copy-right-top {
     border-color: rgba(255, 255, 255, 0.2) !important;
 }
+#referral,#tracking {
+    padding: 50px 0;
+}
 .social li {
     background: none repeat scroll 0 0 #fff;
     border: 2px solid #fff;
@@ -2203,7 +2229,7 @@ ul.links li a:hover,
 }
 /*- inner banner --*/
 #software {
-    padding: 90px 0;
+    padding: 50px 0;
 
 }
 /*-- move top --*/
@@ -2216,7 +2242,6 @@ ul.links li a:hover,
     right: 1%;
     bottom: 0%;
 }
-
 a.move-top span{
     color: #fff;
     width: 36px;
@@ -2230,15 +2255,11 @@ a.move-top span{
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
 }
-
 /*-- //move top --*/
 
-
 /*-- Responsive design --*/
-
 @media(max-width:1440px) {
 }
-
 @media(max-width:1366px) {
   .banner-info-grid h2 {
     font-size: 3.2em;
