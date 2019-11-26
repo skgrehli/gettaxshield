@@ -87,22 +87,20 @@ function includeHTML() {
 </script>
 <!-- Facebook Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
- fbq('init', '543424706435942'); 
-fbq('track', 'PageView');
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '416401062641192');
+  fbq('track', 'PageView');
 </script>
-<noscript>
- <img height="1" width="1" 
-src="https://www.facebook.com/tr?id=543424706435942&ev=PageView
-&noscript=1"/>
-</noscript>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=416401062641192&ev=PageView&noscript=1"
+/></noscript>
 <!-- End Facebook Pixel Code -->
 
 </head>
@@ -322,7 +320,7 @@ src="https://www.facebook.com/tr?id=543424706435942&ev=PageView
             </div>
             <div class="modal-body">
                 <p>
-                    Please complete the form below. You will be emailed a link to download the demo software.
+                    Please complete the form below, You will be contacted by one of our sales professionals explaining how our products work.
                 </p>
                 <form class="form" id="requestDemoForm" method="post">
                     <div class="form-group">
@@ -440,7 +438,7 @@ $(document).ready(function(){
                     // SUCCESS
                     $(".modal").scrollTop(0);
                     $response = $("<p>", {class: "alert alert-success", role: "alert"});
-                    $response.html("<strong>Your request has been sent.</strong> Please check your email for a link to download the software. Thank you!");
+                    $response.html("Thank you! We've received your request for a demo. One of our Sales professionals will contact you shortly.");
                     $("#downloadDemo .modal-body p").remove();
                     $("#downloadDemo .modal-body").prepend($response);
                     $requestDemoForm.remove();
@@ -452,7 +450,7 @@ $(document).ready(function(){
                     // SUCCESS
                     $(".modal").scrollTop(0);
                     $response = $("<p>", {class: "alert alert-success", role: "alert"});
-                    $response.html("<strong>Your request has been sent.</strong> Please check your email for a link to download the software. Thank you!");
+                    $response.html("Thank you! We've received your request for a demo. One of our Sales professionals will contact you shortly.");
                     $("#downloadDemo .modal-body p").remove();
                     $("#downloadDemo .modal-body").prepend($response);
                     $requestDemoForm.remove();
