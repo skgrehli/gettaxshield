@@ -22,9 +22,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
 
-
-<!-- //css files -->
-
 <style type="text/css">
 		.n_panel-title-txt a{
     	font-size: 20px;
@@ -162,29 +159,29 @@ function includeHTML() {
     						<p class="select-boxes">Choose one or more options from here</p>
                             <div class="inputGroup">
                                 <input id="option1" name="Funded Referral" type="checkbox" class="fundedReferrals50Checkbox" />
-                                <label for="option1">Funded Referral <a href="javascript:void(0)" data-toggle="tooltip" title="TaxShield offers up to $50 for every referrer that refers a client to your"><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option1">Funded Referral <a href="javascript:void(0)" data-tooltip="TaxShield offers up to $50 for every referrer that refers a client to your"><i class="fa fa-info-circle"></i></a>
                                 </label>
                             </div>                
                             <div class="inputGroup">
                                 <input id="option2" name="Referral" type="checkbox" class="customerFundedReferralsCheckbox"  />
-                                <label for="option2">Referral <a href="javascript:void(0)" data-toggle="tooltip" title="Use TSS to facilitate your referral program using your own money"><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option2">Referral <a href="javascript:void(0)" data-tooltip="Use TSS to facilitate your referral program using your own money"><i class="fa fa-info-circle"></i></a></label>
                             </div>
                             <div class="inputGroup">
                                 <input id="option3" name="Text  Message" type="checkbox"  class="customerFundedReferralsCheckbox" checked/>
-                                <label for="option3">Text  Message <a href="javascript:void(0)" data-toggle="tooltip" title="Text all your clients at the same time or have one on one conversations!"><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option3">Text  Message <a href="javascript:void(0)" data-tooltip="Text all your clients at the same time or have one on one conversations!"><i class="fa fa-info-circle"></i></a></label>
 
                             </div>                
                             <div class="inputGroup">
                                 <input id="option4" name="Advance Module" type="checkbox" class="hollidayAdvanceCheckbox" />
-                                <label for="option4">Advance Module <a href="javascript:void(0)" data-toggle="tooltip" title="Use TSS to facilitate your advance program using your own money"><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option4">Advance Module <a href="javascript:void(0)" data-tooltip="Use TSS to facilitate your advance program using your own money"><i class="fa fa-info-circle"></i></a></label>
                             </div>
                             <div class="inputGroup">
                                 <input  id="option5" name="Call Tracking" type="checkbox" class="callTrackingCheckbox" checked/>
-                                <label for="option5">Call Tracking <a href="javascript:void(0)" data-toggle="tooltip" title="Buy Toll Free Or local numbers. Track and record all calls."><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option5">Call Tracking <a href="javascript:void(0)" data-tooltip="Buy Toll Free Or local numbers. Track and record all calls."><i class="fa fa-info-circle"></i></a></label>
                             </div>
                             <div class="inputGroup">
                                 <input id="option6" name="Funded Advance" type="checkbox" class="fundedAdvanceCheckbox" />
-                                <label for="option6">Funded Advance <a href="javascript:void(0)" data-toggle="tooltip" title="Use TSS funded advance program up to $500 in starting in December."><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option6">Funded Advance <a href="javascript:void(0)" data-tooltip="Use TSS funded advance program up to $500 in starting in December."><i class="fa fa-info-circle"></i></a></label>
                             </div>
 						  	<div class="count-checkboxes-wrapper">
 							    <span id="count-checked-checkboxes">2</span> of 6 services chosen
@@ -644,11 +641,6 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
-
-
 
 $('select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;  
@@ -736,5 +728,13 @@ $(document).ready(function(){
 });
 
 </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
 </body>
 </html>

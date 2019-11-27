@@ -290,6 +290,7 @@ and (max-device-width : 568px)
         font-size: 15px !important;
         text-align: center;
     }
+    .conversion-right-img,
     .conversion-left-img {
         background: #fff;
     }
