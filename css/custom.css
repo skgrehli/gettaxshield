@@ -650,8 +650,8 @@ box-shadow: 16px 0px 30px #f0efef;
   left: 50%;
   margin-bottom: 5px;
   margin-left: -80px;
-  padding: 7px;
-  width: 160px;
+  padding: 13px;
+  width: 180px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -662,6 +662,7 @@ box-shadow: 16px 0px 30px #f0efef;
   text-align: center;
   font-size: 14px;
   line-height: 1.2;
+  font-weight: 100;
 }
 
 /* Triangle hack to make tooltip look like a speech bubble */
