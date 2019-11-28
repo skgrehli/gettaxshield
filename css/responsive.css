@@ -447,6 +447,10 @@ and (max-device-width : 1024px)
     .tracking-left-section .ico img {
         width: 90%;
     }
+    #button {
+        top: 50%;
+        left: 45%;
+    }
 }
 
 @media only screen 
