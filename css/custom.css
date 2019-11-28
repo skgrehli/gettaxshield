@@ -444,12 +444,21 @@ color:#000 !important;
     width: 100%;
     background: radial-gradient(circle, #00E3FD, #00BAD5 565px);
 }
+.text-message-banner{
+    /* background: #873AF5; */
+    width: 100%;
+    background: radial-gradient(circle, #00E3FD, #00BAD5 565px);
+}
 .referral-banner .slider-info a.btn{
 color:#F66B1C !important;
 }
 .call-tracking-banner .slider-info a.btn{
 color:#00BAD5 !important;
 }
+.text-message-banner .slider-info a.btn{
+color:#00BAD5 !important;
+}
+.text-message-banner .slider-info a.req-demo,
 .referral-banner .slider-info a.req-demo,
 .call-tracking-banner .slider-info a.req-demo,
 .advance-banner .slider-info a.req-demo {
@@ -464,6 +473,7 @@ color:#00BAD5 !important;
   color: #fff !important;
 }
 
+.text-message-banner .slider-info a.btn,
 .referral-banner .slider-info a.btn,
 .call-tracking-banner .slider-info a.btn,
 .advance-banner .slider-info a.btn {
@@ -476,12 +486,15 @@ color:#00BAD5 !important;
   border: 3px solid #fff;
   margin-bottom: 15px;
 }
+
+.text-message-banner .banner-info-grid h2,
 .referral-banner .banner-info-grid h2,
 .call-tracking-banner .banner-info-grid h2,
 .advance-banner .banner-info-grid h2{
   color: #fff !important;
 
 }
+.text-message-banner .banner-info-grid p,
 .referral-banner .banner-info-grid p,
 .call-tracking-banner .banner-info-grid p,
 .advance-banner .banner-info-grid p {
@@ -495,6 +508,44 @@ color:#00BAD5 !important;
     background: radial-gradient(circle, #FF4060, #DD040E 565px);
 }
 
+.text-marketing {
+    padding: 6% 0 !important;
+}
+ul.oneservice li {
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    color: #424242;
+}
+ul.oneservice li:before {    
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -1.5em;
+    color: #0074D9;
+    content: " ";
+    display: inline-block;
+    color:#6fbe4a;
+    padding: 0 35px 0 0;
+    font-size: 15px;
+    background: url('../images/icons/check-icon.svg');
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    width: 20px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+ul.oneservice li span {
+  padding-left: 12px;
+  display: block;
+  font-size: 18px;
+  color:#000;
+  opacity: 0.5;
+  font-weight: 600;
+}
 /* -------------- Business page -------------*/
 .contact-banner {
     /* background: #873AF5; */
@@ -1202,6 +1253,9 @@ ul.list-unstyled.partners-icon img {
 }
 .call-tracking-banner .banner-text {
     padding: 50px 0 100px;
+}
+.text-message-banner .banner-text {
+    padding: 15% 0 0px;
 }
 .banner-image img{ 
   position: relative;
