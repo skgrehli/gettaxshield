@@ -512,12 +512,13 @@ color:#00BAD5 !important;
     padding: 6% 0 !important;
 }
 ul.oneservice li {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 160%;
-    color: #424242;
+    color:#424242;
+    padding-right: 20px;
 }
 ul.oneservice li:before {    
     font-family: 'FontAwesome';
@@ -545,6 +546,10 @@ ul.oneservice li span {
   color:#000;
   opacity: 0.5;
   font-weight: 600;
+}
+.plan-selection.total i {
+    font-size: 18px;
+    margin-left: 1px;
 }
 /* -------------- Business page -------------*/
 .contact-banner {
@@ -1271,7 +1276,7 @@ ul.list-unstyled.partners-icon img {
 .box-shadow{
     -webkit-filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
     filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
-  margin: auto;
+  margin: 0px 0px -1px 0;
     }
 
 /* .scroll-btn{padding: 4em 0 0 0;}
