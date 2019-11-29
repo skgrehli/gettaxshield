@@ -266,7 +266,7 @@ function includeHTML() {
             </div>
             <div class="modal-body">
                 <p>
-                    Please complete the form below, You will be contacted by one of our sales professionals explaining how our products work.
+                    Please complete the form below, You will be emailed a Link to Demo the software.
                 </p>
                 <form class="form" id="requestDemoForm" method="post">
                     <div class="form-group">
@@ -433,7 +433,7 @@ $(document).ready(function(){
                     // SUCCESS
                     $(".modal").scrollTop(0);
                     $response = $("<p>", {class: "alert alert-success", role: "alert"});
-                    $response.html("Thank you! We've received your request for a demo. One of our Sales professionals will contact you shortly.");
+                    $response.html("Thank you! We've received your request for a demo. Please check your email for an invitation to create an account.");
                     $("#downloadDemo .modal-body p").remove();
                     $("#downloadDemo .modal-body").prepend($response);
                     $requestDemoForm.remove();
@@ -445,7 +445,7 @@ $(document).ready(function(){
                     // SUCCESS
                     $(".modal").scrollTop(0);
                     $response = $("<p>", {class: "alert alert-success", role: "alert"});
-                    $response.html("Thank you! We've received your request for a demo. One of our Sales professionals will contact you shortly.");
+                    $response.html("Thank you! We've received your request for a demo. Please check your email for an invitation to create an account.");
                     $("#downloadDemo .modal-body p").remove();
                     $("#downloadDemo .modal-body").prepend($response);
                     $requestDemoForm.remove();

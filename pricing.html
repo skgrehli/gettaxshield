@@ -159,7 +159,7 @@ function includeHTML() {
     						<p class="select-boxes">Choose one or more options from here</p>
                             <div class="inputGroup">
                                 <input id="option1" name="Funded Referral" type="checkbox" class="fundedReferrals50Checkbox" />
-                                <label for="option1">Funded Referral <a href="javascript:void(0)" data-tooltip="TaxShield offers up to $50 for every referrer that refers a client to your"><i class="fa fa-info-circle"></i></a>
+                                <label for="option1">Funded Referral <a href="javascript:void(0)" data-tooltip="TaxShield offers up to $50 for every referrer that refers a client to your office"><i class="fa fa-info-circle"></i></a>
                                 </label>
                             </div>                
                             <div class="inputGroup">
@@ -168,7 +168,7 @@ function includeHTML() {
                             </div>
                             <div class="inputGroup">
                                 <input id="option3" name="Text  Message" type="checkbox"  class="customerFundedReferralsCheckbox" checked/>
-                                <label for="option3">Text  Message <a href="javascript:void(0)" data-tooltip="Text all your clients at the same time or have one on one conversations!"><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option3">Text  Message <a href="javascript:void(0)" data-tooltip="Text all your clients at the same time or have one on one conversations"><i class="fa fa-info-circle"></i></a></label>
 
                             </div>                
                             <div class="inputGroup">
@@ -181,7 +181,7 @@ function includeHTML() {
                             </div>
                             <div class="inputGroup">
                                 <input id="option6" name="Funded Advance" type="checkbox" class="fundedAdvanceCheckbox" />
-                                <label for="option6">Funded Advance <a href="javascript:void(0)" data-tooltip="Use TSS funded advance program up to $500 in starting in December."><i class="fa fa-info-circle"></i></a></label>
+                                <label for="option6">Funded Advance <a href="javascript:void(0)" data-tooltip="Use TSS funded advance program up to $500 starting in December."><i class="fa fa-info-circle"></i></a></label>
                             </div>
 						  	<div class="count-checkboxes-wrapper">
 							    <span id="count-checked-checkboxes">2</span> of 6 services chosen
@@ -259,7 +259,8 @@ function includeHTML() {
 			                    <div class="panel-section callTrackingDiv">
 			                        <a class="toggle-trigger">
 			                            <p class="n_panel-title-txt">Call Tracking </p>
-			                            <span class="price">Per Tax Season <b>$5</b></span>
+			                            <span class="price">Toll free number <b>$3.75</b>/month</span>
+			                            <span class="price">Local numbers <b>$2</b>/month</span>
 			                        </a>
 			                    </div>                                        
 			                    <div class="panel-section  fundedAdvanceDiv" style="display: none;" >
@@ -425,7 +426,7 @@ function includeHTML() {
             </div>
             <div class="modal-body">
                 <p>
-                    Please complete the form below, You will be contacted by one of our sales professionals explaining how our products work.
+                    Please complete the form below, You will be emailed a Link to Demo the software.
                 </p>
                 <form class="form" id="requestDemoForm" method="post">
                     <div class="form-group">
@@ -701,7 +702,7 @@ $(document).ready(function(){
                     // SUCCESS
                     $(".modal").scrollTop(0);
                     $response = $("<p>", {class: "alert alert-success", role: "alert"});
-                    $response.html("Thank you! We've received your request for a demo. One of our Sales professionals will contact you shortly.");
+                    $response.html("Thank you! We've received your request for a demo. Please check your email for an invitation to create an account.");
                     $("#downloadDemo .modal-body p").remove();
                     $("#downloadDemo .modal-body").prepend($response);
                     $requestDemoForm.remove();
@@ -713,7 +714,7 @@ $(document).ready(function(){
                     // SUCCESS
                     $(".modal").scrollTop(0);
                     $response = $("<p>", {class: "alert alert-success", role: "alert"});
-                    $response.html("Thank you! We've received your request for a demo. One of our Sales professionals will contact you shortly.");
+                    $response.html("Thank you! We've received your request for a demo. Please check your email for an invitation to create an account.");
                     $("#downloadDemo .modal-body p").remove();
                     $("#downloadDemo .modal-body").prepend($response);
                     $requestDemoForm.remove();
