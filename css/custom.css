@@ -1064,7 +1064,6 @@ p.total-price {
   line-height: 65px;
   letter-spacing: 1px;
   font-weight: 800;
-  white-space: nowrap;
 }
 .banner-info-grid h3{
   font-size: 2em;
@@ -1090,8 +1089,7 @@ p.total-price {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(50%, 50%) !important;
-    background-color: 
-    rgb(71, 71, 71);
+    background-color:rgb(71, 71, 71);
     border: 0;
     border-radius: 50%;
     outline: none;
@@ -1268,17 +1266,16 @@ ul.list-unstyled.partners-icon img {
   top: 6%;
   bottom: 0;
   left: 0%;
-  width:150%;
-  
+  width:150%;  
 }
 .banner-image h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 .box-shadow{
-    -webkit-filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
-    filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
+  -webkit-filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
+  filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
   margin: 0px 0px 0px 0;
-    }
+}
 
 /* .scroll-btn{padding: 4em 0 0 0;}
 .scroll-btn img{
@@ -1317,12 +1314,10 @@ ul.list-unstyled.partners-icon img {
     padding: 3em 2em;
     z-index: 999;
 }
-
 .popup p {
     font-size: 15px;
     color: #777;
 }
-
 .popup .close {
     position: absolute;
     top: 10px;
@@ -1339,18 +1334,18 @@ ul.list-unstyled.partners-icon img {
     border: none;
 }
 .login .btn {
-    border: 2px solid #6a67ce;
-    background: #6a67ce;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 15px;
-    border-radius: 0px;
+  border: 2px solid #6a67ce;
+  background: #6a67ce;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 0px;
   -webkit-border-radius: 0px;
-    -o-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    padding: 8px 25px;
+  -o-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  padding: 8px 25px;
 }
 .login .btn:hover {
     opacity: 0.9;
@@ -1367,7 +1362,6 @@ ul.list-unstyled.partners-icon img {
 /*-- //popup --*/
 
 /*-- Global style --*/
-
 .section-text h3{
     font-size: 27px;
     font-weight: 600;
@@ -1414,7 +1408,6 @@ display: block;
 width: 100%;
 list-style: none;
 }
-
 ul.under-list li:before
 {
    font-family: FontAwesome;
@@ -1536,7 +1529,7 @@ h3.tittle-w3 {
     position: relative;
     margin: 10% 0;
 }
- .lt-blue-bg {
+.lt-blue-bg {
     background-color: 
     #fff !important;
 }
@@ -1622,22 +1615,22 @@ position: relative;
 } 
 /* Heading for Parallax Section */ 
 .paral h1 {
-color:rgb(255, 255, 255);
-font-size: 46px;
-text-align: center;
-padding-top: 60px;
-line-height: 60px;
-font-weight: bold;
+  color:rgb(255, 255, 255);
+  font-size: 46px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 60px;
+  font-weight: bold;
 }
 .lead a{
     font-size: 14px;
     border: none;
 }
 .paralsec {
-background-image: url("../images/banner-tax.png");
-background-position: center;
-background-size: cover;
-border-radius: 0;
+  background-image: url("../images/banner-tax.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0;
 }
 .text-message {
     background: url('../images/text-msg.jpg');
@@ -1699,24 +1692,24 @@ font-family: Nunito Sans;
 }
 .ref-img{
   position: absolute;
-    top: -48px;
-    z-index: 0;
+  top: -48px;
+  z-index: 0;
 }
 .local-number {
-    background: url('../images/local-number.png');
-    background-repeat: repeat;
-    background-repeat: no-repeat;
-    padding: 0 !important;
-    height: auto;
-    background-position: 20%;
+  background: url('../images/local-number.png');
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  padding: 0 !important;
+  height: auto;
+  background-position: 20%;
 }
 .holiday {
-    background: url('../images/holiday.png');
-    background-repeat: repeat;
-    background-repeat: no-repeat;
-    padding: 0 !important;
-    height: 690px;
-    background-position: -60px;
+  background: url('../images/holiday.png');
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  padding: 0 !important;
+  height: 690px;
+  background-position: -60px;
 }
 .holiday-text-section {
     margin-top: 90px !important;
@@ -2186,6 +2179,13 @@ ul.partners-icon li span.fa {
 }
 .partners h3.heading {
   color: #fff;
+}
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(111, 190, 74);
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
+  background-color:rgb(111, 190, 74);
+  border-color: rgb(111, 190, 74);
 }
 /*-- //partners --*/
 

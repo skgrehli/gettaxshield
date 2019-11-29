@@ -606,6 +606,9 @@ and (min-width : 1224px) {
     .banner-image img {
         left: 12%;
     }
+    .banner-info-grid h2 {
+        white-space: nowrap;
+    }
 }
 @media only screen and (min-device-width: 480px) 
                    and (max-device-width: 640px) 
