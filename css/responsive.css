@@ -294,6 +294,28 @@ and (max-device-width : 568px)
     .conversion-left-img {
         background: #fff;
     }
+    .oneservice {
+        padding: 0 0px 0px 20px;
+    }
+    ul.oneservice li {
+        font-size: 17px;
+        padding-right: 0px;
+    }
+    ul.oneservice li span {
+        font-size: 17px;
+    }
+    ul.oneservice li::before {
+        padding: 0 30px 0 0;
+    }
+    ul.oneservice li span {
+        padding-left: 9px;
+    }
+    .partners {
+        padding: 1rem;
+    }
+    .text-message-banner .slider-info a.btn, .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+        margin-right: 0px;
+    }
 }
 @media only screen 
 and (min-device-width : 768px) 
@@ -357,9 +379,14 @@ and (max-device-width : 1024px)
     .jumbotron {
         padding: 4rem 2rem !important;
     }
+
     .paral h1 {
         font-size: 35px;
         line-height: 35px;
+    }
+    .text-message h1 {
+        font-size: 30px;
+        width: 100% !important;
     }
     .paral p {
         font-size: 17px;
@@ -433,7 +460,7 @@ and (max-device-width : 1024px)
     .diff-main-sec {
         margin-bottom: 20px;
     }
-    .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+    .text-message-banner .slider-info a.btn,.referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
         padding: 10px 20px;
         font-weight: 700;
         padding: 10px 17px;
@@ -451,6 +478,21 @@ and (max-device-width : 1024px)
         top: 50%;
         left: 45%;
     }
+    .h-500 {
+        height: 350px !important;
+        overflow: hidden;
+    }
+    .oneservice {
+        padding: 0 0px 0px 20px;
+    }
+    ul.oneservice li {
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    ul.oneservice li span {
+        font-size: 17px;
+    }
+
 }
 
 @media only screen 
@@ -523,6 +565,14 @@ and (max-device-width : 1200px)
     }
      .banner-image img {
         left: 0%;
+    }
+    .h-500 {
+        height: 450px !important;
+        overflow: hidden;
+    }
+    .text-message h1 {
+        font-size: 30px;
+        width: 75% !important;
     }
 }
 

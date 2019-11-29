@@ -447,7 +447,7 @@ color:#000 !important;
 .text-message-banner{
     /* background: #873AF5; */
     width: 100%;
-    background: radial-gradient(circle, #00E3FD, #00BAD5 565px);
+    background: radial-gradient(circle, #0057FDCC, #003FD5D1 565px);
 }
 .referral-banner .slider-info a.btn{
 color:#F66B1C !important;
@@ -456,7 +456,7 @@ color:#F66B1C !important;
 color:#00BAD5 !important;
 }
 .text-message-banner .slider-info a.btn{
-color:#00BAD5 !important;
+color:#003FD5 !important;
 }
 .text-message-banner .slider-info a.req-demo,
 .referral-banner .slider-info a.req-demo,
@@ -511,6 +511,7 @@ color:#00BAD5 !important;
 .text-marketing {
     padding: 6% 0 !important;
 }
+.h-500{height: 500px !important;overflow: hidden;}
 ul.oneservice li {
     margin-bottom: 50px;
     font-style: normal;
@@ -1276,7 +1277,7 @@ ul.list-unstyled.partners-icon img {
 .box-shadow{
     -webkit-filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
     filter: drop-shadow(0 0px 20px rgba(0, 0, 0, .2));
-  margin: 0px 0px -1px 0;
+  margin: 0px 0px 0px 0;
     }
 
 /* .scroll-btn{padding: 4em 0 0 0;}
@@ -1637,6 +1638,15 @@ background-image: url("../images/banner-tax.png");
 background-position: center;
 background-size: cover;
 border-radius: 0;
+}
+.text-message {
+    background: url('../images/text-msg.jpg');
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    background-position: 0% 90%;
+    padding: 3rem 0 5rem !important;
 }
 .demo-request {
     background: url('../images/green.jpg');
