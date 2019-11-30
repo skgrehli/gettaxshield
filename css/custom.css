@@ -1258,10 +1258,10 @@ ul.list-unstyled.partners-icon img {
 .call-tracking-banner .banner-text {
     padding: 50px 0 100px;
 }
-.text-message-banner .banner-text {
+/*.text-message-banner .banner-text {
     padding: 15% 0 0px;
 }
-.banner-image img{ 
+*/.banner-image img{ 
   position: relative;
   top: 6%;
   bottom: 0;
