@@ -1582,8 +1582,7 @@ h3.tittle-w3 {
 }
 .angle-wrapper {
     position: relative;
-    margin: 10% 0;
-}
+ }
 .lt-blue-bg {
     background-color: 
     #fff !important;
@@ -1657,8 +1656,13 @@ position: relative;
   transform: rotate(180deg);
   z-index: 1;
 }*/
+
 .jumbotron {
     padding: 9rem 2rem !important;
+}
+.call-tracking-jumb {
+    padding: 6rem 2rem !important;
+    background: #fff;
 }
 .jumbotron{margin-bottom: 0;}
 /* Paragraph for Parallax Section */ 
@@ -1676,6 +1680,10 @@ position: relative;
   padding-top: 60px;
   line-height: 60px;
   font-weight: bold;
+}
+.call-tracking-jumb h1{
+   font-size: 37px;
+  line-height: 50px;
 }
 .lead a{
     font-size: 14px;
@@ -1780,6 +1788,25 @@ font-family: Nunito Sans;
 #print {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.single-service img {
+    width: 20%;
+    margin-bottom: 25px;
+}
+.section-title p {
+  color: #777;
+  font-size: 16px;
+}
+.single-service {
+  padding: 30px 10px;
+  position: relative;
+  text-align: center;
+}
+.single-service h4 {
+  text-transform: capitalize;
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .diff-main-sec .title {
     font-size: 23px !important;
@@ -1928,7 +1955,10 @@ ul.about-list li::before {
   background-size: cover;
 }
 .coversion-text {
-    padding: 28% 14%;
+    padding:15%;
+}
+.making-dollar {
+    padding: 75px 0 !important;
 }
 .coversion-text a.learn-more
  {
