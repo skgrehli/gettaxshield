@@ -398,14 +398,6 @@ color:#000 !important;
   z-index: 99999;
   transition: 1s;
 }
-
-
-
-
-
-
-
-
 .global-btn{
     border: 2px solid #6fbe4a;
     border-radius: 50px;
@@ -424,11 +416,9 @@ color:#000 !important;
 .btn{
   font-size:15px !important;
 }
-
 .slick-prev,  .slick-arrow, .slick-dots{
     display: none !important;
 }
-
 .referral-banner {
     /* background: #873AF5; */
     width: 100%;
@@ -447,7 +437,7 @@ color:#000 !important;
 .text-message-banner{
     /* background: #873AF5; */
     width: 100%;
-    background: radial-gradient(circle, #0057FDCC, #003FD5D1 565px);
+    background: radial-gradient(circle, #497FFB, #003FD5D1 565px);
 }
 .referral-banner .slider-info a.btn{
 color:#F66B1C !important;
@@ -509,9 +499,9 @@ color:#003FD5 !important;
 }
 
 .text-marketing {
-    padding: 6% 0 !important;
+    padding: 7% 0 3% 0 !important;
 }
-.h-500{height: 500px !important;overflow: hidden;}
+.h-500{height: 400px !important;overflow: hidden;}
 ul.oneservice li {
     margin-bottom: 50px;
     font-style: normal;
@@ -520,6 +510,70 @@ ul.oneservice li {
     line-height: 160%;
     color:#424242;
     padding-right: 20px;
+}
+ul.oneservice li.text-ntf:before { 
+  background: url('../images/text-ntf.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.semd-mass:before { 
+  background: url('../images/semd_mass.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.conversations:before { 
+  background: url('../images/conversations.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.send_flyers:before { 
+  background: url('../images/send_flyers.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.appointment:before { 
+  background: url('../images/appointment.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.discounts:before { 
+  background: url('../images/discounts.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.employee:before { 
+  background: url('../images/employee.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
+}
+ul.oneservice li.website:before { 
+  background: url('../images/website.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 35px;
+  margin-right: 15px;
 }
 ul.oneservice li:before {    
     font-family: 'FontAwesome';
@@ -541,12 +595,13 @@ ul.oneservice li:before {
     background-position: left;
 }
 ul.oneservice li span {
-  padding-left: 12px;
+  padding-left: 27px;
   display: block;
   font-size: 18px;
   color:#000;
   opacity: 0.5;
   font-weight: 600;
+  min-height: 80px;
 }
 .plan-selection.total i {
     font-size: 18px;
@@ -1258,10 +1313,10 @@ ul.list-unstyled.partners-icon img {
 .call-tracking-banner .banner-text {
     padding: 50px 0 100px;
 }
-/*.text-message-banner .banner-text {
+.text-message-banner .banner-text {
     padding: 15% 0 0px;
 }
-*/.banner-image img{ 
+.banner-image img{ 
   position: relative;
   top: 6%;
   bottom: 0;
@@ -1641,6 +1696,10 @@ position: relative;
     background-position: 0% 90%;
     padding: 3rem 0 5rem !important;
 }
+.text-message h1{
+font-size: 30px;
+line-height: 45px;
+}
 .demo-request {
     background: url('../images/green.jpg');
     background-position-x: 0%;
@@ -1734,6 +1793,19 @@ font-family: Nunito Sans;
 #own-account {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.textmsg-page-section h3.bottom-line span {
+    color: 
+    #86C568;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 100;
+}
+.textmsg-page-section h3{
+  font-size: 32px !important;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 50px;
 }
 .advance-page-section h3{
   font-size: 32px;
