@@ -212,7 +212,10 @@ li {
 .dropdown-item:focus .dropdown-toggle::after, .dropdown-item:hover.dropdown-toggle::after {
   color: #4955ef;
 }
-
+.dropdown-menu.mega-dropdown-menu.show {
+    opacity: 1 !important;
+    visibility: unset;
+}
 @media(min-width:992px) {
   .dropdown .dropdown-menu {
     display: block;
@@ -2773,6 +2776,9 @@ a.move-top span{
     right: 16%;
   }
   .banner-text {
+    padding: 30vw 0 8vw;
+  }
+  .call-tracking-banner .banner-text {
     padding: 30vw 0 8vw;
   }
   .process-grids img {
