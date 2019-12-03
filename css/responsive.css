@@ -129,6 +129,9 @@
     .call-tracking-banner .banner-text {
         padding: 30vw 0 8vw;
     }
+    .copy-right {
+        font-size: 12px;
+    }
 }
 @media only screen 
 and (min-device-width : 320px) 
@@ -264,6 +267,7 @@ and (max-device-width : 568px)
     h3.bottom-line,
     h3.bottom-line span {
         font-size: 30px !important;
+        line-height: 35px;
     }
     .tracking-left-section {
         padding: 0px;
@@ -341,10 +345,16 @@ and (max-device-width : 568px)
         padding: 15% 0 3% 0 !important;
     }
     .text-message-main #software {
-        padding: 50px 11px;
+        padding: 50px 7px !important;
     }
     .social li a i {
         margin: 0 0 0 0px;
+    }
+    .copy-right {
+        font-size: 12px;
+    }
+    .textmsg-page-section h3.bottom-line span {
+        white-space: -moz-pre-space;
     }
 }
 @media only screen 
