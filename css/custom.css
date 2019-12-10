@@ -422,6 +422,11 @@ color:#000 !important;
 .slick-prev,  .slick-arrow, .slick-dots{
     display: none !important;
 }
+.verify-banner {
+    /* background: #873AF5; */
+    width: 100%;
+    background: radial-gradient(circle,#73AC5A,#5f9445 565px);
+}
 .referral-banner {
     /* background: #873AF5; */
     width: 100%;
@@ -2269,7 +2274,7 @@ h2.heading,h3.heading {
     color: #333;
     text-transform: capitalize;
     letter-spacing: 0;
-    font-weight: 800;
+    font-weight: 700;
 }
 /*-- why choose us --*/
 
@@ -2293,7 +2298,6 @@ ul.partners-icon li span.fa {
   border-color: rgb(111, 190, 74);
 }
 /*-- //partners --*/
-
 /*-- Contact page ---*/
 .contact-form .form-control {
     padding: 15px;
@@ -2328,31 +2332,125 @@ ul.partners-icon li span.fa {
     margin-bottom: 40px;
 }
 .contact-btn {
-    background: 
-#6fbe4a;
-padding: 15px 60px;
-color:
-#fff;
-border: 2px solid
-#6fbe4a;
-font-size: 15px;
-border-radius: 50px;
--webkit-border-radius: 50px;
--o-border-radius: 50px;
--moz-border-radius: 50px;
--ms-border-radius: 50px;
-transition: 0.5s all;
--webkit-transition: 0.5s all;
--o-transition: 0.5s all;
--moz-transition: 0.5s all;
--ms-transition: 0.5s all;
-text-transform: uppercase;
-font-weight: bold;
-margin-top: 10px;
-box-shadow: 0px 3px 6px
-    #7B7B7B47;
+    background:#6fbe4a;
+    padding: 15px 60px;
+    color:#fff;
+    border: 2px solid #6fbe4a;
+    font-size: 15px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px #7B7B7B47;
+}
+.verify-btn {
+    background:#6fbe4a;
+    padding: 10px 30px;
+    color:#fff;
+    border: 2px solid #6fbe4a;
+    font-size: 15px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px #7B7B7B47;
+}
+.btn.verify-btn:hover {
+    color:#fff;
+}
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none !important;
 }
 /*-- contact page end  ---*/
+
+/*-- Verify page Start  ---*/
+.section-block-grey {
+    padding: 5% 0;
+}
+.serv-section-2 {
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);
+    overflow: hidden;
+    padding: 50px 15px;
+    text-align: center;
+}
+.serv-section-2-icon {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    max-width: 100px;
+    z-index: 1;
+    text-align: center;
+}
+.serv-section-2-icon i {
+    color: #86C568;
+    font-size: 48px;
+    line-height: 65px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.serv-section-desc {
+    position: relative;
+}
+.serv-section-2 h4 {
+    color: #333;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.serv-section-2 h5 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 5px;
+}
+.section-heading-line-left {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #86C568;
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.serv-section-2 p {
+    margin-top: 25px;
+    padding-right: 50px;
+}
+.serv-section-2:hover .serv-section-2-icon i {
+    color: #fff;
+}
+.serv-section-2:hover:before {
+    background: #86C568;
+}
+#verify-form-section {
+    display:none;
+}
+/*-- verify page end  ---*/
 /*-- footer --*/
 footer {
     background: #000000;

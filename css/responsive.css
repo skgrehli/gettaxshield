@@ -360,7 +360,7 @@ and (max-device-width : 568px)
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)
-{ 
+{
     #logo {
         width: 55%;
     }
@@ -556,7 +556,6 @@ and (max-device-width : 1024px)
         background:#fff;
     }
 }
-
 @media only screen 
 and (min-device-width : 1024px) 
 and (max-device-width : 1200px)
