@@ -356,6 +356,9 @@ and (max-device-width : 568px)
     .textmsg-page-section h3.bottom-line span {
         white-space: -moz-pre-space;
     }
+    .sm-t-p {
+        padding-top: 50px;
+    }
 }
 @media only screen 
 and (min-device-width : 768px) 
