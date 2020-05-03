@@ -4,12 +4,14 @@
 */
 @media (min-width: 320px) and (max-width: 480px) {
     #logo .logo {
-        max-width: 40%;
-    
+        max-width: 100%;    
+    }
+    #logo {
+        width: 30%;
     }
     #home,section{padding: 0px 11px;}
     .scroll-btn {padding: 1em 0 0 0;}
-    .partners .list-unstyled li:nth-child(3),.partners .list-unstyled li:nth-child(4) { padding-top: 30px; }
+    .partners .list-unstyled li:nth-child(2),.partners .list-unstyled li:nth-child(3),.partners .list-unstyled li:nth-child(4) { padding-top: 20px; }
     .section-text p { font-size: 15px; }
     ul.list-unstyle li { font-size: 15px; }
     ul.list-unstyle li::before {
@@ -20,10 +22,11 @@
     height: auto;
     -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
-    padding: 20px 0;
+    padding: 0 10px;
     }
+    .conversion, .angle-wrapper{padding: 0px;}
     #services .section-text h3 {
-        padding-top: 0px;
+        padding-top: 50px;
     }
     .package-price {
         font-size: 45px;
@@ -95,12 +98,13 @@
     .social {
         text-align: center !important;
         margin: auto;
-            margin-bottom: auto;
+        margin-bottom: auto;
         width: 40%;
         margin-bottom: 55px;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         float: none !important;
+        padding-left:0 !important;
     }
     .paral h1 {
         padding-top: 0px !important;
@@ -121,6 +125,12 @@
     }
     .section-text {
         margin-top: 35px !important;
+    }
+    .call-tracking-banner .banner-text {
+        padding: 30vw 0 8vw;
+    }
+    .copy-right {
+        font-size: 12px;
     }
 }
 @media only screen 
@@ -144,12 +154,13 @@ and (max-device-width : 568px)
         font-size: 35px;
     }
     #logo .logo {
-        max-width: 42%;
+        max-width: 100%;
     }
-    .toggle {
-        font-size: 23px;
-        padding: 5px 5px;
-        margin-right: 0;
+    .menu-dropdown-section .ico {
+        height: 0vh;
+    }
+    .menu-dropdown-section {
+        padding: 15px 1px;
     }
     .slider-info {
         margin-bottom: 25px;
@@ -193,7 +204,7 @@ and (max-device-width : 568px)
      display: none;
   }
   .inputGroup label {
-    padding: 20px 5px;
+    padding: 20px 10px;
     font-size: 14px;
   }
   .inputGroup label::after {
@@ -214,8 +225,7 @@ and (max-device-width : 568px)
     margin: 15px 0;
   }
   .form {
-    padding: 0px 16px;
-    margin: 50px auto;
+    margin:0px auto 50px;
     font-size: 18px;
     }
     section.process {
@@ -230,17 +240,136 @@ and (max-device-width : 568px)
     }
     .software {
         background:#fff;
-        height: auto;
+    }
+    .holiday {
+        height: 700px;
     }
     .localnumber-text-section {
         margin-top: 60px !important;
         margin-bottom: 30px !important;
     }
+    .demo-request {
+       padding: 3rem 0 3rem !important;
+    }
+    .money-section {
+        margin-bottom: 25px;
+        padding: 10px;
+        border-left: 3px solid transparent;
+
+    }
+    .money-section .ico {
+        margin-bottom: 0;
+    }
+    .row.price-text-section .title-section h3.heading {
+        font-size: 32px !important;
+        margin-top: 0px !important;
+    }
+    h3.bottom-line,
+    h3.bottom-line span {
+        font-size: 30px !important;
+        line-height: 35px;
+    }
+    .tracking-left-section {
+        padding: 0px;
+        min-height: 130px;
+    }
+    .tracking-left-section {
+        padding: 0px;
+        min-height: 130px;
+    }
+    #contactus-form {
+        padding: 0 15px;
+    }
+    .diff-main-sec {
+        margin-bottom: 35px;
+    }
+    .diff-main-sec .tracking-left-section .ico {
+        margin-bottom: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .diff-main-sec .title {
+        width: 100%;
+        text-align: center;
+    }
+    .diff-main-sec .tracking-left-section .desc {
+        padding-right: 0;
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .conversion-right-img,
+    .conversion-left-img {
+        background: #fff;
+    }
+    .oneservice {
+        padding: 0 0px 0px 20px;
+    }
+    ul.oneservice li {
+        font-size: 17px;
+        padding-right: 0px;
+    }
+    ul.oneservice li span {
+        font-size: 17px;
+    }
+    ul.oneservice li::before {
+        padding: 0 30px 0 0;
+    }
+    ul.oneservice li span {
+        padding-left: 26px;
+    }
+    .partners {
+        padding: 1rem;
+    }
+    .text-message-banner .slider-info a.btn, .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+        margin-right: 0px;
+    }
+    .call-tracking-jumb {
+        padding: 5rem 0rem !important;
+        background:#fff;
+    }
+    .call-tracking-jumb h1,
+    .text-message h1{
+        font-size: 25px;
+        line-height: 30px !important;
+        width: 95% !important;
+    }
+    .text-message-banner .banner-text {
+        padding: 35% 0 0px;
+    }
+    .text-message{padding: 3rem 0 2rem !important;}
+    .h-500 {
+        height: 300px !important;
+        text-align: center !important;
+    }
+    .text-marketing {
+        padding: 15% 0 3% 0 !important;
+    }
+    .text-message-main #software {
+        padding: 50px 7px !important;
+    }
+    .social li a i {
+        margin: 0 0 0 0px;
+    }
+    .copy-right {
+        font-size: 12px;
+    }
+    .textmsg-page-section h3.bottom-line span {
+        white-space: -moz-pre-space;
+    }
+    .sm-t-p {
+        padding-top: 50px;
+    }
 }
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)
-{ 
+{
+    #logo {
+        width: 55%;
+    }
+    .head-bnr {
+        max-width: 100%;
+    }
     .banner-info-grid h2 {
         font-size: 1.5em;
         line-height: 35px;
@@ -257,13 +386,13 @@ and (max-device-width : 1024px)
     }
     ul.list-unstyle li {
         font-size: 14px;
-    }
-    ul.list-unstyle li::before {
+    } 
+    ul.list-unstyle li::before { 
         padding: 0 5px 0 0;
     }
     #services {
-        -webkit-clip-path: polygon(0 0%, 100% 6%, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0%, 100% 6%, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0% 100%);
     }
     .rs-container {
         width: 96% !important;
@@ -293,9 +422,14 @@ and (max-device-width : 1024px)
     .jumbotron {
         padding: 4rem 2rem !important;
     }
+
     .paral h1 {
         font-size: 35px;
         line-height: 35px;
+    }
+    .text-message h1 {
+        font-size: 30px;
+        width: 100% !important;
     }
     .paral p {
         font-size: 17px;
@@ -308,11 +442,11 @@ and (max-device-width : 1024px)
         left: 80px;
     }
     .price-text-section {
-        padding: 100px 0 15px;
+        padding: 0px 0 15px;
     }
     .form {
-        padding: 45px 16px;
-        margin: 40px auto;
+        padding: 25px 5px;
+        margin: 0px auto;
         font-size: 18px;
     }
     .select-boxes {
@@ -339,7 +473,238 @@ and (max-device-width : 1024px)
     h3.bottom-line::after {
         margin-bottom: 30px;
     }
-    .ico {
-        margin-bottom: 85px;
+    .money-section .ico {
+        margin-bottom: 0px;
     }
+    .holiday{background: #fff;}
+    .vl.client-sec {
+        display: none;
+    }
+    .local-number {
+        background-position: 4%;
+        background-size: 40%;
+    }
+    .localnumber-text-section {
+        margin-top: 80px !important;
+        margin-bottom: 80px !important;
+    }
+    .different-sec-img img {
+        padding: 25px;
+    }
+    .diff-main-sec .title {
+        font-size: 17px !important;
+    }
+    .desc {
+        padding-right: 0px;
+    }
+    .tracking-left-section {
+        padding: 0px;
+    }
+    .diff-main-sec {
+        margin-bottom: 20px;
+    }
+    .text-message-banner .slider-info a.btn,.referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+        padding: 10px 20px;
+        font-weight: 700;
+        padding: 10px 17px;
+        margin-right: 0px;
+        border: 2px solid #fff;
+        margin-bottom: 15px;
+    }
+    .angle-wrapper {
+        margin: 1% 0 5% 0;
+    }
+    .tracking-left-section .ico img {
+        width: 90%;
+    }
+    #button {
+        top: 50%;
+        left: 45%;
+    }
+    .h-500 {
+        height: 350px !important;
+        overflow: hidden;
+    }
+    .oneservice {
+        padding: 0 0px 0px 20px;
+    }
+    ul.oneservice li {
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    ul.oneservice li span {
+        font-size: 14px;
+    }
+    .text-message-banner .banner-text {
+        padding: 22% 0 0px;
+    }
+    .h-500 {
+        height: 260px !important;
+        overflow: hidden;
+    }
+    .jumbotron.paral.text-message {padding: 1rem 0rem !important;}
+    .jumbotron.paral.text-message h1 {
+        font-size: 25px;
+    }
+    .call-tracking-banner .banner-text {
+        padding: 100px 0 100px;
+    }
+    .call-tracking-jumb h1 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 100% !important;
+    }
+    .call-tracking-jumb {
+        padding: 2rem 2rem 3rem 2rem !important;
+        background:#fff;
+    }
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1200px)
+    {
+    .vl.client-sec {
+        display: block;
+    }
+    .holiday {
+        background: url('../images/holiday.png');
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+        height: 690px;
+        background-position: -70px;
+        background-size: 60%;
+    }
+    .funded-ref {
+        background: url('../images/Group3.svg');
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+        height: 690px;
+        background-position: -14px -40px;
+        background-size: 50%;
+    }
+    .funded-ref .holiday-text-section {
+        margin-top: 0px !important;
+    }
+    .advance-page-section h3 {
+        font-size: 31px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        line-height: 35px !important;
+    }
+    #services {
+        margin-top: -108px;
+        padding-bottom: 80px;
+    }
+    .holiday-text-section {
+        margin-top: 100px !important;
+    }
+    .advance-page-section p.advance-page-desc {
+        font-size: 15px;
+    }
+    .money-section .ico {
+        margin-bottom: 125px;
+    }
+    .referral-banner .slider-info a.btn, .call-tracking-banner .slider-info a.btn, .advance-banner .slider-info a.btn {
+        margin-right: 10px;
+    }
+    .tracking-left-section .ico {
+        margin-bottom: 95px;
+    }
+    .tracking-left-section {
+        padding: 10px;
+    }
+    .localnumber-text-section {
+        margin-bottom: 135px !important;
+    }
+    .tracking-left-section {
+        padding: 10px;
+    }
+    .diff-main-sec .title {
+        font-size: 21px !important;
+    }
+    .desc {
+        font-size: 16px !important;
+    }
+     .banner-image img {
+        left: 0%;
+    }
+    .h-500 {
+        height: 450px !important;
+        overflow: hidden;
+    }
+    .text-message h1 {
+        font-size: 30px;
+        width: 75% !important;
+    }
+    .h-500 {
+        height: 340px !important;
+    }
+    .jumbotron.paral.text-message {
+        padding: 1rem 0rem 3rem 0rem !important;
+    }
+    .call-tracking-jumb h1 {
+        font-size: 37px;
+        line-height: 50px;
+    }
+    .angle-wrapper {
+        margin: 1% 0 5% 0;
+    }
+    .single-service {
+        padding: 30px 0px;
+    }
+    #print {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .col-xl-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 16.666667%;
+        flex: 1 0 16.666667%;
+        max-width: 18.667%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .mega-dropdown-menu ul {
+        padding-left: 0px;
+    }
+    .col-xl-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 16.666667%;
+        flex: 1 0 16.666667%;
+        max-width: 18.667%;
+    }
+    .banner-image img {
+        left: 12%;
+    }
+}
+@media only screen 
+and (min-width : 1224px) {
+    .mega-dropdown-menu ul {
+        padding-left: 0px;
+    }
+    .col-xl-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 16.666667%;
+        flex: 1 0 16.666667%;
+        max-width: 18.667%;
+    }
+    .banner-image img {
+        left: 12%;
+    }
+    .banner-info-grid h2 {
+        white-space: nowrap;
+    }
+}
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 640px) 
+                   and (orientation: landscape) {
+
+.holiday {
+    background: #fff;
+}
 }

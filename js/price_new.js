@@ -199,9 +199,11 @@ jQuery('select.number_of_store').on('change', function(){
 jQuery('.fundedAdvanceCheckbox').on('change', function(){
     jQuery('.fundedAdvanceDiv').toggle();
     if($(this).is(':checked')){
+        jQuery(".hollidayAdvanceCheckbox").attr("disabled", true);
         fundedAdvanceFlag = true;
     } else {
         fundedAdvanceFlag = false;
+        jQuery(".hollidayAdvanceCheckbox").removeAttr("disabled");
     }
     price_calculator();
 });
@@ -218,8 +220,10 @@ jQuery('.customerFundedReferralsCheckbox').on('change', function(){
     jQuery('.customerFundedReferralsDiv').toggle();
     if($(this).is(':checked')){
         customerFundedReferralsFlag = true;
+        jQuery(".fundedReferrals50Checkbox").attr("disabled", true);
     } else {
         customerFundedReferralsFlag = false;
+        jQuery(".fundedReferrals50Checkbox").removeAttr("disabled");
     }
     price_calculator();
 });
@@ -228,9 +232,10 @@ jQuery('.fundedReferrals50Checkbox').on('change', function(){
     jQuery('.fundedReferralDiv').toggle();
     if($(this).is(':checked')){
         fundedReferrals50Flag = true;
+        jQuery(".customerFundedReferralsCheckbox").attr("disabled", true);
     } else {
         fundedReferrals50Flag = false;
-
+        jQuery(".customerFundedReferralsCheckbox").removeAttr("disabled");
     }
     price_calculator();
 });
@@ -239,8 +244,10 @@ jQuery('.hollidayAdvanceCheckbox').on('change', function(){
     jQuery('.hollidayAdvanceModuleDiv').toggle();
     if($(this).is(':checked')){
         hollidayAdvanceModuleFlag = true;
+        jQuery(".fundedAdvanceCheckbox").attr("disabled", true);
     } else {
         hollidayAdvanceModuleFlag = false;
+        jQuery(".fundedAdvanceCheckbox").removeAttr("disabled");
 
     }
     price_calculator();

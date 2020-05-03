@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Tax-Shield</title>
+<title>Advance | TaxShield Services</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,8 +13,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" href="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/css/rSlider.min.css">
 	<link href="css/custom.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
-    <link href="css/testimonial.css" rel="stylesheet"><!-- fontawesome css -->    
-	<link href="css/responsive.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/responsive.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     
 
@@ -57,122 +56,72 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }
 .logo{max-width:80%;}
 </style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '416401062641192');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=416401062641192&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 </head>
 <body>
-
-
-<!-- //header -->
-    <div class="header-classic">
-        <!-- navigation start -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <nav class="navbar navbar-expand-lg navbar-classic">
-                        <a href="index.html"><img alt="logo" class="logo" src="images/w-logo.png"></a>
-                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-classic" aria-controls="navbar-classic" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar top-bar mt-0"></span>
-                            <span class="icon-bar middle-bar"></span>
-                            <span class="icon-bar bottom-bar"></span>
-                        </button>
-                                                <div class="collapse navbar-collapse" id="navbar-classic">
-                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-3">
-                            	<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="/about">About</a></li>                               
-                                <li class="nav-item dropdown mega-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Features
-                                    </a>
-                                    <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="menu-4">
-                                        <li class="row justify-content-center"">
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon4.png">
-												    </span>
-												    <span class="title">Advance’s</span>
-												    <span class="desc">TaxShield Software is proud to announce our newest product!<br>
-												    <a class="header-more" href="/advance">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon3.png">
-												    </span>
-												    <span class="title color1">Call Tracking</span>
-												    <span class="desc">Use TaxShield software to track all your calls! Knowing <br><a class="header-more" href="/call-tracking">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon2.png">
-												    </span>
-												    <span class="title color2">Referral</span>
-												    <span class="desc">We built a platform that helps thousands of office’s grow<br><a class="header-more" href="/referral">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon1.png">
-												    </span>
-												    <span class="title color3">Txt Message</span>
-												    <span class="desc">We’ve created the perfect way to communicate with<br><a class="header-more" href="#">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                            <ul class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                                <div class="menu-dropdown-section"> 
-												    <span class="ico">
-												    	<img src="images/dropdown-icon5.png">
-												    </span>
-												    <span class="title color4">Credit Card Payment</span>
-												    <span class="desc">Accept credit card payments for all your clients that want<br><a class="header-more" href="#">Learn More <i class="fa fa-chevron-right"></i></a></span>
-												</div>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                	<a class="nav-link" href="/pricing">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact">Contact</a>
-                                </li>
-                            </ul>
-                            <div class="login-icon ml-lg-2 text-center">
-								<a class="user" href="https://app.gettaxshield.com/#/login"> Login</a>
-							</div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- navigation close -->
-    </div>
-    <!-- header close -->
-<!-- //header -->
+<div class="about-menu" include-html="/menu"></div>
 <!-- banner -->
 <div class="advance-banner" id="home">
 	<div class="container">
 		<div class="row banner-text justify-content-center">
-			<div class="slider-info col-lg-5 col-sm-10 col-10 d-flex align-items-center align-self-center">
+			<div class="slider-info col-lg-5 col-sm-6 col-12 d-flex align-items-center align-self-center">
 				<div class="banner-info-grid mt-lg-5 text-center text-md-left" style="width: 100%;">
 					<h2>Advance's</h2>
 					<p>TaxShield gives you an added advantage over the rest of the market by giving you a platform to process your own advances earlier than your competitors. </p>
-					<a class="btn mt-0 " href="#">Try For Free</a>
-					<a class="btn mt-0 req-demo" href="#">Request a demo</a>
+					<a class="btn mt-0 " href="https://app.gettaxshield.com/#/register">Try For Free</a>
+					<a class="btn mt-0 req-demo" data-toggle="modal" data-target="#downloadDemo">Request a demo</a>
 				</div>
 				
 			</div>
-			<div class="col-sm-6 col-lg-7 col-sm-12 col-12 mt-lg-0 mt-4 banner-image text-lg-center pr-lg-0 mt-sm-4 pl-lg-5">
+			<div class="col-sm-6 col-lg-7 col-sm-6 col-12 mt-lg-0 mt-4 banner-image text-lg-center pr-lg-0 mt-sm-0 pl-lg-5">
 				<img alt="Banner" src="images/advance-banner-img.png" class="img-fluid box-shadow"/>
 			</div>
-			<!-- <div class="col-lg-12 text-center py-4">
-				<div class="scroll-btn">
-					<a href="#"><img alt="Slide-bottom" src="images/banner-bottom.svg" class="img-fluid"/></a>
-				</div>
-			</div> -->
 		</div>
 	</div>
 </div>
@@ -180,21 +129,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- software -->
 <section class="software holiday" id="software">
-	<div class="container py-lg-5 py-sm-3">
+	<div class="container py-lg-0 py-xl-5 py-sm-3">
 		<div class="row">
-			<div class="col-lg-7 col-sm-5 video-img mt-lg-0 mt-4 my-auto text-center text-md-left">
+			<div class="col-sm-5 col-md-12 col-lg-6 col-xl-7 video-img mt-lg-0 mt-4 my-auto text-center text-md-left d-none d-lg-block">
 			</div>
-			<div class="col-lg-5 col-sm-7 advance-page-section px-2 mt-4 my-auto holiday-text-section">
+			<div class="col-sm-12 col-md-12 col-lg-6 col-xl-5 advance-page-section px-2 mt-4 my-auto holiday-text-section">
 				<p class="small">CUSTOM BRANDING</p>
 				<h3 class="tittle-w3">Holiday Advances</h3>
-				<p class="advance-page-desc">Offer Tax advances in December to all your clients, up to $500! We use your own retention to determine what your customer’s would get. Customers get supper excited when they get a call or text from your office offering a service like this in December, before Christmas!<br>
+				<p class="advance-page-desc">Offer Tax advances in December to all your clients, up to $500! We use your own retention to determine what your customers would get. Customers get super excited when they get a call or a text from our office offering a service like this in December, before Christmas!<br>
 					<br>
 				<b>How it works</b>
 					<ul class="advance-page-list mt-3">
 						<li>$100 to $500 based on your own retention</li>
 						<li>Advances provided with Tax return Estimates</li>
 						<li>Start early before the competition, December 19th.</li>
-						<li>ERO is Liable for all Advance Loses</li>
+						<li>ERO is responsible for all advance losses</li>
 						<li>Simple Collection Process</li>
 						<li>ERO has to meet Minimum requirement</li>
 						<li>$39.99/App</li>
@@ -211,40 +160,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<h3 class="heading mt-5 text-center bottom-line"><span>Use Your</span> Own Money</h3>
 		<p class="mb-5 text-center bottom-line-p">Spend out of your own pocket</p>
 		<div class="row">
-			<div class="col-lg-6 mt-lg-0 mt-4">
-				<div class="money-section"> 
-				    <span class="ico">
-				    	<img src="images/icons/money.svg">
-				    </span>
-				    <span class="title">Set Criteria's</span>
-				    <span class="desc">Set how you want to administer your advance program, set amounts, Set to Acks, set by retention or by type of return. Complete control across all account levels under your admin account. Import retention from your tax software.</span>
-				</div>
-
-				<div class="money-section"> 
-				    <span class="ico">
-				    	<img src="images/icons/money2.svg">
-				    </span>
-				    <span class="title">Advance Collection</span>
-				    <span class="desc">Collect the advance money you give to your customers by the biggest banks in the industry. A line Item created and separated from your fee’s. Funds deposited in SB account the same time they always do, no wait time.</span>
-				</div>
-
-				<div class="money-section"> 
-				    <span class="ico">
-				    	<img src="images/icons/money3.svg">
-				    </span>
-				    <span class="title">Connect to your own bank account</span>
-				    <span class="desc">Connect TaxShield to your own account and start printed checks. Set up is really simple. Upload clear check-file from your bank into TSS and update all clear checks. Get a clear picture of how much you’ve spent and how is still pending to hit your bank account.</span>
-				</div>
-
-				<div class="money-section"> 
-				    <span class="ico">
-				    	<img src="images/icons/money1.svg">
-				    </span>
-				    <span class="title">Check Verification System</span>
-				    <span class="desc">Check verification is really easy and straight forward. Two ways check cashiers can verify a check is legitimate; first is by an automated tollfree line with a number that’s located on the physical check, second is here, on this website.</span>
+			<div class="col-md-12 col-lg-12 col-xl-6 mt-lg-0 mt-4">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-12">
+						<div class="money-section"> 
+						    <span class="ico">
+						    	<img src="images/icons/money.svg">
+						    </span>
+						    <span class="title">Set Criteria's</span>
+						    <span class="desc">Set how you want to administer your advance program, set amounts, Set to Acks, set by retention or by type of return. Complete control across all account levels under your admin account. Import retention from your tax software.</span>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-12">
+						<div class="money-section"> 
+						    <span class="ico">
+						    	<img src="images/icons/money2.svg">
+						    </span>
+						    <span class="title">Advance Collection</span>
+						    <span class="desc">Collect the advance money you give to your customers by the biggest banks in the industry. A line Item created and separated from your fee’s. Funds deposited in SB account the same time they always do, no wait time.</span>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-12">
+						<div class="money-section"> 
+						    <span class="ico">
+						    	<img src="images/icons/money3.svg">
+						    </span>
+						    <span class="title">Connect to your own bank account</span>
+						    <span class="desc">Connect TaxShield to your own account and start printing checks. Set up is really simple. Upload clear check-file from your bank into TSS and update all clear checks. Get a clear picture of how much you’ve spent and how is still pending to hit your bank account.</span>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-12"> 
+						<div class="money-section"> 
+						    <span class="ico">
+						    	<img src="images/icons/money1.svg">
+						    </span>
+						    <span class="title">Check Verification System</span>
+						    <span class="desc">Check verification is really easy and straight forward. Two ways check cashiers can verify a check is legitimate; first is by an automated tollfree line with a number that’s located on the physical check, second is here, on this website.</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 section-text mt-4 px-lg-5 col-sm-9 mx-auto my-auto">
+			<div class="col-md-7 col-lg-6 col-xl-6 section-text mt-4 pb-5 px-lg-5 col-sm-9 mx-auto my-auto">
 				<img class="box-shadow w-100" src="images/money.png">
 			</div>
 		</div>
@@ -255,12 +211,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <section class="print" id="print">
 	<div class="container py-lg-5 py-sm-3">
 		<div class="row">
-			<div class="col-lg-6 col-sm-7 advance-page-section px-2 mt-4 my-auto">
+			<div class="col-lg-6 col-sm-7 advance-page-section px-2 mt-4 my-auto order-sm-1">
 				<p class="small">process</p>
 				<h3 class="tittle-w3">Print Checks</h3>
-				<p class="advance-page-desc">After adjusting your criteria, enable all your employee’s or owners under your admin account to process an application and print checks. Each check number is Unique and will never repeat so you can track it through our robust reporting.<br> 
+				<p class="advance-page-desc">After adjusting your criteria, enable all your employee’s or owners under your admin account to process an application and print checks. Each check # is unique and will never repeat, so you can track it through our robust reporting!<br> 
 			</div>
-			<div class="col-lg-6 col-sm-5 video-img mt-lg-0 mt-4 my-auto text-center order-first order-lg-2 text-lg-right">
+			<div class="col-lg-6 col-sm-5 video-img mt-lg-0 mt-4 my-auto text-center order-first order-lg-2 text-lg-right order-sm-12">
 				<img alt="Tracking" src="images/queue.png" class="img-fluid box-shadow">
 			</div>
 		</div>
@@ -289,13 +245,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <section class="verification" id="verification">
 	<div class="container py-lg-5 py-sm-3">
 		<div class="row">
-			<div class="col-lg-6 col-sm-7 advance-page-section px-2 mt-4 my-auto">
+			<div class="col-lg-6 col-sm-7 advance-page-section px-2 mt-4 my-auto order-sm-1">
 				<p class="small">Design</p>
 				<h3 class="tittle-w3">Check verification system</h3>
-				<p class="advance-page-desc">No Double Entry - When using one of our many integrated tax software partners we’ve eliminated any double entry. Once you’ve completed with a return simply click on a bottom and all the Taxpayers information is automatically collected by TSS. All you’d have to do is verify the social security number and your already almost done.
-</p>
+				<p class="advance-page-desc">When using one of the many integrated tax software partners, we’ve eliminated double entries! Once you’ve completed a return, simply click on a button and all of the Taxpayers info is automatically collected by TSS. All you’d have to do is verify the social security # and you’re almost done already!
+
+				Shut off any employee or owner under your admin account, and they will be logged out of their account in real time. </p>
 			</div>
-			<div class="col-lg-6 col-sm-5 video-img mt-lg-0 mt-4 my-auto text-center order-first order-lg-2">
+			<div class="col-lg-6 col-sm-5 video-img mt-lg-0 mt-4 my-auto text-center order-first order-lg-2 order-sm-12">
 				<img alt="Test Message" src="images/verification.png" class="img-fluid box-shadow">
 			</div>
 		</div>
@@ -344,301 +301,170 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </section>
 <!-- //Partners -->
-<!-- footer -->
-<footer class="footer-emp-w3ls py-5">
-	<div class="container pt-lg-3">
-		<div class="row footer-top">
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree">
-				<h4 class="footer-title text-uppercase mb-4">
-					<div id="footer=logo">
-						<img alt="footer-logo" class="f-logo" src="images/footer.png">					
-					</div>
-				</h4>
-				<div class="contact-info">
-					<p>Compete 1040 & Business Software Integrated Referral software Text Messaging & Call Tracking Customer Lead management Portal Taxpayer's remote signature Self-funded advance Software</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-				<h3 class="footer-title text-uppercase mb-4">COMPANY</h3>
-				<ul class="links list-unstyled">
-					<li>
-						<a class="" href="#"> About Us</a>
-					</li>
-					<li>
-						<a class="" href="#t"> Contact Us</a>
-					</li>
-					<li>
-						<a class="" href="#"> Become a Partner</a>
-					</li>
-					<li>
-						<a class="" href="#">Control & Insights</a>
-					</li>
-					<li>
-						<a class="" href="#">Success Stories</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-				<h3 class="footer-title text-uppercase mb-4">FEATURES</h3>
-				<ul class="links list-unstyled">
-					<li>
-						<a class="" href="#"> Call Analytics</a>
-					</li>
-					<li>
-						<a class="" href="#"> Referrals</a>
-					</li>
-					<li>
-						<a class="" href="#"> Messaging Services</a>
-					</li>
-					<li>
-						<a class="" href="#">Control & Insights</a>
-					</li>
-					<li>
-						<a class="" href="#">Generate Reports</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
-				<h3 class="footer-title text-uppercase mb-4">RESOURCES</h3>
-				<ul class="links list-unstyled">
-					<li>
-						<a class="" href="#"> Support</a>
-					</li>
-					<li>
-						<a class="" href="#"> Privacy & Terms</a>
-					</li>
-					<li>
-						<a class="" href="#"> Documentation</a>
-					</li>
-					<li>
-						<a class="" href="#">Security</a>
-					</li>
-					<li>
-						<a class="" href="#">Free Consultant</a>
-					</li>
-					<li>
-						<a class="" href="#">Blog</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-<!-- //footer -->
-
-<!-- copyright -->
-<div class="copy-right-top border-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<p class="copy-right py-4">All Rights Reserved. TaxShield Software LLC. &copy; 2019</p>
-			</div>			
-			<div class="col-md-4 float-right">
-				<ul class="social float-right py-3">
-                        <li> <a href="#"> <i class="fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-linkedin"></i> </a> </li>
-                    </ul>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //copyright -->	
-	
+<div class="about-footer-menu" include-html="/footer_menu"></div>	
 <!-- move top -->
 <div class="move-top text-right">
 	<a href="#home" class="move-top"> 
 		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
 	</a>
 </div>
-<!-- move top -->
 
-<script src="js/bootstrap.js"></script>
+	<div class="modal fade" id="downloadDemo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Request Demo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Please complete the form below, You will be emailed a Link to Demo the software.
+                </p>
+                <form class="form" id="requestDemoForm" method="post">
+                    <div class="form-group">
+                        <label for="yourName">Your Name</label>
+                        <input id="yourName" type="text" placeholder="Your Name" name="name" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourCompany">Company Name</label>
+                        <input id="yourCompany" type="text" placeholder="Company Name" name="company" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourEmail">Email Address</label>
+                        <input id="yourEmail" type="text" placeholder="Email Address" name="email" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="yourPhoneNumber">Phone Number</label>
+                        <input id="yourPhoneNumber" type="text" placeholder="Phone Number" name="phoneNumber" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numOfBankProducts">Number of Bank Products  <span style="color:red;">*</span></label>
+                        <select name="numOfBankProducts" id="numOfBankProducts" class="form-control" required="true">
+                            <option value="No Bank Products">No Bank Products</option>
+                            <option value="1 - 100 Bank Products">1 - 100</option>
+                            <option value="101 - 250 Bank Products">101 - 250</option>
+                            <option value="251 - 500 Bank Products">251 - 500</option>
+                            <option value="501 - 1000 Bank Products">501 - 1000</option>
+                            <option value="1001 - 2000 Bank Products">1001 - 2000</option>
+                            <option value="2000+ Bank Products">2000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="taxSoftware">Current Tax Software <span style="color:red;">*</span></label>
+                    <select name="taxSoftware" id="taxSoftware" class="form-control" required="true">
+                   <option value="Crosslink">Crosslink</option>
+                   <option value="Drake">Drake</option>
+                   <option value="ProSeries">ProSeries</option>
+                   <option value="TaxSlayer Pro">TaxSlayer Pro</option>
+                   <option value="TaxSlayer Pro Online">TaxSlayer Pro Online</option>
+                   <option value="Tax Wise">Tax Wise</option>
+                   <option value="H&amp;R Block, Jackson Hewitt, Liberty Tax">H&amp;R Block, Jackson Hewitt, Liberty Tax</option>
+                   <option value="Other">Other</option>
+                   <option value="None">None</option>
+                   </select>
+                    </div>
+                    <div class="form-group" required="">
+                        <label for="numOfOffices">Number of Tax Offices <span style="color:red;">*</span></label>
+                        <input type="text" name="numOfOffices" placeholder="Number of Tax Offices" id="numOfOffices" value="" class="form-control" required="true">
+                    </div>
+                    <div class="form-group text-center">
+						<div class="g-recaptcha" data-sitekey="6Ld3XLUUAAAAADZkiCmcPIVFuYHCpgUmDZjfEKlu"></div>
+					</div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary" id="rd_submit">
+                    Request Demo
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+        </div>
+           </div>
+
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script src="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/js/rSlider.min.js"></script>
-<script src="js/slider.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+includeHTML();
+</script>
+
 <script type="text/javascript">
 
 
-$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-            }
-            var $subMenu = $(this).next(".dropdown-menu");
-            $subMenu.toggleClass('show');
+$(document).ready(function(){
+	var getUrlParameter = function getUrlParameter(sParam) {
+	    var sPageURL = window.location.search.substring(1),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
 
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-                $('.dropdown-submenu .show').removeClass("show");
+	    for (i = 0; i < sURLVariables.length; i++) {
+	        sParameterName = sURLVariables[i].split('=');
+
+	        if (sParameterName[0] === sParam) {
+	            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+	        }
+	    }
+	};
+	console.log(getUrlParameter('request_demo'));
+	if(getUrlParameter('request_demo') == 'true')
+	{
+		$("#downloadDemo").modal();
+	}
+
+    $requestDemoForm = $("#requestDemoForm");
+    $rd_submit = $("#rd_submit");
+    if($requestDemoForm && $rd_submit) {
+        $rd_submit.click(function() {
+            $rd_submit.attr("disabled", "disabled");
+            if($("#downloadDemo p.alert")) {
+                $("#downloadDemo p.alert").remove();
+            }
+            $requestDemoForm.submit();
+        })
+        $requestDemoForm.submit(function() {
+            $.ajax( {
+                type: "GET",
+                url: 'https://app.gettaxshield.com/api/request_download_demo',
+                data: $requestDemoForm.serialize(),
+                dataType: "json",
+                success: function( response ) {
+                    $rd_submit.removeAttr("disabled");
+                    // SUCCESS
+                    $(".modal").scrollTop(0);
+                    $response = $("<p>", {class: "alert alert-success", role: "alert"});
+                    $response.html("Thank you! We've received your request for a demo. Please check your email for an invitation to create an account.");
+                    $("#downloadDemo .modal-body p").remove();
+                    $("#downloadDemo .modal-body").prepend($response);
+                    $requestDemoForm.remove();
+                    $rd_submit.remove();
+                    $(".modal-footer button[data-dismiss=modal]").html("Close");
+                },
+                error: function( response ) {
+                  $rd_submit.removeAttr("disabled");
+                    // SUCCESS
+                    $(".modal").scrollTop(0);
+                    $response = $("<p>", {class: "alert alert-success", role: "alert"});
+                    $response.html("Thank you! We've received your request for a demo. Please check your email for an invitation to create an account.");
+                    $("#downloadDemo .modal-body p").remove();
+                    $("#downloadDemo .modal-body").prepend($response);
+                    $requestDemoForm.remove();
+                    $rd_submit.remove();
+                    $(".modal-footer button[data-dismiss=modal]").html("Close");
+                }
             });
             return false;
-        });
+         });
 
-
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,2],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        pagination:false,
-        navigation:true,
-        slideSpeed:1000,
-        singleItem:true,
-        transitionStyle:"goDown",
-        navigationText:["",""],
-        autoPlay:false
-    });
-});
-
-//$(document).ready(function(){
-
-   (function () {
-    'use strict';
-    var init = function () {
-           
-        var slider2 = new rSlider({
-            target: '#time_range',
-            values: [100+'+',200+'+',300+'+',500+'+',1000+'+',2000+'+'],
-            step: 1,
-            range: false,
-            set: [500+'+'],
-            tooltip: true,
-            scale: true,
-            labels: true,
-            width: null,
-            onChange: function (vals) {
-                console.log(vals);
-                $("#rangeselect").val(vals);
-                $('#hiddenvalue').val(vals);
-            }
-        });
-        $('#rangeselect').on('change', function() {
-          var getselect = this.value;
-             console.log(getselect);
-             slider2.setValues( getselect );
-             $('#hiddenvalue').val(getselect);
-        });
-    };
-    $(document).ready(init); 
-})();   
-
-
-$('select').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;  
-    $this.addClass('select-hidden'); 
-    $this.wrap('<div class="select"></div>');
-    $this.after('<div class="select-styled"></div>');
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());  
-    var $list = $('<ul />', {'class': 'select-options'}).insertAfter($styledSelect);  
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
     }
-    var $listItems = $list.children('li');  
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.select-options').hide();
-        });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });  
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-    });
-  
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-
 });
 
-// $(document).ready(function() {
-    
-//   // When the button is clicked make the lightbox fade in in the span of 1 second, hide itself and start the video
-//   $("#button").on("click", function() {
-//     $("#lightbox").fadeIn(1000);
-//     $(this).hide();
-//     var videoURL = $('#video').prop('src');
-//     videoURL += "?autoplay=1";
-//     $('#video').prop('src',videoURL);
-//   });
-  
-//   // When the close button is clicked make the lightbox fade out in the span of 0.5 seconds and show the play button
-//   $("#close-btn").on("click", function() {
-//     $("#lightbox").fadeOut(500);
-//     $("#button").show(250);
-//   });
-// });
-
-// Function to reveal lightbox and adding YouTube autoplay
-function revealVideo(div,video_id) {
-  var video = document.getElementById(video_id).src;
-  document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
-  document.getElementById(div).style.display = 'block';
-}
-
-// Hiding the lightbox and removing YouTube autoplay
-function hideVideo(div,video_id) {
-  var video = document.getElementById(video_id).src;
-  var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
-  document.getElementById(video_id).src = cleaned;
-  document.getElementById(div).style.display = 'none';
-}
-
-</script>	
-
-<script>
-	(function(){
-      var words = [
-		  'Holiday Advances',
-	  	  'Print Referrals',
-          'Tracks calls',
-		  'Text Messages'
-          ], i = 0;
-    //   setInterval(function(){
-    //       $('#changingword').fadeOut(function(){
-    //           $(this).html(words[i=(i+1)%words.length]).fadeIn();
-    //       });
-    //   }, 2000);
-        
-  })();
 </script>
-<script>
-$(document).ready(function() {
-  // slick carousel
-//   $('.vertical-center-4').slick({
-//     dots: true,
-//     // infinite: true,
-//   	// speed: 100,
-//     vertical: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 0,
-//     verticalSwiping: true,
-//     autoplay: true,
-//   	autoplaySpeed: 1000,
-//   });
 
-$(".vertical-center-4").owlCarousel({
-	items:1,
-	itemsDesktop:[1000,1],
-	itemsDesktopSmall:[979,1],
-	itemsTablet:[768,1],
-	pagination:false,
-	navigation:false,
-	slideSpeed:500,
-	singleItem:true,
-	transitionStyle:"goDown",
-	autoPlay:1500,
-});
-});
-</script>
 </body>
 </html>
